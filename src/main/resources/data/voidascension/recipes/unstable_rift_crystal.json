@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "eee",
+    "ece",
+    "eee"
+  ],
+  "key": {
+    "c": {
+      "item": "voidascension:rift_crystal"
+    },
+    "e": {
+      "item": "voidascension:void_essence"
+    }
+  },
+  "result": {
+    "item": "voidascension:unstable_rift_crystal"
+  }
+}

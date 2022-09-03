@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ueu",
+    "ebe",
+    " e "
+  ],
+  "key": {
+    "b": {
+      "item": "voidascension:void_boots"
+    },
+    "u": {
+      "item": "voidascension:unstable_rift_crystal"
+    },
+    "e": {
+      "item": "voidascension:empowered_void_essence"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_relic_boots"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "voidascension:item/void_sword_unpowered"
+  }
+}

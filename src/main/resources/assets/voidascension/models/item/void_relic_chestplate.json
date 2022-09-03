@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "voidascension:item/void_relic_chestplate"
+  }
+}

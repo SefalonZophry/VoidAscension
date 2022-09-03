@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    "sls",
+    " c "
+  ],
+  "key": {
+    "c": {
+      "item": "voidascension:rift_crystal"
+    },
+    "l": {
+      "item": "voidascension:living_void_steel_ingot"
+    },
+    "s": {
+      "item": "voidascension:void_infused_string"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_pickaxe_handle"
+  }
+}

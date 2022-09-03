@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "voidascension:block/void_slab"
+    },
+    "type=double": {
+      "model": "voidascension:block/void_stone"
+    },
+    "type=top": {
+      "model": "voidascension:block/void_slab_top"
+    }
+  }
+}

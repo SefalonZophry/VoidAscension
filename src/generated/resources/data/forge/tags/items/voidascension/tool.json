@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "voidascension:void_sword_unpowered",
+    "voidascension:void_sword_powered",
+    "voidascension:void_pickaxe"
+  ]
+}

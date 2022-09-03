@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " b ",
+    " l "
+  ],
+  "key": {
+    "b": {
+      "item": "voidascension:void_sword_blade"
+    },
+    "l": {
+      "item": "voidascension:void_sword_lower_half"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_sword_unpowered"
+  }
+}

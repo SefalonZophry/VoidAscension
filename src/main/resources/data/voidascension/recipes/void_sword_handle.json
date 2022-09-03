@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  s",
+    " l "
+  ],
+  "key": {
+    "s": {
+      "item": "voidascension:void_infused_string"
+    },
+    "l": {
+      "item": "voidascension:living_void_steel_ingot"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_sword_handle"
+  }
+}

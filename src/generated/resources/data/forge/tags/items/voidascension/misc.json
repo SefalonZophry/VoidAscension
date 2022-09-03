@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "voidascension:rift_former",
+    "voidascension:void_essence",
+    "voidascension:empowered_void_essence",
+    "voidascension:rift_crystal",
+    "voidascension:void_infused_string",
+    "voidascension:unstable_rift_crystal",
+    "voidascension:living_void_steel_ingot",
+    "voidascension:ne_relic_piece",
+    "voidascension:se_relic_piece",
+    "voidascension:sw_relic_piece",
+    "voidascension:nw_relic_piece",
+    "voidascension:relic"
+  ]
+}

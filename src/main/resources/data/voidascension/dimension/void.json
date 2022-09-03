@@ -1,0 +1,13 @@
+{
+  "type": "voidascension:void",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 0,
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "seed": 0,
+      "biome": "voidascension:deep_void"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "voidascension:void_helmet",
+    "voidascension:void_chestplate",
+    "voidascension:void_leggings",
+    "voidascension:void_boots",
+    "voidascension:void_relic_helmet",
+    "voidascension:void_relic_chestplate",
+    "voidascension:void_relic_leggings",
+    "voidascension:void_relic_boots"
+  ]
+}
