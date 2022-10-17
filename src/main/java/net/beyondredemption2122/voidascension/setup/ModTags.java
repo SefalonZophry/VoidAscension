@@ -47,6 +47,9 @@ public class ModTags {
         public static final ITag.INamedTag<Item> SW_RELIC_PIECE = forge("voidascension/misc");
         public static final ITag.INamedTag<Item> NW_RELIC_PIECE = forge("voidascension/misc");
         public static final ITag.INamedTag<Item> RELIC = forge("voidascension/misc");
+        public static final ITag.INamedTag<Item> VOID_SPAWN_SPAWN_EGG = forge("voidascension/misc");
+        public static final ITag.INamedTag<Item> INJECTOR_SPAWN_EGG = forge("voidascension/misc");
+        public static final ITag.INamedTag<Item> ELITE_VOID_SPAWN_SPAWN_EGG = forge("voidascension/misc");
 
 
         //Blocks
