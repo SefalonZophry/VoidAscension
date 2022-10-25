@@ -46,6 +46,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("relic",
                 modLoc("item/relic"));
 
+        withExistingParent("void_essence_capsule",
+                modLoc("item/void_essence_capsule"));
+
         //Blocks
         withExistingParent("rift_crystal_ore_block",
                 modLoc("block/rift_crystal_ore_block"));
@@ -105,6 +108,8 @@ public class ModItemModelProvider extends ItemModelProvider {
                 "nw_relic_piece");
         builder(itemGenerated,
                 "relic");
+        builder(itemGenerated,
+                "void_essence_capsule");
 
 
 

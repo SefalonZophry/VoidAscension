@@ -48,6 +48,9 @@ public class ModItems {
     public static final RegistryObject<Item> RELIC = Registration.ITEMS.register("relic", () ->
             new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
+    public static final RegistryObject<Item> VOID_ESSENCE_CAPSULE = Registration.ITEMS.register("void_essence_capsule", () ->
+            new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
+
     //Tool Workables
     public static final RegistryObject<Item> VOID_PICKAXE_HEAD = Registration.ITEMS.register("void_pickaxe_head", () ->
             new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
