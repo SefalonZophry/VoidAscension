@@ -12,6 +12,9 @@
     "voidascension:se_relic_piece",
     "voidascension:sw_relic_piece",
     "voidascension:nw_relic_piece",
-    "voidascension:relic"
+    "voidascension:relic",
+    "voidascension:void_spawn_spawn_egg",
+    "voidascension:injector_spawn_egg",
+    "voidascension:elite_void_spawn_spawn_egg"
   ]
 }
