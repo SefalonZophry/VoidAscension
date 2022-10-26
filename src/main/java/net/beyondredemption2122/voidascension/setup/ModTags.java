@@ -50,8 +50,10 @@ public class ModTags {
         public static final ITag.INamedTag<Item> VOID_SPAWN_SPAWN_EGG = forge("voidascension/misc");
         public static final ITag.INamedTag<Item> INJECTOR_SPAWN_EGG = forge("voidascension/misc");
         public static final ITag.INamedTag<Item> ELITE_VOID_SPAWN_SPAWN_EGG = forge("voidascension/misc");
-
         public static final ITag.INamedTag<Item> VOID_ESSENCE_CAPSULE = forge("voidascension/misc");
+        public static final ITag.INamedTag<Item> EMPTY_VOID_ESSENCE_CAPSULE = forge("voidascension/misc");
+        public static final ITag.INamedTag<Item> EMPTY_SYRINGE = forge("voidascension/misc");
+        public static final ITag.INamedTag<Item> FILLED_VOID_ESSENCE_SYRINGE = forge("voidascension/misc");
 
 
         //Blocks

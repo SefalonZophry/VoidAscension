@@ -49,6 +49,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("void_essence_capsule",
                 modLoc("item/void_essence_capsule"));
 
+        withExistingParent("empty_void_essence_capsule",
+                modLoc("item/empty_void_essence_capsule"));
+
+        withExistingParent("empty_syringe",
+                modLoc("item/empty_syringe"));
+
+        withExistingParent("filled_void_essence_syringe",
+                modLoc("item/filled_void_essence_syringe"));
+
         //Blocks
         withExistingParent("rift_crystal_ore_block",
                 modLoc("block/rift_crystal_ore_block"));
@@ -110,9 +119,12 @@ public class ModItemModelProvider extends ItemModelProvider {
                 "relic");
         builder(itemGenerated,
                 "void_essence_capsule");
-
-
-
+        builder(itemGenerated,
+                "empty_void_essence_capsule");
+        builder(itemGenerated,
+                "empty_syringe");
+        builder(itemGenerated,
+                "filled_void_essence_syringe");
 
         //Blocks
 

@@ -14,6 +14,9 @@
     "voidascension:nw_relic_piece",
     "voidascension:relic",
     "voidascension:void_essence_capsule",
+    "voidascension:empty_void_essence_capsule",
+    "voidascension:empty_syringe",
+    "voidascension:filled_void_essence_syringe",
     "voidascension:void_spawn_spawn_egg",
     "voidascension:injector_spawn_egg",
     "voidascension:elite_void_spawn_spawn_egg"

@@ -51,6 +51,15 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_ESSENCE_CAPSULE = Registration.ITEMS.register("void_essence_capsule", () ->
             new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
+    public static final RegistryObject<Item> EMPTY_VOID_ESSENCE_CAPSULE = Registration.ITEMS.register("empty_void_essence_capsule", () ->
+            new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
+
+    public static final RegistryObject<Item> EMPTY_SYRINGE = Registration.ITEMS.register("empty_syringe", () ->
+            new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
+
+    public static final RegistryObject<Item> FILLED_VOID_ESSENCE_SYRINGE = Registration.ITEMS.register("filled_void_essence_syringe", () ->
+            new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
+
     //Tool Workables
     public static final RegistryObject<Item> VOID_PICKAXE_HEAD = Registration.ITEMS.register("void_pickaxe_head", () ->
             new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
