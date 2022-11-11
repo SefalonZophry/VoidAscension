@@ -52,6 +52,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_SWORD_UNPOWERED).add(ModItems.VOID_SWORD_UNPOWERED.get());
         tag(ModTags.Items.VOID_SWORD_POWERED).add(ModItems.VOID_SWORD_POWERED.get());
         tag(ModTags.Items.VOID_PICKAXE).add(ModItems.VOID_PICKAXE.get());
+        tag(ModTags.Items.VOID_BOW).add(ModItems.VOID_BOW.get());
 
 
 
@@ -62,6 +63,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_PICKAXE_HANDLE).add(ModItems.VOID_PICKAXE_HANDLE.get());
         tag(ModTags.Items.VOID_SWORD_BLADE).add(ModItems.VOID_SWORD_BLADE.get());
         tag(ModTags.Items.VOID_SWORD_GUARD).add(ModItems.VOID_SWORD_GUARD.get());
+        tag(ModTags.Items.VOID_BOW_BODY).add(ModItems.VOID_BOW_BODY.get());
+        tag(ModTags.Items.VOID_BOW_UNPOWERED_BODY).add(ModItems.VOID_BOW_UNPOWERED_BODY.get());
 
 
         //Armor

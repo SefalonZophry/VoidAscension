@@ -79,6 +79,12 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_SWORD_BLADE = Registration.ITEMS.register("void_sword_blade", () ->
             new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
+    public static final RegistryObject<Item> VOID_BOW_BODY = Registration.ITEMS.register("void_bow_body", () ->
+            new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
+
+    public static final RegistryObject<Item> VOID_BOW_UNPOWERED_BODY = Registration.ITEMS.register("void_bow_unpowered_body", () ->
+            new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
+
 
     //Tools
     public static final RegistryObject<Item> VOID_SWORD_UNPOWERED = Registration.ITEMS.register("void_sword_unpowered", () ->

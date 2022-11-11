@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "c  ",
+    " b ",
+    "c  "
+  ],
+  "key": {
+    "b": {
+      "item": "voidascension:void_bow_unpowered_body"
+    },
+    "c": {
+      "item": "voidascension:rift_crystal"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_bow_body"
+  }
+}

@@ -89,6 +89,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("void_sword_blade",
                 modLoc("item/void_sword_blade"));
 
+        withExistingParent("void_bow_body",
+                modLoc("item/void_bow_body"));
+
+        withExistingParent("void_bow_unpowered_body",
+                modLoc("item/void_bow_unpowered_body"));
+
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
@@ -144,6 +150,10 @@ public class ModItemModelProvider extends ItemModelProvider {
                 "void_sword_lower_half");
         builder(itemGenerated,
                 "void_sword_blade");
+        builder(itemGenerated,
+                "void_bow_body");
+        builder(itemGenerated,
+                "void_bow_unpowered_body");
 
     }
 

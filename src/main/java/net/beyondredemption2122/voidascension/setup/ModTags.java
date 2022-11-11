@@ -70,6 +70,7 @@ public class ModTags {
         public static final ITag.INamedTag<Item> VOID_SWORD_UNPOWERED = forge("voidascension/tool");
         public static final ITag.INamedTag<Item> VOID_SWORD_POWERED = forge("voidascension/tool");
         public static final ITag.INamedTag<Item> VOID_PICKAXE = forge("voidascension/tool");
+        public static final ITag.INamedTag<Item> VOID_BOW = forge("voidascension/tool");
 
 
         //Tool Workables
@@ -79,6 +80,8 @@ public class ModTags {
         public static final ITag.INamedTag<Item> VOID_SWORD_LOWER_HALF = forge("voidascension/workables");
         public static final ITag.INamedTag<Item> VOID_PICKAXE_HANDLE = forge("voidascension/workables");
         public static final ITag.INamedTag<Item> VOID_SWORD_BLADE = forge("voidascension/workables");
+        public static final ITag.INamedTag<Item> VOID_BOW_BODY = forge("voidascension/workables");
+        public static final ITag.INamedTag<Item> VOID_BOW_UNPOWERED_BODY = forge("voidascension/workables");
 
 
         //Armor

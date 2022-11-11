@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  s",
+    " bs",
+    "  s"
+  ],
+  "key": {
+    "b": {
+      "item": "voidascension:void_bow_body"
+    },
+    "s": {
+      "item": "voidascension:void_infused_string"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_bow"
+  }
+}
