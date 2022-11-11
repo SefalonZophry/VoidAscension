@@ -2,7 +2,7 @@ package net.beyondredemption2122.voidascension.data.client;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
-import com.sun.org.apache.xpath.internal.operations.Mod;
+import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.LootTableProvider;
@@ -11,8 +11,8 @@ import net.minecraft.loot.*;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 import net.beyondredemption2122.voidascension.setup.customblocks.ModBlocks;
-import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
 import net.beyondredemption2122.voidascension.setup.Registration;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 import java.util.Map;
@@ -42,7 +42,7 @@ public class ModLootTableProvider extends LootTableProvider {
     public static class ModBlockLootTables extends BlockLootTables {
         @Override
         protected void addTables() {
-//            dropOther(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(), ModItems.RIFT_CRYSTAL.get());
+            dropOther(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(), ModItems.RIFT_CRYSTAL.get());
             dropSelf(ModBlocks.ALTAR.get());
             dropSelf(ModBlocks.CHALICE.get());
             dropSelf(ModBlocks.PEDESTAL.get());

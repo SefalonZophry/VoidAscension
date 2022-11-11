@@ -59,6 +59,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                 modLoc("item/filled_void_essence_syringe"));
 
         //Blocks
+
         withExistingParent("rift_crystal_ore_block",
                 modLoc("block/rift_crystal_ore_block"));
 

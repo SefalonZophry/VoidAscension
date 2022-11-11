@@ -1,12 +1,11 @@
 package net.beyondredemption2122.voidascension.setup.customblocks;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.common.ToolType;
 
-public class CrystalOre extends Block {
+public class CrystalOre extends OreBlock {
 
     public CrystalOre() {
         super(AbstractBlock.Properties.of(Material.STONE)
@@ -18,4 +17,9 @@ public class CrystalOre extends Block {
     }
 
     public static void register() {}
+
+    @Override
+    public int getExpDrop(BlockState state, net.minecraft.world.IWorldReader reader, BlockPos pos, int fortune, int silktouch) {
+        return silktouch == 0 ? this.xpOnDrop(RANDOM) : 0;
+    }
 }

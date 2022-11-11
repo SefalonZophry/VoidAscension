@@ -1,9 +1,11 @@
 package net.beyondredemption2122.voidascension;
 
+import net.beyondredemption2122.voidascension.data.client.ModItemModelProperties;
 import net.beyondredemption2122.voidascension.setup.CustomDimensionRenders;
 import net.beyondredemption2122.voidascension.setup.customeffects.ModEffects;
 import net.beyondredemption2122.voidascension.setup.init.ContainerTypesinit;
 import net.beyondredemption2122.voidascension.setup.init.TileEntityTypesInit;
+import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
 import net.beyondredemption2122.voidascension.setup.worldgen.biome.DeepVoid;
 import net.beyondredemption2122.voidascension.setup.worldgen.structure.ModStructures;
 import net.beyondredemption2122.voidascension.setup.entity.render.EliteVoidSpawnRenderer;
@@ -74,6 +76,8 @@ public class VoidAscension {
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MonsterEntity::checkMonsterSpawnRules);
         EntitySpawnPlacementRegistry.register(ModEntityTypes.INJECTOR.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MonsterEntity::checkMonsterSpawnRules);
+
+        ModItemModelProperties.makeBow(ModItems.VOID_BOW.get());
 
     }
 

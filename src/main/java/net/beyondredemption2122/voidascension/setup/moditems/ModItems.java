@@ -93,6 +93,9 @@ public class ModItems {
             new PickaxeItem(ModItemTier.VOID, 2, 1F,
                     new Item.Properties() .tab(RiftsItemGroup.creativeTab)));
 
+    public static final RegistryObject<Item> VOID_BOW = Registration.ITEMS.register("void_bow", () ->
+            new BowItem(new Item.Properties() .tab(RiftsItemGroup.creativeTab).stacksTo(1)));
+
 
     //Armor
     public static final RegistryObject<Item> VOID_HELMET = Registration.ITEMS.register("void_helmet", () ->
