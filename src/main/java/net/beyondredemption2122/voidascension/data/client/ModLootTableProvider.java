@@ -42,7 +42,7 @@ public class ModLootTableProvider extends LootTableProvider {
     public static class ModBlockLootTables extends BlockLootTables {
         @Override
         protected void addTables() {
-            dropOther(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(), ModItems.RIFT_CRYSTAL.get());
+//            dropOther(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(), ModItems.RIFT_CRYSTAL.get());
             dropSelf(ModBlocks.ALTAR.get());
             dropSelf(ModBlocks.CHALICE.get());
             dropSelf(ModBlocks.PEDESTAL.get());

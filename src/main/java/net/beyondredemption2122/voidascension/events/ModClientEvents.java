@@ -19,8 +19,9 @@ import net.beyondredemption2122.voidascension.setup.entity.custom.InjectorEntity
 import net.beyondredemption2122.voidascension.setup.entity.custom.VoidSpawnEntity;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
+
 @Mod.EventBusSubscriber(modid = VoidAscension.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-public class ModEvents {
+public class ModClientEvents {
 
     @SubscribeEvent
     public static void addEntityAttribute(EntityAttributeCreationEvent event) {
@@ -40,4 +41,8 @@ public class ModEvents {
     public static void onRegisterEntities(RegistryEvent.Register<EntityType<?>> event) {
         ModSpawnEggs.initSpawnEggs();
     }
+
+
+//    @SubscribeEvent
+//    public static void fillSyringeEvent()
 }
