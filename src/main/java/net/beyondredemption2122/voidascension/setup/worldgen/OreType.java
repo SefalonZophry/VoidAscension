@@ -6,7 +6,7 @@ import net.beyondredemption2122.voidascension.setup.customblocks.ModBlocks;
 
 public enum OreType {
 
-    RIFT_CRYSTAL_ORE(Lazy.of(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK), 4, 24, 40, 5);
+    RIFT_CRYSTAL_ORE(Lazy.of(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK), 4, 18, 40, 5);
 
     private final Lazy<Block> block;
     private final int maxVeinSize;

@@ -1,8 +1,7 @@
 package net.beyondredemption2122.voidascension.setup.customblocks;
 
 import net.beyondredemption2122.voidascension.setup.Registration;
-import net.beyondredemption2122.voidascension.setup.customblocks.Altar;
-import net.beyondredemption2122.voidascension.setup.customblocks.Chalice;
+import net.beyondredemption2122.voidascension.setup.customblocks.tileentities.AltarTileEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
@@ -10,7 +9,6 @@ import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.beyondredemption2122.voidascension.data.RiftsItemGroup;
-import net.beyondredemption2122.voidascension.setup.customblocks.CrystalOre;
 
 import java.util.function.Supplier;
 
@@ -20,7 +18,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RIFT_CRYSTAL_ORE_BLOCK = Registration.BLOCKS.register("rift_crystal_ore_block", CrystalOre::new);
 
-    public static final RegistryObject<Block> ALTAR = Registration.BLOCKS.register("altar", Altar::new);
+    public static final RegistryObject<Block> ALTAR = Registration.BLOCKS.register("altar", AltarTileEntity::new);
 
     public static final RegistryObject<Block> CHALICE = Registration.BLOCKS.register("chalice", Chalice::new);
 

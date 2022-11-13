@@ -1,4 +1,4 @@
-package net.beyondredemption2122.voidascension.setup.customblocks;
+package net.beyondredemption2122.voidascension.setup.customblocks.tileentities;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
@@ -17,7 +17,7 @@ import net.minecraftforge.common.ToolType;
 
 import java.util.stream.Stream;
 
-public class Altar extends Block {
+public class AltarTileEntity extends Block {
 
     private static final DirectionProperty FACING = HorizontalBlock.FACING;
 
@@ -49,7 +49,7 @@ public class Altar extends Block {
     ).reduce((v1, v2) -> VoxelShapes.join(v1, v2, IBooleanFunction.OR)).get();
 
 
-    public Altar() {
+    public AltarTileEntity() {
         super (AbstractBlock.Properties.of(Material.METAL)
                 .strength(3.0f,2.0f)
                 .sound(SoundType.ANVIL)

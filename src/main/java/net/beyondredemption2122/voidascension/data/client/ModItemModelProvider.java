@@ -28,8 +28,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("empowered_void_essence",
                 modLoc("item/empowered_void_essence"));
 
-        withExistingParent("living_void_steel_ingot",
-                modLoc("item/living_void_steel_ingot"));
+        withExistingParent("living_void_ingot",
+                modLoc("item/living_void_ingot"));
 
         withExistingParent("ne_relic_piece",
                 modLoc("item/ne_relic_piece"));
@@ -113,7 +113,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated,
                 "unstable_rift_crystal");
         builder(itemGenerated,
-                "living_void_steel_ingot");
+                "living_void_ingot");
         builder(itemGenerated,
                 "ne_relic_piece");
         builder(itemGenerated,

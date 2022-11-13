@@ -2,7 +2,7 @@ package net.beyondredemption2122.voidascension.setup;
 
 import net.beyondredemption2122.voidascension.VoidAscension;
 import net.beyondredemption2122.voidascension.setup.customblocks.*;
-import net.beyondredemption2122.voidascension.setup.customblocks.tileentities.PedestalTileEntity;
+import net.beyondredemption2122.voidascension.setup.customblocks.tileentities.AltarTileEntity;
 import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
 import net.beyondredemption2122.voidascension.setup.entity.custom.EliteVoidSpawnEntity;
 import net.beyondredemption2122.voidascension.setup.entity.custom.InjectorEntity;
@@ -39,7 +39,7 @@ public class Registration {
         EliteVoidSpawnModel.register();
         EliteVoidSpawnEntity.register();
         CrystalOre.register();
-        Altar.register();
+        AltarTileEntity.register();
         Chalice.register();
         Pedestal.register();
         ModBlocks.register();

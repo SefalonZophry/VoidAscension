@@ -41,7 +41,7 @@ public class ModTags {
         public static final ITag.INamedTag<Item> RIFT_CRYSTAL = forge("voidascension/misc");
         public static final ITag.INamedTag<Item> UNSTABLE_RIFT_CRYSTAL = forge("voidascension/misc");
         public static final ITag.INamedTag<Item> VOID_INFUSED_STRING = forge("voidascension/misc");
-        public static final ITag.INamedTag<Item> LIVING_VOID_STEEL_INGOT = forge("voidascension/misc");
+        public static final ITag.INamedTag<Item> LIVING_VOID_INGOT = forge("voidascension/misc");
         public static final ITag.INamedTag<Item> NE_RELIC_PIECE = forge("voidascension/misc");
         public static final ITag.INamedTag<Item> SE_RELIC_PIECE = forge("voidascension/misc");
         public static final ITag.INamedTag<Item> SW_RELIC_PIECE = forge("voidascension/misc");

@@ -8,7 +8,7 @@ aebdfceab247764c8e8f673570c7842e5db47fb9 assets/voidascension/models/block/void_
 19bcbd6a7653d39f54069c0a0b35d6e27dddaa3c assets/voidascension/models/item/empty_syringe.json
 78a10cca6d8a2d97ba0d3076b1180649bcea6725 assets/voidascension/models/item/empty_void_essence_capsule.json
 afd786749a86a3fa1e6daf2e8e3e7563e4c569d1 assets/voidascension/models/item/filled_void_essence_syringe.json
-39a3748f1b77ab32b9eb80c1db852adfce660525 assets/voidascension/models/item/living_void_steel_ingot.json
+1cdbcced27a89493cd8242298f9bdeb5394a8800 assets/voidascension/models/item/living_void_ingot.json
 bbd40c6dd3ee6daff0df1c9ce5922945a97d1af8 assets/voidascension/models/item/ne_relic_piece.json
 f0c43531b3d842375d3f9a27c550c2eb05b61296 assets/voidascension/models/item/nw_relic_piece.json
 3048af686ae052dd45cfc32369698096b6e14e3f assets/voidascension/models/item/relic.json
@@ -36,7 +36,7 @@ fb63ec39eecc34e80f0d14b3d20be0a778b7de62 data/forge/tags/blocks/voidacension/blo
 2557b170e38865cdcbbc38a3f231f67e2ca4da34 data/forge/tags/blocks/voidascension/ore.json
 c6cc76ebf0e7d6e05a010ddf57c5044fdaf450f7 data/forge/tags/items/voidascension/armor.json
 44cbbf05c3d28ce213cfc8a9a1a5e77da2b11238 data/forge/tags/items/voidascension/block.json
-969712a2be3e763dc2b83d4c2b653f4237c28ca3 data/forge/tags/items/voidascension/misc.json
+691cbe89714f5a1a31f64035377f8d8280af8a9b data/forge/tags/items/voidascension/misc.json
 2557b170e38865cdcbbc38a3f231f67e2ca4da34 data/forge/tags/items/voidascension/ore.json
 283fb5160f7bba6a68ec1a84ff3e0058b325ce75 data/forge/tags/items/voidascension/tool.json
 a61e31c62c3238af12f0394ed76052445d377907 data/forge/tags/items/voidascension/workables.json

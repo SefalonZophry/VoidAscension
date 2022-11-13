@@ -24,7 +24,7 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_INFUSED_STRING = Registration.ITEMS.register("void_infused_string", () ->
             new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
-    public static final RegistryObject<Item> LIVING_VOID_STEEL_INGOT = Registration.ITEMS.register("living_void_steel_ingot", () ->
+    public static final RegistryObject<Item> LIVING_VOID_INGOT = Registration.ITEMS.register("living_void_ingot", () ->
             new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_ESSENCE = Registration.ITEMS.register("void_essence", () ->
