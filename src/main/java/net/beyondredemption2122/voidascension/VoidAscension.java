@@ -29,7 +29,6 @@ import net.beyondredemption2122.voidascension.setup.worldgen.ModBiomeGeneration;
 import net.beyondredemption2122.voidascension.setup.entity.ModEntityTypes;
 import net.beyondredemption2122.voidascension.setup.entity.render.InjectorRenderer;
 import net.beyondredemption2122.voidascension.setup.entity.render.VoidSpawnRenderer;
-import software.bernie.geckolib3.GeckoLib;
 
 @Mod(VoidAscension.MOD_ID)
 public class VoidAscension {
@@ -47,8 +46,6 @@ public class VoidAscension {
         ModStructures.register(eventBus);
 
         ModEffects.register(eventBus);
-
-        GeckoLib.initialize();
 
         TileEntityTypesInit.TILE_ENTITY_TYPE.register(eventBus);
         ContainerTypesinit.CONTAINER_TYPES.register(eventBus);

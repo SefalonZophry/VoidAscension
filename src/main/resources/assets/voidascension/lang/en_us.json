@@ -52,5 +52,6 @@
   "block.voidascension.void_stairs": "Void Stairs",
   "block.voidascension.void_fence": "Void Fence",
   "block.voidascension.void_slab": "Void Slab",
-  "itemGroup.VoidAscension": "Void Ascension"
+  "itemGroup.VoidAscension": "Void Ascension",
+  "biome.voidascension.void_touched_biome": "Void Touched Biome"
 }

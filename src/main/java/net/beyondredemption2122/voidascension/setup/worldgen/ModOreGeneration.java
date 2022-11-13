@@ -49,7 +49,6 @@ public class ModOreGeneration {
                 ore.getBlock().get().defaultBlockState(), ore.getMaxVeinSize());
     }
 
-    // Currently only supports vanilla Dimensions
     private static ConfiguredFeature<?, ?> makeOreFeature(OreType ore, String dimensionToSpawnIn) {
         OreFeatureConfig oreFeatureConfig = null;
 

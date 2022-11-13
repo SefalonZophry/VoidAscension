@@ -100,7 +100,7 @@ public class ModItems {
                     new Item.Properties() .tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_BOW = Registration.ITEMS.register("void_bow", () ->
-            new BowItem(new Item.Properties() .tab(RiftsItemGroup.creativeTab).stacksTo(1)));
+            new BowItem(new Item.Properties() .tab(RiftsItemGroup.creativeTab).stacksTo(1) .durability( 2500)));
 
 
     //Armor
