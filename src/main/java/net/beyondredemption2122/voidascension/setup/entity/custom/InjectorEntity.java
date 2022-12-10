@@ -17,7 +17,7 @@ public class InjectorEntity extends MonsterEntity{
     public static AttributeModifierMap.MutableAttribute setCustomAttribute() {
         return MobEntity.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 25.00)
-                .add(Attributes.MOVEMENT_SPEED,1.0F)
+                .add(Attributes.MOVEMENT_SPEED,0.50F)
                 .add(Attributes.ATTACK_DAMAGE, 10)
                 .add(Attributes.ATTACK_SPEED, 0.25F)
                 .add(Attributes.FOLLOW_RANGE, 25.00);
@@ -26,10 +26,10 @@ public class InjectorEntity extends MonsterEntity{
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(1, new SwimGoal(this));
-        this.goalSelector.addGoal(7, new RandomWalkingGoal(this, 0.50F));
+        this.goalSelector.addGoal(7, new RandomWalkingGoal(this, 0F));
         this.goalSelector.addGoal(7, new LookRandomlyGoal(this));
         this.goalSelector.addGoal(8, new LookAtGoal(this, PlayerEntity.class, 8.0F));
-        this.goalSelector.addGoal(1, new MoveTowardsTargetGoal(this, 0.50F, 15.00F));
+        this.goalSelector.addGoal(1, new MoveTowardsTargetGoal(this, 0F, 15.00F));
         this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 0.50F, false));
         this.addBehaviourGoals();
     }
