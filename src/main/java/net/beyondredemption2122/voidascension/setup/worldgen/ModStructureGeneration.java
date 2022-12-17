@@ -20,22 +20,27 @@ public class ModStructureGeneration {
         RegistryKey<Biome> key = RegistryKey.create(Registry.BIOME_REGISTRY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(key.location().equals(VoidTouchedBome.VOID_TOUCHED_BIOME.get().getRegistryName()))  {
+        if (key.location().equals(VoidTouchedBome.VOID_TOUCHED_BIOME.get().getRegistryName())) {
             List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 
             structures.add(() -> ModStructures.ALTAR.get().configured(IFeatureConfig.NONE));
         }
 
-        if(key.location().equals(DeepVoid.DEEP_VOID.get().getRegistryName()))  {
+        if (key.location().equals(DeepVoid.DEEP_VOID.get().getRegistryName())) {
             List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 
             structures.add(() -> ModStructures.ALTAR.get().configured(IFeatureConfig.NONE));
         }
 
-        if(key.location().equals(DeepVoid.DEEP_VOID.get().getRegistryName()))  {
+        if (key.location().equals(DeepVoid.DEEP_VOID.get().getRegistryName())) {
             List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 
             structures.add(() -> ModStructures.FUSER.get().configured(IFeatureConfig.NONE));
+        }
+
+        if (key.location().equals(DeepVoid.DEEP_VOID.get().getRegistryName())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+            structures.add(() -> ModStructures.KEEP.get().configured(IFeatureConfig.NONE));
         }
     }
 }

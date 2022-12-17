@@ -5,6 +5,7 @@ import com.google.common.collect.ImmutableMap;
 import net.beyondredemption2122.voidascension.VoidAscension;
 import net.beyondredemption2122.voidascension.setup.worldgen.structure.structures.AltarStructure;
 import net.beyondredemption2122.voidascension.setup.worldgen.structure.structures.FuserStructure;
+import net.beyondredemption2122.voidascension.setup.worldgen.structure.structures.KeepStructure;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraft.world.gen.feature.structure.Structure;
@@ -28,6 +29,9 @@ public class ModStructures {
     public static final RegistryObject<Structure<NoFeatureConfig>> FUSER =
             STRUCTURES.register("fuser", FuserStructure::new);
 
+    public static final RegistryObject<Structure<NoFeatureConfig>> KEEP =
+            STRUCTURES.register("keep", KeepStructure::new);
+
     /* average distance apart in chunks between spawn attempts */
     /* minimum distance apart in chunks between spawn attempts. MUST BE LESS THAN ABOVE VALUE*/
     /* this modifies the seed of the structure so no two structures always spawn over each-other.
@@ -38,7 +42,11 @@ public class ModStructures {
                 true);
 
         setupMapSpacingAndLand(FUSER.get(),
-                new StructureSeparationSettings(125, 30, 1234567890),
+                new StructureSeparationSettings(125, 30, 547983755),
+                true);
+
+        setupMapSpacingAndLand(KEEP.get(),
+                new StructureSeparationSettings(65, 25, 754359374),
                 true);
     }
 
