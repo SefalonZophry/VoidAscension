@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "voidascension:rift_crystal"
+    },
+    "title": "Void Ascension",
+    "description": "He has awoken.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "voidascension:textures/block/void_pillar_top.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -78,9 +78,9 @@ public class Chalice extends Block {
                             player.changeDimension(overWorld, new ChaliceTeleporter(pos, false));
                         }
                     } else {
-                        ServerWorld kjDim = server.getLevel(ModDimensions.Void);
-                        if (kjDim != null) {
-                            player.changeDimension(kjDim, new ChaliceTeleporter(pos, true));
+                        ServerWorld vd = server.getLevel(ModDimensions.Void);
+                        if (vd != null) {
+                            player.changeDimension(vd, new ChaliceTeleporter(pos, true));
                         }
                     }
                     return ActionResultType.SUCCESS;
