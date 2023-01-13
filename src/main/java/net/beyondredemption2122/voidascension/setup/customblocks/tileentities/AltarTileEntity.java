@@ -1,4 +1,4 @@
-package net.beyondredemption2122.voidascension.setup.customblocks.tileentities;
+/*package net.beyondredemption2122.voidascension.setup.customblocks.tileentities;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
@@ -87,5 +87,5 @@ public class AltarTileEntity extends Block {
     public static void register() {}
 
 
-}
+}*/
 
