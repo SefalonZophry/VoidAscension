@@ -21,7 +21,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.VOID_FENCE).add(ModBlocks.VOID_FENCE.get());
         tag(ModTags.Blocks.VOID_SLAB).add(ModBlocks.VOID_SLAB.get());
         tag(ModTags.Blocks.VOID_STAIRS).add(ModBlocks.VOID_STAIRS.get());
-        tag(ModTags.Blocks.ALTAR).add(ModBlocks.ALTAR.get());
-        tag(ModTags.Blocks.CHALICE).add(ModBlocks.ALTAR.get());
+//        tag(ModTags.Blocks.ALTAR).add(ModBlocks.ALTAR.get());
+//        tag(ModTags.Blocks.CHALICE).add(ModBlocks.ALTAR.get());
     }
 }

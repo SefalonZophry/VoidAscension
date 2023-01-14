@@ -64,7 +64,7 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_PICKAXE_HEAD = Registration.ITEMS.register("void_pickaxe_head", () ->
             new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
-    public static final RegistryObject<Item> VOID_PICKAXE_HANDLE = Registration.ITEMS.register("void_pickaxe_handle", () ->
+    public static final RegistryObject<Item> VOID_TOOL_HANDLE = Registration.ITEMS.register("void_tool_handle", () ->
             new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_SWORD_GUARD = Registration.ITEMS.register("void_sword_guard", () ->
@@ -154,7 +154,7 @@ public class ModItems {
     // Block Items
     public static final RegistryObject<Item> RIFT_CRYSTAL_ORE_BLOCK = Registration.ITEMS.register("rift_crystal_ore_block", () -> new BlockItem(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(), new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
-    public static final RegistryObject<Item> ALTAR_ITEM = Registration.ITEMS.register("altar", () -> new BlockItem(ModBlocks.ALTAR.get(), new Item.Properties().tab(RiftsItemGroup.creativeTab)));
+//    public static final RegistryObject<Item> ALTAR_ITEM = Registration.ITEMS.register("altar", () -> new BlockItem(ModBlocks.ALTAR.get(), new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> CHALICE = Registration.ITEMS.register("chalice", () -> new BlockItem(ModBlocks.CHALICE.get(), new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 

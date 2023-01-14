@@ -60,7 +60,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_PICKAXE_HEAD).add(ModItems.VOID_PICKAXE_HEAD.get());
         tag(ModTags.Items.VOID_SWORD_HANDLE).add(ModItems.VOID_SWORD_HANDLE.get());
         tag(ModTags.Items.VOID_SWORD_LOWER_HALF).add(ModItems.VOID_SWORD_LOWER_HALF.get());
-        tag(ModTags.Items.VOID_PICKAXE_HANDLE).add(ModItems.VOID_PICKAXE_HANDLE.get());
+        tag(ModTags.Items.VOID_TOOL_HANDLE).add(ModItems.VOID_TOOL_HANDLE.get());
         tag(ModTags.Items.VOID_SWORD_BLADE).add(ModItems.VOID_SWORD_BLADE.get());
         tag(ModTags.Items.VOID_SWORD_GUARD).add(ModItems.VOID_SWORD_GUARD.get());
         tag(ModTags.Items.VOID_BOW_BODY).add(ModItems.VOID_BOW_BODY.get());

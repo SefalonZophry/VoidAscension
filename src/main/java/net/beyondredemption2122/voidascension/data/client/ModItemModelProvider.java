@@ -74,8 +74,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("void_pickaxe_head",
                 modLoc("item/void_pickaxe_head"));
 
-        withExistingParent("void_pickaxe_handle",
-                modLoc("item/void_pickaxe_handle"));
+        withExistingParent("void_tool_handle",
+                modLoc("item/void_tool_handle"));
 
         withExistingParent("void_sword_guard",
                 modLoc("item/void_sword_guard"));
@@ -141,7 +141,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated,
                 "void_pickaxe_head");
         builder(itemGenerated,
-                "void_pickaxe_handle");
+                "void_tool_handle");
         builder(itemGenerated,
                 "void_sword_handle");
         builder(itemGenerated,
