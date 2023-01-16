@@ -15,10 +15,16 @@ import net.minecraft.world.World;
 import java.util.Map;
 import java.util.Objects;
 
-public class ModArmorItem extends ArmorItem {
-    private static final Map<IArmorMaterial, Effect> MATERIAL_TO_EFFECT_MAP =
+public class
+ModArmorItem extends ArmorItem {
+    private static final Map<IArmorMaterial, Effect> MATERIAL_TO_EFFECT_MAP_1 =
             new ImmutableMap.Builder<IArmorMaterial, Effect>()
                     .put(ModArmorMaterial.VOID_RELIC, Effects.ABSORPTION)
+                    .build();
+
+    private  static final Map<IArmorMaterial, Effect> MATERIAL_TO_EFFECT_MAP_2 =
+            new ImmutableMap.Builder<IArmorMaterial, Effect>()
+                    .put(ModArmorMaterial.VOID_RELIC, Effects.DAMAGE_BOOST)
                     .build();
 
     public ModArmorItem(IArmorMaterial material, EquipmentSlotType slot, Properties settings) {
@@ -29,19 +35,30 @@ public class ModArmorItem extends ArmorItem {
     public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {
         if(!world.isClientSide()) {
             if(hasFullSuitOfArmorOn(player)) {
-                evaluateArmorEffects(player);
+                evaluateArmorEffects1(player);
+                evaluateArmorEffects2(player);
             }
         }
 
         super.onArmorTick(stack, world, player);
     }
 
-    private void evaluateArmorEffects(PlayerEntity player) {
-        for (Map.Entry<IArmorMaterial, Effect> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+    private void evaluateArmorEffects1(PlayerEntity player) {
+        for (Map.Entry<IArmorMaterial, Effect> entry : MATERIAL_TO_EFFECT_MAP_1.entrySet()) {
             IArmorMaterial mapArmorMaterial = entry.getKey();
             Effect mapStatusEffect = entry.getValue();
 
             if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            }
+        }
+    }
+    private void evaluateArmorEffects2(PlayerEntity player) {
+        for (Map.Entry<IArmorMaterial, Effect> entry : MATERIAL_TO_EFFECT_MAP_2.entrySet()) {
+            IArmorMaterial mapArmorMaterial = entry.getKey();
+            Effect mapStatusEffect = entry.getValue();
+
+            if (hasCorrectArmorOn(mapArmorMaterial, player)) {
                 addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
             }
         }
@@ -52,11 +69,6 @@ public class ModArmorItem extends ArmorItem {
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addEffect(new EffectInstance(mapStatusEffect, 400));
-
-            // if(new Random().nextFloat() > 0.6f) { // 40% of damaging the armor! Possibly!
-                // Uncomment if you wanna damage armor
-                // player.inventory.func_234563_a_(DamageSource.MAGIC, 1f);
-            // }
         }
     }
 

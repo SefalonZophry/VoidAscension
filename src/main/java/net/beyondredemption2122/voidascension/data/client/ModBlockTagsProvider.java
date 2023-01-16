@@ -6,7 +6,6 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.beyondredemption2122.voidascension.VoidAscension;
 import net.beyondredemption2122.voidascension.setup.customblocks.ModBlocks;
 import net.beyondredemption2122.voidascension.setup.ModTags;
-import net.minecraftforge.fml.common.Mod;
 
 public class ModBlockTagsProvider extends BlockTagsProvider {
     public ModBlockTagsProvider(DataGenerator  generatorIn, ExistingFileHelper existingFileHelper) {
