@@ -3,6 +3,7 @@ package net.beyondredemption2122.voidascension.setup.moditems;
 import net.beyondredemption2122.voidascension.setup.*;
 import net.beyondredemption2122.voidascension.setup.customblocks.ModBlocks;
 import net.beyondredemption2122.voidascension.setup.moditems.custom.ModArmorItem;
+import net.beyondredemption2122.voidascension.setup.moditems.custom.VoidBow;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
@@ -100,7 +101,7 @@ public class ModItems {
                     new Item.Properties() .tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_BOW = Registration.ITEMS.register("void_bow", () ->
-            new BowItem(new Item.Properties() .tab(RiftsItemGroup.creativeTab).stacksTo(1) .durability( 2500)));
+            new VoidBow(new Item.Properties() .tab(RiftsItemGroup.creativeTab).stacksTo(1) .durability( 2500)));
 
 
     //Armor
