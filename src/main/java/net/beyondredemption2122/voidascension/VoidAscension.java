@@ -3,6 +3,12 @@ package net.beyondredemption2122.voidascension;
 import net.beyondredemption2122.voidascension.data.client.ModItemModelProperties;
 import net.beyondredemption2122.voidascension.setup.CustomDimensionRenders;
 import net.beyondredemption2122.voidascension.setup.customeffects.ModEffects;
+import net.beyondredemption2122.voidascension.setup.entity.custom.EliteVoidSpawnEntity;
+import net.beyondredemption2122.voidascension.setup.entity.custom.InjectorEntity;
+import net.beyondredemption2122.voidascension.setup.entity.custom.VoidSpawnEntity;
+import net.beyondredemption2122.voidascension.setup.entity.model.EliteVoidSpawnModel;
+import net.beyondredemption2122.voidascension.setup.entity.model.InjectorModel;
+import net.beyondredemption2122.voidascension.setup.entity.model.VoidSpawnModel;
 import net.beyondredemption2122.voidascension.setup.init.ContainerTypesinit;
 import net.beyondredemption2122.voidascension.setup.init.TileEntityTypesInit;
 import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
@@ -35,9 +41,10 @@ public class VoidAscension {
     public static final String MOD_ID = "voidascension";
 
     public VoidAscension() {
-        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus eventBus = modEventBus;
 
-        Registration.register();
+        Registration.register(eventBus);
 
         ModEntityTypes.register(eventBus);
         VoidTouchedBome.register(eventBus);
@@ -50,13 +57,13 @@ public class VoidAscension {
         TileEntityTypesInit.TILE_ENTITY_TYPE.register(eventBus);
         ContainerTypesinit.CONTAINER_TYPES.register(eventBus);
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        modEventBus.addListener(this::setup);
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
+        modEventBus.addListener(this::enqueueIMC);
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
+        modEventBus.addListener(this::processIMC);
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        modEventBus.addListener(this::doClientStuff);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -74,7 +81,7 @@ public class VoidAscension {
         EntitySpawnPlacementRegistry.register(ModEntityTypes.INJECTOR.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MonsterEntity::checkMonsterSpawnRules);
 
-        ModItemModelProperties.makeBow(ModItems.VOID_BOW.get());
+
 
     }
 
@@ -86,6 +93,7 @@ public class VoidAscension {
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.VOIDSPAWN.get(), VoidSpawnRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.ELITEVOIDSPAWN.get(), EliteVoidSpawnRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.INJECTOR.get(), InjectorRenderer::new);
+
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {
@@ -100,7 +108,6 @@ public class VoidAscension {
 
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
-
 
     }
 }

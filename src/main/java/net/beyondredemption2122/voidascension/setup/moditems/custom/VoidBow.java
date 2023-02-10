@@ -12,7 +12,7 @@ public class VoidBow extends ModdedBowResource{
     protected double getArrowDamage(ItemStack bowStack, AbstractArrowEntity arrowEntity) {
         int powerLevel = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, bowStack);
 
-        return (double)powerLevel * 15.0D +15.0D;
+        return (double)powerLevel * 8.0D +3.0D;
 
     }
 }

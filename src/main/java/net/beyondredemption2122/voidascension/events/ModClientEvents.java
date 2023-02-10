@@ -20,7 +20,7 @@ import net.beyondredemption2122.voidascension.setup.entity.custom.VoidSpawnEntit
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 
-@Mod.EventBusSubscriber(modid = VoidAscension.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@Mod.EventBusSubscriber(modid = VoidAscension.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModClientEvents {
 
     @SubscribeEvent
