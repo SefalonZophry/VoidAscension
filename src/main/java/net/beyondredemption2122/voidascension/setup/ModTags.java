@@ -16,7 +16,7 @@ public class ModTags {
         public static final ITag.INamedTag<Block> RIFT_CRYSTAL_ORE_BLOCK = forge("voidascension/ore");
         public static final ITag.INamedTag<Block> VOID_STONE = forge("voidascension/block");
         public static final ITag.INamedTag<Block> VOID_PILLAR_TOP = forge("voidascension/block");
-        public static final ITag.INamedTag<Block> ALTAR = forge("voidascension/block");
+//        public static final ITag.INamedTag<Block> ALTAR = forge("voidascension/block");
         public static final ITag.INamedTag<Block> CHALICE = forge("voidacension/block");
         public static final ITag.INamedTag<Block> PEDESTAL = forge("voidascension/block");
         public static final ITag.INamedTag<Block> VOID_FENCE = forge("voidascension/block");

@@ -1,6 +1,7 @@
 package net.beyondredemption2122.voidascension.setup.moditems.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.beyondredemption2122.voidascension.VoidAscension;
 import net.beyondredemption2122.voidascension.setup.ModArmorMaterial;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -11,12 +12,14 @@ import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.Map;
 import java.util.Objects;
 
-public class
-ModArmorItem extends ArmorItem {
+@Mod.EventBusSubscriber(modid = VoidAscension.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+public class ModArmorItem extends ArmorItem {
     private static final Map<IArmorMaterial, Effect> MATERIAL_TO_EFFECT_MAP_1 =
             new ImmutableMap.Builder<IArmorMaterial, Effect>()
                     .put(ModArmorMaterial.VOID_RELIC, Effects.ABSORPTION)

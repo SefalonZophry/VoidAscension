@@ -41,8 +41,4 @@ public class ModClientEvents {
     public static void onRegisterEntities(RegistryEvent.Register<EntityType<?>> event) {
         ModSpawnEggs.initSpawnEggs();
     }
-
-
-//    @SubscribeEvent
-//    public static void fillSyringeEvent()
 }
