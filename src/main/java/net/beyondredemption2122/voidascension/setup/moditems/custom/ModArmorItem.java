@@ -18,6 +18,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.Map;
 import java.util.Objects;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ModArmorItem extends ArmorItem {
     private static final Map<IArmorMaterial, Effect> MATERIAL_TO_EFFECT_MAP_1 =
@@ -77,36 +78,27 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private boolean hasFullSuitOfArmorOn(PlayerEntity player) {
-//        System.out.println(player.inventory.armor.get(0).getItem().equals(Items.AIR));
+        AtomicBoolean fullyArmorOn = new AtomicBoolean(true);
 
-//        System.out.println(player.inventory.armor.get(0).getItem() instanceof ModArmorItem);
+        player.getArmorSlots().forEach(itemStack -> {
+            if (itemStack.isEmpty()) fullyArmorOn.set(false);
+            return;
+        });
 
-        ItemStack boots = player.inventory.getArmor(0);
-        ItemStack leggings = player.inventory.getArmor(1);
-        ItemStack breastplate = player.inventory.getArmor(2);
-        ItemStack helmet = player.inventory.getArmor(3);
-
-
-//        return false;
-
-        return !Items.AIR() && !breastplate.isEmpty()
-                && !leggings.isEmpty() && !boots.isEmpty();
+        return fullyArmorOn.get();
     }
 
     private boolean hasCorrectArmorOn(IArmorMaterial material, PlayerEntity player) {
-        for (ItemStack armorStack : player.inventory.armor) {
-            if (!(armorStack.getItem() instanceof ArmorItem)) {
-                return false;
+        AtomicBoolean correctArmorOn = new AtomicBoolean(true);
+
+        player.getArmorSlots().forEach(itemStack -> {
+            if (!(itemStack.getItem() instanceof ArmorItem) || ((ArmorItem) itemStack.getItem()).getMaterial() != material) {
+                correctArmorOn.set(false);
             }
-        }
 
+            return;
+        });
 
-            ArmorItem boots = ((ArmorItem) player.inventory.getArmor(0).getItem());
-            ArmorItem leggings = ((ArmorItem) player.inventory.getArmor(1).getItem());
-            ArmorItem breastplate = ((ArmorItem) player.inventory.getArmor(2).getItem());
-            ArmorItem helmet = ((ArmorItem) player.inventory.getArmor(3).getItem());
-
-            return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
-                    leggings.getMaterial() == material && boots.getMaterial() == material;
+        return correctArmorOn.get();
     }
 }
