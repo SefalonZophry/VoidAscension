@@ -1,5 +1,6 @@
 package net.beyondredemption2122.voidascension.setup.moditems.custom;
 
+import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
@@ -10,9 +11,11 @@ import net.minecraft.item.BowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.stats.Stats;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.world.World;
+import org.apache.commons.lang3.ObjectUtils;
 
 import java.util.function.Predicate;
 
@@ -89,7 +92,7 @@ public class ModdedBowResource extends BowItem {
     }
 
     protected AbstractArrowEntity createArrow(World pLevel, ItemStack ammoStack, PlayerEntity playerentity) {
-        ArrowItem arrowitem = (ArrowItem)(ammoStack.getItem() instanceof ArrowItem ? ammoStack.getItem() : Items.ARROW);
+        ArrowItem arrowitem = (ArrowItem)(ammoStack.getItem() instanceof ArrowItem ? ammoStack.getItem() : ModItems.VOID_ARROW);
         return arrowitem.createArrow(pLevel, ammoStack, playerentity);
     }
     protected double getArrowDamage(ItemStack bowStack, AbstractArrowEntity arrowEntity) {
@@ -105,6 +108,8 @@ public class ModdedBowResource extends BowItem {
     }
 
     public Predicate<ItemStack> getAllSupportedProjectiles() {
-        return ARROW_ONLY;
+        return (ammoStack) -> {
+            return ammoStack.getItem().is(ItemTags.ARROWS);
+        };
     }
 }

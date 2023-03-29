@@ -3,6 +3,7 @@ package net.beyondredemption2122.voidascension.setup.moditems;
 import net.beyondredemption2122.voidascension.setup.*;
 import net.beyondredemption2122.voidascension.setup.customblocks.ModBlocks;
 import net.beyondredemption2122.voidascension.setup.moditems.custom.ModArmorItem;
+import net.beyondredemption2122.voidascension.setup.moditems.custom.VoidArrowItem;
 import net.beyondredemption2122.voidascension.setup.moditems.custom.VoidBow;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -103,6 +104,15 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_BOW = Registration.ITEMS.register("void_bow", () ->
             new VoidBow(new Item.Properties() .tab(RiftsItemGroup.creativeTab).stacksTo(1) .durability( 2500)));
 
+    //Arrows
+    public static final RegistryObject<Item> VOID_ARROW =Registration.ITEMS.register("void_arrow", () -> new VoidArrowItem(new Item.Properties() .tab(RiftsItemGroup.creativeTab), 1.5F));
+
+    //Arrow Workables
+    public static final RegistryObject<Item> VOID_ARROW_SHAFT = Registration.ITEMS.register("void_arrow_shaft", () ->
+            new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
+
+    public static final RegistryObject<Item> VOID_ARROW_HEAD = Registration.ITEMS.register("void_arrow_head", () ->
+            new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
     //Armor
     public static final RegistryObject<Item> VOID_HELMET = Registration.ITEMS.register("void_helmet", () ->

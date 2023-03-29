@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "l",
+    "l"
+  ],
+  "key": {
+    "l": {
+      "item": "voidascension:living_void_ingot"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_arrow_shaft",
+    "count": 4
+  }
+}

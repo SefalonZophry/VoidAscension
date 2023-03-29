@@ -65,6 +65,9 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_SWORD_GUARD).add(ModItems.VOID_SWORD_GUARD.get());
         tag(ModTags.Items.VOID_BOW_BODY).add(ModItems.VOID_BOW_BODY.get());
         tag(ModTags.Items.VOID_BOW_UNPOWERED_BODY).add(ModItems.VOID_BOW_UNPOWERED_BODY.get());
+        tag(ModTags.Items.VOID_ARROW_SHAFT).add(ModItems.VOID_ARROW_SHAFT.get());
+        tag(ModTags.Items.VOID_ARROW_HEAD).add(ModItems.VOID_ARROW_HEAD.get());
+
 
 
         //Armor

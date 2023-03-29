@@ -82,6 +82,8 @@ public class ModTags {
         public static final ITag.INamedTag<Item> VOID_SWORD_BLADE = forge("voidascension/workables");
         public static final ITag.INamedTag<Item> VOID_BOW_BODY = forge("voidascension/workables");
         public static final ITag.INamedTag<Item> VOID_BOW_UNPOWERED_BODY = forge("voidascension/workables");
+        public static final ITag.INamedTag<Item> VOID_ARROW_SHAFT = forge("voidascension/workables");
+        public static final ITag.INamedTag<Item> VOID_ARROW_HEAD = forge("voidascension/workables");
 
 
         //Armor

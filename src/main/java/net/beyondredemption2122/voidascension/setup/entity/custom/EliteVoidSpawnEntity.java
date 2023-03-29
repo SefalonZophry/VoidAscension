@@ -24,20 +24,21 @@ public class EliteVoidSpawnEntity extends MonsterEntity {
     }
     public static AttributeModifierMap.MutableAttribute setCustomAttribute() {
         return MonsterEntity.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 65.00)
+                .add(Attributes.MAX_HEALTH, 65.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.30F)
-                .add(Attributes.ATTACK_DAMAGE, 18)
+                .add(Attributes.ATTACK_DAMAGE, 18.0D)
                 .add(Attributes.ATTACK_SPEED, 0.25F)
-                .add(Attributes.FOLLOW_RANGE, 25.00);
+                .add(Attributes.FOLLOW_RANGE, 8.0D);
     }
 
 
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new SwimGoal(this));
-        this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.0F, false));
+        this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.0F, false));
+        this.goalSelector.addGoal(3, new LookAtGoal (this, PlayerEntity.class, 8.0F));
+        this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
         this.goalSelector.addGoal(6, new WaterAvoidingRandomWalkingGoal(this, 1.0D));
-        this.goalSelector.addGoal(7, new LookRandomlyGoal(this));
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
     }

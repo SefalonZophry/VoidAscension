@@ -1,5 +1,6 @@
 package net.beyondredemption2122.voidascension;
 
+import net.beyondredemption2122.voidascension.client.renderer.entity.VoidArrowRenderer;
 import net.beyondredemption2122.voidascension.data.client.ModItemModelProperties;
 import net.beyondredemption2122.voidascension.setup.CustomDimensionRenders;
 import net.beyondredemption2122.voidascension.setup.customeffects.ModEffects;
@@ -12,6 +13,7 @@ import net.beyondredemption2122.voidascension.setup.entity.model.VoidSpawnModel;
 import net.beyondredemption2122.voidascension.setup.init.ContainerTypesinit;
 import net.beyondredemption2122.voidascension.setup.init.TileEntityTypesInit;
 import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
+import net.beyondredemption2122.voidascension.setup.world.entity.ModEntityType;
 import net.beyondredemption2122.voidascension.setup.worldgen.biome.DeepVoid;
 import net.beyondredemption2122.voidascension.setup.worldgen.structure.ModStructures;
 import net.beyondredemption2122.voidascension.setup.entity.render.EliteVoidSpawnRenderer;
@@ -54,6 +56,8 @@ public class VoidAscension {
 
         ModEffects.register(eventBus);
 
+        ModEntityType.register(FMLJavaModLoadingContext.get().getModEventBus());
+
         TileEntityTypesInit.TILE_ENTITY_TYPE.register(eventBus);
         ContainerTypesinit.CONTAINER_TYPES.register(eventBus);
 
@@ -81,6 +85,8 @@ public class VoidAscension {
         EntitySpawnPlacementRegistry.register(ModEntityTypes.INJECTOR.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MonsterEntity::checkMonsterSpawnRules);
 
+        ModEntityType.register(FMLJavaModLoadingContext.get().getModEventBus());
+
 
 
     }
@@ -90,6 +96,7 @@ public class VoidAscension {
 
         CustomDimensionRenders.init();
 
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityType.VOID_ARROW.get(), VoidArrowRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.VOIDSPAWN.get(), VoidSpawnRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.ELITEVOIDSPAWN.get(), EliteVoidSpawnRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.INJECTOR.get(), InjectorRenderer::new);

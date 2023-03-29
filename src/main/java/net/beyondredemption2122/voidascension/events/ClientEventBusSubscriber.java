@@ -1,6 +1,7 @@
 package net.beyondredemption2122.voidascension.events;
 
 import net.beyondredemption2122.voidascension.VoidAscension;
+import net.beyondredemption2122.voidascension.client.renderer.entity.VoidArrowRenderer;
 import net.beyondredemption2122.voidascension.data.client.ModItemModelProperties;
 import net.beyondredemption2122.voidascension.setup.entity.ModEntityTypes;
 import net.beyondredemption2122.voidascension.setup.entity.custom.EliteVoidSpawnEntity;
@@ -13,7 +14,12 @@ import net.beyondredemption2122.voidascension.setup.entity.render.EliteVoidSpawn
 import net.beyondredemption2122.voidascension.setup.entity.render.InjectorRenderer;
 import net.beyondredemption2122.voidascension.setup.entity.render.VoidSpawnRenderer;
 import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
+import net.beyondredemption2122.voidascension.setup.world.entity.ModEntityType;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityViewRenderEvent;
+import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
@@ -21,6 +27,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod.EventBusSubscriber(modid = VoidAscension.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEventBusSubscriber {
+
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
