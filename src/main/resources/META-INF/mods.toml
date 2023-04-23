@@ -8,7 +8,7 @@ license="All rights reserved"
 
 modId="voidascension"
 
-version="1.0"
+version="0.2"
 
 displayName="Void Ascension"
 
@@ -18,7 +18,7 @@ description='''
 
 Made by BeyondRedemption2122
 
-A mod that introduces a new player race the Void rifter.
+In heavy development, most things will be changed at a later date. Most models are place holder.
 
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.

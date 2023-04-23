@@ -14,7 +14,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.1'
+version = '0.2'
 group = 'net.beyondredemption2122.voidascension' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'voidascension'
 
