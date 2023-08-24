@@ -14,7 +14,6 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags() {
-        tag(ModTags.Blocks.RIFT_CRYSTAL_ORE_BLOCK).add(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get());
         tag(ModTags.Blocks.VOID_STONE).add(ModBlocks.VOID_STONE.get());
         tag(ModTags.Blocks.VOID_PILLAR_TOP).add(ModBlocks.VOID_PILLAR_TOP.get());
         tag(ModTags.Blocks.VOID_FENCE).add(ModBlocks.VOID_FENCE.get());

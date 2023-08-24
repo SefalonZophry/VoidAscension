@@ -33,11 +33,10 @@ public class Registration {
         ITEMS.register(modEventBus);
 
 
-        CrystalOre.register();
 //        AltarTileEntity.register();
         Chalice.register();
         Pedestal.register();
-        ModBlocks.register();
-        ModItems.register();
+        ModBlocks.register(eventBus);
+        ModItems.register(eventBus);
     }
 }

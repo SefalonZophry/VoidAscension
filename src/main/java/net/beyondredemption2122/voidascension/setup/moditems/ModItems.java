@@ -1,5 +1,6 @@
 package net.beyondredemption2122.voidascension.setup.moditems;
 
+import net.beyondredemption2122.voidascension.VoidAscension;
 import net.beyondredemption2122.voidascension.setup.*;
 import net.beyondredemption2122.voidascension.setup.customblocks.ModBlocks;
 import net.beyondredemption2122.voidascension.setup.moditems.custom.ModArmorItem;
@@ -7,11 +8,17 @@ import net.beyondredemption2122.voidascension.setup.moditems.custom.VoidArrowIte
 import net.beyondredemption2122.voidascension.setup.moditems.custom.VoidBow;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.beyondredemption2122.voidascension.data.RiftsItemGroup;
 import net.beyondredemption2122.voidascension.setup.entity.ModEntityTypes;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModItems {
+
+    public static final DeferredRegister<Item> ITEMS =
+            DeferredRegister.create(ForgeRegistries.ITEMS, VoidAscension.MOD_ID);
 
     //Items
     public static final RegistryObject<Item> RIFT_FORMER = Registration.ITEMS.register("rift_former", () ->
@@ -163,7 +170,6 @@ public class ModItems {
 
 
     // Block Items
-    public static final RegistryObject<Item> RIFT_CRYSTAL_ORE_BLOCK = Registration.ITEMS.register("rift_crystal_ore_block", () -> new BlockItem(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(), new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
 //    public static final RegistryObject<Item> ALTAR_ITEM = Registration.ITEMS.register("altar", () -> new BlockItem(ModBlocks.ALTAR.get(), new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
@@ -173,5 +179,7 @@ public class ModItems {
 
 
 
-    public static void register() {}
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
 }

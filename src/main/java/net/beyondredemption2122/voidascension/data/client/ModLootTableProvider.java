@@ -12,7 +12,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 import net.beyondredemption2122.voidascension.setup.customblocks.ModBlocks;
 import net.beyondredemption2122.voidascension.setup.Registration;
-import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 import java.util.Map;
@@ -42,16 +41,9 @@ public class ModLootTableProvider extends LootTableProvider {
     public static class ModBlockLootTables extends BlockLootTables {
         @Override
         protected void addTables() {
-            dropOther(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(), ModItems.RIFT_CRYSTAL.get());
 //            dropSelf(ModBlocks.ALTAR.get());
             dropSelf(ModBlocks.CHALICE.get());
             dropSelf(ModBlocks.PEDESTAL.get());
-            dropSelf(ModBlocks.VOID_STONE.get());
-            dropSelf(ModBlocks.VOID_PILLAR_TOP.get());
-            dropSelf(ModBlocks.VOID_STAIRS.get());
-            dropSelf(ModBlocks.VOID_FENCE.get());
-            dropSelf(ModBlocks.VOID_SLAB.get());
-
         }
 
         @Override

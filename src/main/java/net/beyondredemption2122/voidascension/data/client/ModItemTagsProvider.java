@@ -17,7 +17,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     protected void addTags() {
         //Blocks
 
-        copy(ModTags.Blocks.RIFT_CRYSTAL_ORE_BLOCK, ModTags.Items.RIFT_CRYSTAL_ORE_BLOCK);
 //        copy(ModTags.Blocks.ALTAR, ModTags.Items.ALTAR);
         copy(ModTags.Blocks.CHALICE, ModTags.Items.CHALICE);
         copy(ModTags.Blocks.PEDESTAL, ModTags.Items.PEDESTAL);

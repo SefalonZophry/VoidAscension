@@ -1,7 +1,7 @@
-package net.beyondredemption2122.voidascension.setup.world.entity.projectile;
+package net.beyondredemption2122.voidascension.setup.worldgen.world.entity.projectile;
 
 import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
-import net.beyondredemption2122.voidascension.setup.world.entity.ModEntityType;
+import net.beyondredemption2122.voidascension.setup.worldgen.world.entity.ModEntityType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.AbstractArrowEntity;

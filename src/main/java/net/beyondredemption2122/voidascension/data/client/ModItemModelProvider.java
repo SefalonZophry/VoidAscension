@@ -60,9 +60,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         //Blocks
 
-        withExistingParent("rift_crystal_ore_block",
-                modLoc("block/rift_crystal_ore_block"));
-
         withExistingParent("void_stone",
                 modLoc("block/void_stone"));
 

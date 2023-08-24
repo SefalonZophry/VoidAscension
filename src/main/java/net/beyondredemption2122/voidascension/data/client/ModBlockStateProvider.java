@@ -14,7 +14,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get());
         simpleBlock(ModBlocks.VOID_STONE.get());
         simpleBlock(ModBlocks.VOID_PILLAR_TOP.get());
 

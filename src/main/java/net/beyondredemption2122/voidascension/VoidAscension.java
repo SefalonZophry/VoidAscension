@@ -1,19 +1,11 @@
 package net.beyondredemption2122.voidascension;
 
 import net.beyondredemption2122.voidascension.client.renderer.entity.VoidArrowRenderer;
-import net.beyondredemption2122.voidascension.data.client.ModItemModelProperties;
 import net.beyondredemption2122.voidascension.setup.CustomDimensionRenders;
 import net.beyondredemption2122.voidascension.setup.customeffects.ModEffects;
-import net.beyondredemption2122.voidascension.setup.entity.custom.EliteVoidSpawnEntity;
-import net.beyondredemption2122.voidascension.setup.entity.custom.InjectorEntity;
-import net.beyondredemption2122.voidascension.setup.entity.custom.VoidSpawnEntity;
-import net.beyondredemption2122.voidascension.setup.entity.model.EliteVoidSpawnModel;
-import net.beyondredemption2122.voidascension.setup.entity.model.InjectorModel;
-import net.beyondredemption2122.voidascension.setup.entity.model.VoidSpawnModel;
 import net.beyondredemption2122.voidascension.setup.init.ContainerTypesinit;
 import net.beyondredemption2122.voidascension.setup.init.TileEntityTypesInit;
-import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
-import net.beyondredemption2122.voidascension.setup.world.entity.ModEntityType;
+import net.beyondredemption2122.voidascension.setup.worldgen.world.entity.ModEntityType;
 import net.beyondredemption2122.voidascension.setup.worldgen.biome.DeepVoid;
 import net.beyondredemption2122.voidascension.setup.worldgen.structure.ModStructures;
 import net.beyondredemption2122.voidascension.setup.entity.render.EliteVoidSpawnRenderer;

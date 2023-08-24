@@ -1,7 +1,7 @@
-package net.beyondredemption2122.voidascension.setup.world.entity;
+package net.beyondredemption2122.voidascension.setup.worldgen.world.entity;
 
 import net.beyondredemption2122.voidascension.VoidAscension;
-import net.beyondredemption2122.voidascension.setup.world.entity.projectile.VoidArrow;
+import net.beyondredemption2122.voidascension.setup.worldgen.world.entity.projectile.VoidArrow;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.util.ResourceLocation;

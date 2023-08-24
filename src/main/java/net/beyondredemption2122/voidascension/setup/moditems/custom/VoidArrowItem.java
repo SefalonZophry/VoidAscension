@@ -1,7 +1,7 @@
 package net.beyondredemption2122.voidascension.setup.moditems.custom;
 
 import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
-import net.beyondredemption2122.voidascension.setup.world.entity.projectile.VoidArrow;
+import net.beyondredemption2122.voidascension.setup.worldgen.world.entity.projectile.VoidArrow;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.item.ArrowItem;
