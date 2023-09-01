@@ -4,6 +4,7 @@ import net.beyondredemption2122.voidascension.VoidAscension;
 import net.beyondredemption2122.voidascension.setup.*;
 import net.beyondredemption2122.voidascension.setup.customblocks.ModBlocks;
 import net.beyondredemption2122.voidascension.setup.moditems.custom.ModArmorItem;
+import net.beyondredemption2122.voidascension.setup.moditems.custom.ModItemTier;
 import net.beyondredemption2122.voidascension.setup.moditems.custom.VoidArrowItem;
 import net.beyondredemption2122.voidascension.setup.moditems.custom.VoidBow;
 import net.minecraft.inventory.EquipmentSlotType;

@@ -1,4 +1,4 @@
-package net.beyondredemption2122.voidascension.setup;
+package net.beyondredemption2122.voidascension.setup.moditems.custom;
 
 import net.beyondredemption2122.voidascension.setup.moditems.ModItems;
 import net.minecraft.item.IItemTier;
