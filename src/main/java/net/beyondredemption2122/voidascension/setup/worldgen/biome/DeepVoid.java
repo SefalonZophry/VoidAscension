@@ -38,12 +38,8 @@ public class DeepVoid {
                 new MobSpawnInfo.Spawners(ModEntityTypes.INJECTOR.get(), 100, 3, 4));
 
         DefaultBiomeFeatures.addDefaultUndergroundVariety(biomegenerationsettings$builder);
-        DefaultBiomeFeatures.addDefaultCarvers(biomegenerationsettings$builder);
 
         DefaultBiomeFeatures.addBadlandsTrees(biomegenerationsettings$builder);
-        DefaultBiomeFeatures.addPlainGrass(biomegenerationsettings$builder);
-        DefaultBiomeFeatures.addDefaultLakes(biomegenerationsettings$builder);
-        DefaultBiomeFeatures.addDefaultMonsterRoom(biomegenerationsettings$builder);
         DefaultBiomeFeatures.addDefaultOres(biomegenerationsettings$builder);
 
         return (new Biome.Builder()).precipitation(Biome.RainType.NONE).biomeCategory(Biome.Category.NONE).depth(depth).scale(scale)

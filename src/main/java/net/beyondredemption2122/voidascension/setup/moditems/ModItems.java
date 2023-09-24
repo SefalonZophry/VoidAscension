@@ -95,18 +95,25 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_BOW_UNPOWERED_BODY = Registration.ITEMS.register("void_bow_unpowered_body", () ->
             new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
+    public static final RegistryObject<Item> VOID_SHOVEL_HEAD = Registration.ITEMS.register("void_shovel_head", () ->
+            new Item(new Item.Properties().tab(RiftsItemGroup.creativeTab)));
+
 
     //Tools
     public static final RegistryObject<Item> VOID_SWORD_UNPOWERED = Registration.ITEMS.register("void_sword_unpowered", () ->
-            new SwordItem(ModItemTier.VOID,6,2F,
+            new SwordItem(ModItemTier.VOID,6,-2.2f,
                     new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_SWORD_POWERED = Registration.ITEMS.register("void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID,16,2F,
+            new SwordItem(ModItemTier.VOID,16,-2.0f,
                     new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_PICKAXE = Registration.ITEMS.register("void_pickaxe", () ->
-            new PickaxeItem(ModItemTier.VOID, 2, 1F,
+            new PickaxeItem(ModItemTier.VOID, 2, -2.6F,
+                    new Item.Properties() .tab(RiftsItemGroup.creativeTab)));
+
+    public static final RegistryObject<Item> VOID_SHOVEL = Registration.ITEMS.register("void_shovel", () ->
+            new ShovelItem(ModItemTier.VOID, 2, -2.6F,
                     new Item.Properties() .tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_BOW = Registration.ITEMS.register("void_bow", () ->

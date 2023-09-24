@@ -15,12 +15,12 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements IArmorMaterial {
 
-    VOID("void", 15, new int[] {4, 6, 7, 5}, 15,
+    VOID("void", 78, new int[] {4, 6, 7, 5}, 15,
             SoundEvents.ARMOR_EQUIP_IRON, 5.0f, 0.4f, () -> {
         return Ingredient.of(ModItems.RIFT_CRYSTAL.get());
 
     }),
-    VOID_RELIC("void_relic", 20, new int[] {6, 10, 12, 7}, 15,
+    VOID_RELIC("void_relic", 78, new int[] {6, 10, 12, 7}, 15,
             SoundEvents.ARMOR_EQUIP_DIAMOND, 10.0f, 0.6f, () -> {
         return Ingredient.of(ModItems.UNSTABLE_RIFT_CRYSTAL.get());
     });

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " l ",
+    "lcl",
+    "l l"
+  ],
+  "key": {
+    "c": {
+      "item": "voidascension:rift_crystal"
+    },
+    "l": {
+      "item": "voidascension:living_void_ingot"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_shovel_head"
+  }
+}

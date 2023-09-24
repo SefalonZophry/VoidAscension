@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " h ",
+    " t "
+  ],
+  "key": {
+    "h": {
+      "item": "voidascension:void_shovel_head"
+    },
+    "t": {
+      "item": "voidascension:void_tool_handle"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_shovel"
+  }
+}

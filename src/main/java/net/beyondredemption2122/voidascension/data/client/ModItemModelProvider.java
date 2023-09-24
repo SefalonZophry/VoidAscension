@@ -98,6 +98,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("void_arrow_head",
                 modLoc("item/void_arrow_head"));
 
+        withExistingParent("void_shovel_head",
+                modLoc("item/void_shovel_head"));
+
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
@@ -161,6 +164,8 @@ public class ModItemModelProvider extends ItemModelProvider {
                 "void_arrow_shaft");
         builder(itemGenerated,
                 "void_arrow_head");
+        builder(itemGenerated,
+                "void_shovel_head");
 
     }
 

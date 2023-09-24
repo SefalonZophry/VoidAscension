@@ -24,6 +24,7 @@ b64f7c2192e37c64c5343afc21f8e43460dbe3d5 assets/voidascension/models/item/void_e
 a4d4d04bea37489781e84188c28d6a9ff33e7845 assets/voidascension/models/item/void_infused_string.json
 c3505ee735256f4ad671592e5029a033950106bf assets/voidascension/models/item/void_pickaxe_head.json
 096406601c64111bac6b5c951e46156df389a857 assets/voidascension/models/item/void_pillar_top.json
+cdc903d9a746182f1eec8ebef7b1036f853f6517 assets/voidascension/models/item/void_shovel_head.json
 54a10c441eb0b86d1b69670aaed70f9299f6a032 assets/voidascension/models/item/void_stone.json
 07c1c423f4704c0062710e59bf0800e21d321f56 assets/voidascension/models/item/void_sword_blade.json
 388f8c9ded207e41f26f6fa4e11d62fc89c9179e assets/voidascension/models/item/void_sword_guard.json
@@ -34,7 +35,7 @@ d4fdf5db5a501d92a22d3c9bde27e7284a8426c6 assets/voidascension/models/item/void_t
 c6cc76ebf0e7d6e05a010ddf57c5044fdaf450f7 data/forge/tags/items/voidascension/armor.json
 7df92cabba747656b5821de9d8718d6bbdd84679 data/forge/tags/items/voidascension/block.json
 691cbe89714f5a1a31f64035377f8d8280af8a9b data/forge/tags/items/voidascension/misc.json
-283fb5160f7bba6a68ec1a84ff3e0058b325ce75 data/forge/tags/items/voidascension/tool.json
-975ff3f65c15d05115766c716eab18543239cf99 data/forge/tags/items/voidascension/workables.json
+7c01a64f5f85345a1809425ba54c308299f9b60f data/forge/tags/items/voidascension/tool.json
+dbba3a7547e31e6970d9c071faf63f563461430c data/forge/tags/items/voidascension/workables.json
 8110160513b528f7d7ce32d3892b0517d9a5e357 data/voidascension/loot_tables/blocks/chalice.json
 865576f895e55d62c1c4f01aef143136338f4a08 data/voidascension/loot_tables/blocks/pedestal.json
