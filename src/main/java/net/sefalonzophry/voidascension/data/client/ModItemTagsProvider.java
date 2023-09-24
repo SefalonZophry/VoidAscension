@@ -53,6 +53,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_PICKAXE).add(ModItems.VOID_PICKAXE.get());
         tag(ModTags.Items.VOID_BOW).add(ModItems.VOID_BOW.get());
         tag(ModTags.Items.VOID_SHOVEL).add(ModItems.VOID_SHOVEL.get());
+        tag(ModTags.Items.VOID_BATTLE_AXE).add(ModItems.VOID_BATTLE_AXE.get());
 
 
 
@@ -68,6 +69,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_ARROW_SHAFT).add(ModItems.VOID_ARROW_SHAFT.get());
         tag(ModTags.Items.VOID_ARROW_HEAD).add(ModItems.VOID_ARROW_HEAD.get());
         tag(ModTags.Items.VOID_SHOVEL_HEAD).add(ModItems.VOID_SHOVEL_HEAD.get());
+        tag(ModTags.Items.VOID_BATTLE_AXE_HEAD).add(ModItems.VOID_BATTLE_AXE_HEAD.get());
 
 
 

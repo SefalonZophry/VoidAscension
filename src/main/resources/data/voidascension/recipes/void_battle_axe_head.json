@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " c ",
-    "sls",
-    " u "
+    "clu",
+    "l l",
+    "  l"
   ],
   "key": {
     "c": {
@@ -12,14 +12,12 @@
     "l": {
       "item": "voidascension:living_void_ingot"
     },
-    "s": {
-      "item": "voidascension:void_infused_string"
-    },
     "u": {
       "item": "voidascension:unstable_rift_crystal"
     }
+
   },
   "result": {
-    "item": "voidascension:void_tool_handle"
+    "item": "voidascension:void_battle_axe_head"
   }
 }
