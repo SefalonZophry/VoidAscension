@@ -15,7 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '0.2.1'
-group = 'net.beyondredemption2122.voidascension' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'net.sefalonzophry.voidascension' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'voidascension'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8) // Mojang ships Java 8 to end users, so your mod should target Java 8.
