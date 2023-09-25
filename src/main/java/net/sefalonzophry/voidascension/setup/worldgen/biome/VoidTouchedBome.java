@@ -1,5 +1,6 @@
 package net.sefalonzophry.voidascension.setup.worldgen.biome;
 
+import net.minecraftforge.common.BiomeDictionary;
 import net.sefalonzophry.voidascension.setup.worldgen.ModConfiguredSurfaceBuilder;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.util.SoundEvents;

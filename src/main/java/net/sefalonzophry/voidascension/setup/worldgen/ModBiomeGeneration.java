@@ -18,6 +18,7 @@ public class ModBiomeGeneration {
         RegistryKey<Biome> key = RegistryKey.create(ForgeRegistries.Keys.BIOMES,
                 Objects.requireNonNull(ForgeRegistries.BIOMES.getKey(biome)));
 
+        BiomeDictionary.addTypes(key, BiomeDictionary.Type.OVERWORLD);
         BiomeDictionary.addTypes(key, types);
         BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(key, weight));
     }
