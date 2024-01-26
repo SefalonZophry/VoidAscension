@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 
-    VOID(5, 2500, -0.8f, 10, 5,
+    VOID(5, 2500, 10F, 10, 5,
             () -> Ingredient.of(ModItems.RIFT_CRYSTAL.get()));
 
 

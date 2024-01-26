@@ -104,23 +104,23 @@ public class ModItems {
 
     //Tools
     public static final RegistryObject<Item> VOID_SWORD_UNPOWERED = Registration.ITEMS.register("void_sword_unpowered", () ->
-            new SwordItem(ModItemTier.VOID,6,-2.2f,
+            new SwordItem(ModItemTier.VOID,6, -2.5F,
                     new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_SWORD_POWERED = Registration.ITEMS.register("void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID,13,-2.0f,
+            new SwordItem(ModItemTier.VOID,13, -2.3F,
                     new Item.Properties().tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_PICKAXE = Registration.ITEMS.register("void_pickaxe", () ->
-            new PickaxeItem(ModItemTier.VOID, 2, -2.6F,
+            new PickaxeItem(ModItemTier.VOID, 2,  -2.4F,
                     new Item.Properties() .tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_SHOVEL = Registration.ITEMS.register("void_shovel", () ->
-            new ShovelItem(ModItemTier.VOID, 2, -2.6F,
+            new ShovelItem(ModItemTier.VOID, 2,  -2.3F,
                     new Item.Properties() .tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_BATTLE_AXE = Registration.ITEMS.register("void_battle_axe", () ->
-            new AxeItem(ModItemTier.VOID, 19, -2.5F,
+            new AxeItem(ModItemTier.VOID, 19, -2.7F,
                     new Item.Properties() .tab(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> VOID_BOW = Registration.ITEMS.register("void_bow", () ->

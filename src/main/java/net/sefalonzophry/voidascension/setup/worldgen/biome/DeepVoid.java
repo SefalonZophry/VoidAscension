@@ -36,6 +36,7 @@ public class DeepVoid {
                 new MobSpawnInfo.Spawners(ModEntityTypes.INJECTOR.get(), 100, 3, 4));
 
         DefaultBiomeFeatures.addDefaultUndergroundVariety(biomegenerationsettings$builder);
+        DefaultBiomeFeatures.addDefaultOverworldLandStructures(biomegenerationsettings$builder);
 
         DefaultBiomeFeatures.addBadlandsTrees(biomegenerationsettings$builder);
         DefaultBiomeFeatures.addDefaultOres(biomegenerationsettings$builder);
