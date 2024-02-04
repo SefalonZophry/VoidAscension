@@ -1,0 +1,30 @@
+[04Feb2024 18:05:29.726] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\higho\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.19, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, voidascension, --all, --output, D:\MC Modding\Projects\VoidAscension 1.20.1\src\generated\resources, --existing, D:\MC Modding\Projects\VoidAscension 1.20.1\src\main\resources]
+[04Feb2024 18:05:29.797] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[04Feb2024 18:05:30.126] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[04Feb2024 18:05:30.271] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/higho/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23132!/ Service=ModLauncher Env=CLIENT
+[04Feb2024 18:05:31.159] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\higho\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.19\99f54fe7798c97a9a6e7c962ef94f7d30610122d\javafmllanguage-1.20.1-47.2.19.jar is missing mods.toml file
+[04Feb2024 18:05:31.164] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\higho\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.19\1b32b3f27357ab558a098c1c20e1494558a71b31\lowcodelanguage-1.20.1-47.2.19.jar is missing mods.toml file
+[04Feb2024 18:05:31.168] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\higho\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.19\2eb26ae9afdd5709b9ee9bdf90b9486212a676af\mclanguage-1.20.1-47.2.19.jar is missing mods.toml file
+[04Feb2024 18:05:31.174] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\higho\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.19\7cd28cc091d07bbe6a4f51bf9728ccbc27bfc4fc\fmlcore-1.20.1-47.2.19.jar is missing mods.toml file
+[04Feb2024 18:05:31.322] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[04Feb2024 18:05:34.251] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[04Feb2024 18:05:34.267] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\higho\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, voidascension, --all, --output, D:\MC Modding\Projects\VoidAscension 1.20.1\src\generated\resources, --existing, D:\MC Modding\Projects\VoidAscension 1.20.1\src\main\resources]
+[04Feb2024 18:05:35.004] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using D:\MC Modding\Projects\VoidAscension 1.20.1\build\createSrgToMcp\output.srg
+[04Feb2024 18:05:35.008] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using D:\MC Modding\Projects\VoidAscension 1.20.1\build\createSrgToMcp\output.srg
+[04Feb2024 18:05:35.912] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [voidascension]
+[04Feb2024 18:05:43.984] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.19, for MC 1.20.1 with MCP 20230612.114412
+[04Feb2024 18:05:43.986] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.19 Initialized
+[04Feb2024 18:05:44.205] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[04Feb2024 18:05:44.207] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[04Feb2024 18:05:44.208] [modloading-worker-0/INFO] [terrablender/]: Registered region voidascension:overworld to index 1 for type OVERWORLD
+[04Feb2024 18:05:45.415] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[04Feb2024 18:05:45.422] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.605 ms
+[04Feb2024 18:05:46.161] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/higho/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.19_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.19_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[04Feb2024 18:05:46.162] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/higho/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.19_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.19_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[04Feb2024 18:05:46.583] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[04Feb2024 18:05:46.772] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 187 ms
+[04Feb2024 18:05:46.772] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: voidascension
+[04Feb2024 18:05:46.961] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: voidascension finished after 188 ms
+[04Feb2024 18:05:46.961] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: voidascension
+[04Feb2024 18:05:47.010] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: voidascension finished after 48 ms
+[04Feb2024 18:05:47.010] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries

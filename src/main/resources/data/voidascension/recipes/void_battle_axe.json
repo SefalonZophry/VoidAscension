@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " e ",
+    "eae",
+    "he "
+  ],
+  "key": {
+    "a": {
+      "item": "voidascension:void_battle_axe_head"
+    },
+    "e": {
+      "item": "voidascension:empowered_void_essence"
+    },
+    "h": {
+      "item": "voidascension:void_tool_handle"
+    }
+
+  },
+  "result": {
+    "item": "voidascension:void_battle_axe"
+  }
+}

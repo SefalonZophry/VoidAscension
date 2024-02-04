@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "voidascension:void_touched_biome",
+    "voidascension:deep_void"
+  ],
+  "spawners": {
+    "type": "voidascension:voidspawn",
+    "weight": 100,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

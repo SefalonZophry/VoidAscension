@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "voidascension:rift_crystal"
+    }
+  ],
+  "result": {
+    "item": "voidascension:void_arrow_head",
+    "count": 8
+  }
+}

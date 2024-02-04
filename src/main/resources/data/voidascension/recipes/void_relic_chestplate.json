@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " c ",
+    " r "
+  ],
+  "key": {
+    "c": {
+      "item": "voidascension:void_chestplate"
+    },
+    "r": {
+      "item": "voidascension:relic"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_relic_chestplate"
+  }
+}

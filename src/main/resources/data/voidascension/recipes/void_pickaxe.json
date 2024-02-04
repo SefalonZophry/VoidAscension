@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " e ",
+    " h "
+  ],
+  "key": {
+      "e": {
+          "item": "voidascension:void_pickaxe_head"
+      },
+      "h": {
+          "item": "voidascension:void_tool_handle"
+      }
+  },
+  "result": {
+    "item": "voidascension:void_pickaxe"
+  }
+}

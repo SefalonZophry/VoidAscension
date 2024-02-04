@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    "sls",
+    " u "
+  ],
+  "key": {
+    "c": {
+      "item": "voidascension:rift_crystal"
+    },
+    "l": {
+      "item": "voidascension:living_void_ingot"
+    },
+    "s": {
+      "item": "voidascension:void_infused_string"
+    },
+    "u": {
+      "item": "voidascension:unstable_rift_crystal"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_tool_handle"
+  }
+}

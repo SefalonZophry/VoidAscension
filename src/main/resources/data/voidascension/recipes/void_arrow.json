@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " h ",
+    " s ",
+    " f "
+  ],
+  "key": {
+    "h": {
+      "item": "voidascension:void_arrow_head"
+    },
+    "s": {
+      "item": "voidascension:void_arrow_shaft"
+    },
+    "f": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_arrow",
+    "count": 4
+  }
+}

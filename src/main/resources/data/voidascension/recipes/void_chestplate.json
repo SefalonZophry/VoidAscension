@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "u u",
+    "lll",
+    "lll"
+  ],
+  "key": {
+    "l": {
+      "item": "voidascension:living_void_ingot"
+    },
+    "u": {
+      "item": "voidascension:unstable_rift_crystal"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_chestplate"
+  }
+}

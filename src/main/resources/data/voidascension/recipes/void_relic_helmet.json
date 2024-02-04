@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " e ",
+    "ehe",
+    " e "
+  ],
+  "key": {
+    "h": {
+      "item": "voidascension:void_helmet"
+    },
+    "e": {
+      "item": "voidascension:empowered_void_essence"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_relic_helmet"
+  }
+}

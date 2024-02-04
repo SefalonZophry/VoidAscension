@@ -1,0 +1,7 @@
+// 1.20.1	2024-02-01T16:55:36.0738561	Registries
+1bde40f6f244681a059bd10b4ba2543dbd0e1c75 data/voidascension/dimension/void.json
+e78166354d3b0b74b83f3a461483522005637741 data/voidascension/dimension_type/voiddim_type.json
+4a33c7c9da73f2f53e1a5983f6ebd514ceb2a8ee data/voidascension/forge/biome_modifier/add_rift_crystal_ore.json
+c994f162e1fe90895a24831ac98c9e98109da148 data/voidascension/worldgen/biome/void_touched_biome.json
+8d2635abafcd7739b5ad5a58ab283d380e31b17c data/voidascension/worldgen/configured_feature/rift_crystal_ore.json
+7207af635762f8a09a0eee1180f513bc54d294d1 data/voidascension/worldgen/placed_feature/rift_crystal_ore_placed.json

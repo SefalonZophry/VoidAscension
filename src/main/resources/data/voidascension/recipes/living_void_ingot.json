@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " e ",
+    "eie",
+    " e "
+  ],
+  "key": {
+    "e": {
+      "item": "voidascension:void_essence"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "voidascension:living_void_ingot"
+  }
+}

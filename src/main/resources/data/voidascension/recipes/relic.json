@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "41 ",
+    "32 "
+  ],
+  "key": {
+    "1": {
+      "item": "voidascension:ne_relic_piece"
+    },
+    "2": {
+      "item": "voidascension:se_relic_piece"
+    },
+    "3": {
+      "item": "voidascension:sw_relic_piece"
+    },
+    "4": {
+      "item": "voidascension:nw_relic_piece"
+    }
+  },
+  "result": {
+    "item": "voidascension:relic"
+  }
+}

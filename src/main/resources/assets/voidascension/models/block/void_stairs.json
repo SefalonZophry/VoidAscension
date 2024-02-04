@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "voidascension:block/void_stone",
+    "top": "voidascension:block/void_stone",
+    "side": "voidascension:block/void_stone"
+  }
+}
