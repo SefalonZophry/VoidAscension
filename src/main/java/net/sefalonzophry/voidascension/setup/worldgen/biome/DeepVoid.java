@@ -16,13 +16,9 @@ public class DeepVoid {
     public static final ResourceKey<Biome> DEEP_VOID = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(VoidAscension.MOD_ID, "deep_void"));
 
-    public static void boostrap(BootstapContext<Biome> context) {
-        context.register(DEEP_VOID, deepvoid(context));
-    }
-
     public static void globalOverworldGeneration(BiomeGenerationSettings.Builder builder) {
         BiomeDefaultFeatures.addDefaultCarversAndLakes(builder);
-        BiomeDefaultFeatures.addDefaultCrystalFormations(builder);
+//        BiomeDefaultFeatures.addDefaultCrystalFormations(builder);
         BiomeDefaultFeatures.addDefaultUndergroundVariety(builder);
         BiomeDefaultFeatures.addDefaultSprings(builder);
     }
@@ -41,13 +37,13 @@ public class DeepVoid {
         globalOverworldGeneration(biomeBuilder);
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.TREES_FLOWER_FOREST);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.TREES_PLAINS);
 
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
 
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(false)
-                .downfall(0.9f)
+                .downfall(0f)
                 .temperature(1.5f)
                 .generationSettings(biomeBuilder.build())
                 .mobSpawnSettings(spawnBuilder.build())

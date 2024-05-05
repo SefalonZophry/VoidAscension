@@ -3,7 +3,7 @@ package net.sefalonzophry.voidascension.setup.worldgen;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.SurfaceRules;
-import net.sefalonzophry.voidascension.setup.worldgen.biome.VoidTouchedBome;
+import net.sefalonzophry.voidascension.setup.worldgen.biome.VoidTouchedBiome;
 
 public class ModConfiguredSurfaceBuilder {
     private static final SurfaceRules.RuleSource DIRT = makeStateRule(Blocks.DIRT);
@@ -16,8 +16,8 @@ public class ModConfiguredSurfaceBuilder {
         SurfaceRules.RuleSource grassSurface = SurfaceRules.sequence(SurfaceRules.ifTrue(isAtOrAboveWaterLevel, GRASS_BLOCK), DIRT);
 
         return SurfaceRules.sequence(
-                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(VoidTouchedBome.VOID_TOUCHED_BIOME),
-                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, STONE)),
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(VoidTouchedBiome.VOID_TOUCHED_BIOME),
+                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, GRASS_BLOCK)),
                         SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, STONE)),
 
 

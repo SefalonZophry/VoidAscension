@@ -7,7 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.biome.Climate;
-import net.sefalonzophry.voidascension.setup.worldgen.biome.VoidTouchedBome;
+import net.sefalonzophry.voidascension.setup.worldgen.biome.VoidTouchedBiome;
 import terrablender.api.Region;
 import terrablender.api.RegionType;
 
@@ -24,7 +24,7 @@ public class ModOverworldRegion extends Region {
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint,
             ResourceKey<Biome>>> mapper) {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
-            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.FOREST, VoidTouchedBome.VOID_TOUCHED_BIOME);
+            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.FOREST, VoidTouchedBiome.VOID_TOUCHED_BIOME);
         });
     }
 }

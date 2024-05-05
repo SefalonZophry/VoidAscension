@@ -16,7 +16,8 @@ import net.minecraft.world.level.dimension.LevelStem;
 import net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator;
 import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.worldgen.biome.VoidTouchedBome;
+import net.sefalonzophry.voidascension.setup.worldgen.biome.DeepVoid;
+import net.sefalonzophry.voidascension.setup.worldgen.biome.VoidTouchedBiome;
 
 import java.util.List;
 import java.util.OptionalLong;
@@ -32,7 +33,7 @@ public class ModDimensions {
             new ResourceLocation(VoidAscension.MOD_ID, "voiddim_type"));
     public static void bootstrapType(BootstapContext<DimensionType> context) {
         context.register(VOID_DIM_TYPE, new DimensionType(
-                OptionalLong.of(12000), // fixedTime
+                OptionalLong.of(18000), // fixedTime
                 false, // hasSkylight
                 false, // hasCeiling
                 false, // ultraWarm
@@ -40,12 +41,12 @@ public class ModDimensions {
                 1.0, // coordinateScale
                 false, // bedWorks
                 false, // respawnAnchorWorks
-                0, // minY
-                256, // height
-                256, // logicalHeight
+                -64, // minY
+                384, // height
+                384, // logicalHeight
                 BlockTags.INFINIBURN_OVERWORLD, // infiniburn
-                BuiltinDimensionTypes.NETHER_EFFECTS, // effectsLocation
-                1.0f, // ambientLight
+                BuiltinDimensionTypes.OVERWORLD_EFFECTS, // effectsLocation
+                0f, // ambientLight
                 new DimensionType.MonsterSettings(false, false, ConstantInt.of(0), 0)));
     }
 
@@ -55,13 +56,13 @@ public class ModDimensions {
         HolderGetter<NoiseGeneratorSettings> noiseGenSettings = context.lookup(Registries.NOISE_SETTINGS);
 
         NoiseBasedChunkGenerator wrappedChunkGenerator = new NoiseBasedChunkGenerator(
-                new FixedBiomeSource(biomeRegistry.getOrThrow(VoidTouchedBome.VOID_TOUCHED_BIOME)),
-                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.AMPLIFIED));
+                new FixedBiomeSource(biomeRegistry.getOrThrow(DeepVoid.DEEP_VOID)),
+                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.OVERWORLD));
 
         NoiseBasedChunkGenerator noiseBasedChunkGenerator = new NoiseBasedChunkGenerator(
                 MultiNoiseBiomeSource.createFromList(
                         new Climate.ParameterList<>(List.of(Pair.of(
-                                        Climate.parameters(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(VoidTouchedBome.VOID_TOUCHED_BIOME)),
+                                        Climate.parameters(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(VoidTouchedBiome.VOID_TOUCHED_BIOME)),
                                 Pair.of(
                                         Climate.parameters(0.1F, 0.2F, 0.0F, 0.2F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.BIRCH_FOREST)),
                                 Pair.of(
@@ -70,7 +71,7 @@ public class ModDimensions {
                                         Climate.parameters(0.4F, 0.3F, 0.2F, 0.1F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.DARK_FOREST))
 
                         ))),
-                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.AMPLIFIED));
+                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.OVERWORLD));
 
         LevelStem stem = new LevelStem(dimTypes.getOrThrow(ModDimensions.VOID_DIM_TYPE), wrappedChunkGenerator);
 

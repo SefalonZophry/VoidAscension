@@ -10,7 +10,6 @@ import net.sefalonzophry.voidascension.data.VoidAscensionCreativeTab;
 //import net.sefalonzophry.voidascension.setup.init.TileEntityTypesInit;
 import net.sefalonzophry.voidascension.setup.worldgen.ModConfiguredSurfaceBuilder;
 import net.sefalonzophry.voidascension.setup.worldgen.Terrablender;
-import net.sefalonzophry.voidascension.setup.worldgen.biome.VoidTouchedBome;
 import net.sefalonzophry.voidascension.setup.worldgen.world.entity.ModEntityType;
 import net.sefalonzophry.voidascension.setup.entity.render.EliteVoidSpawnRenderer;
 import net.minecraft.world.entity.SpawnPlacements;

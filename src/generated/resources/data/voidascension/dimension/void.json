@@ -4,8 +4,8 @@
     "type": "minecraft:noise",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "voidascension:void_touched_biome"
+      "biome": "voidascension:deep_void"
     },
-    "settings": "minecraft:amplified"
+    "settings": "minecraft:overworld"
   }
 }

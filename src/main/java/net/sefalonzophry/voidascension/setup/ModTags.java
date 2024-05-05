@@ -1,7 +1,6 @@
 package net.sefalonzophry.voidascension.setup;
 
 import net.minecraft.core.registries.Registries;
-import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.tags.TagKey;
@@ -116,5 +115,8 @@ public class ModTags {
 
         public static TagKey<Biome> VOID_TOUCHED_BIOME =
                 TagKey.create(Registries.BIOME, new ResourceLocation(VoidAscension.MOD_ID, "void_touched_biome"));
+
+        public static TagKey<Biome> DEEP_VOID =
+                TagKey.create(Registries.BIOME, new ResourceLocation(VoidAscension.MOD_ID, "deep_void"));
     }
 }

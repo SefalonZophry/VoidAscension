@@ -8,7 +8,6 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.sefalonzophry.voidascension.VoidAscension;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
 import net.sefalonzophry.voidascension.setup.ModTags;
-import net.sefalonzophry.voidascension.setup.worldgen.biome.VoidTouchedBome;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;

@@ -6,20 +6,22 @@ import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BiomeTags;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.biome.*;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.sefalonzophry.voidascension.VoidAscension;
 import net.sefalonzophry.voidascension.setup.entity.ModEntityTypes;
 
-public class VoidTouchedBome {
+import static net.sefalonzophry.voidascension.setup.worldgen.biome.DeepVoid.DEEP_VOID;
+import static net.sefalonzophry.voidascension.setup.worldgen.biome.DeepVoid.deepvoid;
+
+public class VoidTouchedBiome {
     public static final ResourceKey<Biome> VOID_TOUCHED_BIOME = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(VoidAscension.MOD_ID, "void_touched_biome"));
 
     public static void boostrap(BootstapContext<Biome> context) {
         context.register(VOID_TOUCHED_BIOME, voidtouchedbiome(context));
+        context.register(DEEP_VOID, deepvoid(context));
     }
 
     public static void globalOverworldGenerationVoidTouchedBiome(BiomeGenerationSettings.Builder builder) {

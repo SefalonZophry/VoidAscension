@@ -11,13 +11,13 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import net.sefalonzophry.voidascension.setup.worldgen.dimension.ChaliceTeleporter;
 import net.sefalonzophry.voidascension.setup.worldgen.dimension.ModDimensions;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.sefalonzophry.voidascension.setup.worldgen.dimension.ModTeleporter;
 import net.minecraft.world.phys.shapes.CollisionContext;
 
 public class Chalice extends Block {
@@ -43,9 +43,9 @@ public class Chalice extends Block {
             ServerLevel portalDimension = minecraftserver.getLevel(resourcekey);
             if (portalDimension != null && !player.isPassenger()) {
                 if(resourcekey == ModDimensions.VOID_LEVEL_KEY) {
-                    player.changeDimension(portalDimension, new ModTeleporter(pPos, true));
+                    player.changeDimension(portalDimension, new ChaliceTeleporter(pPos, true));
                 } else {
-                    player.changeDimension(portalDimension, new ModTeleporter(pPos, false));
+                    player.changeDimension(portalDimension, new ChaliceTeleporter(pPos, false));
                 }
             }
         }

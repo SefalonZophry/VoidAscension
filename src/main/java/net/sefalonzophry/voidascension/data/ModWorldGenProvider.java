@@ -11,8 +11,7 @@ import net.sefalonzophry.voidascension.VoidAscension;
 import net.sefalonzophry.voidascension.setup.worldgen.ModBiomeModifiers;
 import net.sefalonzophry.voidascension.setup.worldgen.ModConfiguredFeatures;
 import net.sefalonzophry.voidascension.setup.worldgen.ModPlacedFeatures;
-import net.sefalonzophry.voidascension.setup.worldgen.biome.DeepVoid;
-import net.sefalonzophry.voidascension.setup.worldgen.biome.VoidTouchedBome;
+import net.sefalonzophry.voidascension.setup.worldgen.biome.VoidTouchedBiome;
 import net.sefalonzophry.voidascension.setup.worldgen.dimension.ModDimensions;
 
 import java.util.Set;
@@ -24,8 +23,7 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
             .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
-            .add(Registries.BIOME, VoidTouchedBome::boostrap)
-            .add(Registries.BIOME, DeepVoid::boostrap)
+            .add(Registries.BIOME, VoidTouchedBiome::boostrap)
             .add(Registries.LEVEL_STEM, ModDimensions::bootstrapStem);
 
     public ModWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
