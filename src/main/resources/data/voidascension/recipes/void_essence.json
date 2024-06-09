@@ -3,6 +3,9 @@
   "ingredients": [
     {
       "item": "voidascension:rift_crystal"
+    },
+    {
+      "item": "voidascension:void_pickaxe"
     }
   ],
   "result": {
