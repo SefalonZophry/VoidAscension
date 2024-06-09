@@ -36,11 +36,6 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RIFT_CRYSTAL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 /*
-        context.register(ADD_RIFT_CRYSTAL_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(ModTags.Biomes.DEEP_VOID),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RIFT_CRYSTAL_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
-
         context.register(ADD_NETHER_RIFT_CRYSTAL_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_NETHER),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_RIFT_CRYSTAL_ORE_PLACED_KEY)),

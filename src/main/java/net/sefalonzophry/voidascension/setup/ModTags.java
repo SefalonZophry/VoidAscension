@@ -60,10 +60,10 @@ public class ModTags {
 
 
         //Blocks
-        public static final TagKey<Item> RIFT_CRYSTAL_ORE_BLOCK = tag("voidascension/ore");
+//        public static final TagKey<Item> RIFT_CRYSTAL_ORE_BLOCK = tag("voidascension/ore");
         public static final TagKey<Item> VOID_STONE = tag("voidascension/block");
         public static final TagKey<Item> VOID_PILLAR_TOP = tag("voidascension/block");
-        public static final TagKey<Item> ALTAR = tag("voidascension/block");
+//        public static final TagKey<Item> ALTAR = tag("voidascension/block");
         public static final TagKey<Item> CHALICE = tag("voidascension/block");
         public static final TagKey<Item> PEDESTAL = tag("voidascension/block");
 

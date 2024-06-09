@@ -1,5 +1,6 @@
 package net.sefalonzophry.voidascension.setup.customblocks;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.sefalonzophry.voidascension.VoidAscension;
@@ -64,6 +65,12 @@ public class ModBlocks {
             new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3, 10)
                     .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DEEPSLATE_RIFT_CRYSTAL_ORE_BLOCK = registerBlock("deepslate_rift_crystal_ore_block", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(3, 10)
+                    .sound(SoundType.DEEPSLATE)
                     .requiresCorrectToolForDrops()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {

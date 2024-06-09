@@ -10,6 +10,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
@@ -32,15 +33,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.VOID_FENCE.get());
 
         this.add(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(), ModItems.RIFT_CRYSTAL.get()));
+                block -> createOreDrop(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(), ModItems.RIFT_CRYSTAL.get()));
+        this.add(ModBlocks.DEEPSLATE_RIFT_CRYSTAL_ORE_BLOCK.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_RIFT_CRYSTAL_ORE_BLOCK.get(), ModItems.RIFT_CRYSTAL.get()));
 
     }
-    protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
+    protected LootTable.Builder createOreDrop(Block pBlock, Item item) {
         return createSilkTouchDispatchTable(pBlock,
                 this.applyExplosionDecay(pBlock,
                         LootItem.lootTableItem(item)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+
     }
 
     @Override

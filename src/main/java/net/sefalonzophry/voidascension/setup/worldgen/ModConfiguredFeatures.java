@@ -31,13 +31,10 @@ public class ModConfiguredFeatures {
 
         List<OreConfiguration.TargetBlockState> overworldRiftCrystalOres = List.of(OreConfiguration.target(stoneReplaceable,
                         ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get().defaultBlockState()));
+                OreConfiguration.target(deepslateReplaceables,
+                        ModBlocks.DEEPSLATE_RIFT_CRYSTAL_ORE_BLOCK.get().defaultBlockState()));
 
         register(context, OVERWORLD_RIFT_CRYSTAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRiftCrystalOres, 4));
-//        register(context, NETHER_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplacables,
-//                ModBlocks.NETHER_SAPPHIRE_ORE.get().defaultBlockState(), 9));
-//        register(context, END_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
-//                ModBlocks.END_STONE_SAPPHIRE_ORE.get().defaultBlockState(), 9));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

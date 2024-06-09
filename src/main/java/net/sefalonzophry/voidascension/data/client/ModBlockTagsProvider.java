@@ -10,6 +10,7 @@ import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
 import net.sefalonzophry.voidascension.setup.ModTags;
 import org.jetbrains.annotations.Nullable;
 
+import javax.swing.text.html.HTML;
 import java.util.concurrent.CompletableFuture;
 
 import static net.minecraft.tags.TagEntry.tag;
@@ -22,6 +23,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(ModTags.Blocks.ORES)
-                .add(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get()).addTag(Tags.Blocks.ORES);
+                .add(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get()).addTag(Tags.Blocks.ORES)
+                .add(ModBlocks.DEEPSLATE_RIFT_CRYSTAL_ORE_BLOCK.get()).addTag(Tags.Blocks.ORES);
+
     }
 }

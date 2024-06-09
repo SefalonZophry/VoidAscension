@@ -73,6 +73,7 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModBlocks.VOID_SLAB.get());
                         pOutput.accept(ModBlocks.VOID_STONE.get());
                         pOutput.accept(ModBlocks.VOID_PILLAR_TOP.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_RIFT_CRYSTAL_ORE_BLOCK.get());
 
                     })
                     .build());
