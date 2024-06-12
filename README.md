@@ -7,3 +7,5 @@ Void Ascension is a mod for Minecraft java edition, it adds a single dimension a
 ![All Content](https://github.com/SefalonZophry/VoidAscension/assets/81746319/b9d5e9a4-edef-4ded-ad42-0909dd86974d)
 
 ![Altar Leading to the Deep Void Dimension Resized](https://github.com/SefalonZophry/VoidAscension/assets/81746319/06b84d3d-8c09-4bb4-8b8f-d26d996d0946)
+
+SefalonZophry
