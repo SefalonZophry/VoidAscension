@@ -24,8 +24,8 @@ public class ChaliceTeleporter implements ITeleporter {
     @Override
     public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel destinationWorld,
                               float yaw, Function<Boolean, Entity> repositionEntity) {
-        entity = repositionEntity.apply(false);
-        int y = 61;
+        entity = repositionEntity.apply(true);
+        int y = 60;
 
         if (!insideDimension) {
             y = thisPos.getY();

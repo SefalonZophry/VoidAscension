@@ -8,6 +8,7 @@ import net.sefalonzophry.voidascension.data.VoidAscensionCreativeTab;
 //import net.sefalonzophry.voidascension.setup.customeffects.ModEffects;
 //import net.sefalonzophry.voidascension.setup.init.ContainerTypesinit;
 //import net.sefalonzophry.voidascension.setup.init.TileEntityTypesInit;
+import net.sefalonzophry.voidascension.setup.customeffects.ModEffects;
 import net.sefalonzophry.voidascension.setup.worldgen.ModConfiguredSurfaceBuilder;
 import net.sefalonzophry.voidascension.setup.worldgen.Terrablender;
 import net.sefalonzophry.voidascension.setup.worldgen.world.entity.ModEntityType;
@@ -44,7 +45,7 @@ public class VoidAscension {
 
         ModEntityTypes.register(eventBus);
 
-//        ModEffects.register(eventBus);
+        ModEffects.register(eventBus);
 
         Terrablender.registerBiomes();
 
