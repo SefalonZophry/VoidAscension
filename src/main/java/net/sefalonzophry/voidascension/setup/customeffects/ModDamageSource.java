@@ -5,18 +5,20 @@ import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageSources;
 import net.minecraft.world.damagesource.DamageType;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
 
 import javax.annotation.Nullable;
 
-public class ModDamageSources {
-    private final Registry<DamageType> damageTypes;
+public class ModDamageSource extends DamageSources implements DamageTypes {
+    protected Registry<DamageType> damageTypes;
 
-    private final DamageSource void_decay;
+    public DamageSource void_decay;
 
-
-    public ModDamageSources(RegistryAccess pRegistry) {
+    public ModDamageSource(RegistryAccess pRegistry) {
+        super(pRegistry);
         this.damageTypes = pRegistry.registryOrThrow(Registries.DAMAGE_TYPE);
         this.void_decay = this.source(ModDamageTypes.VOID_DECAY);
     }
@@ -34,7 +36,6 @@ public class ModDamageSources {
 
     public DamageSource void_decay() {
         return this.void_decay;
-
     }
 }
 

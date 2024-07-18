@@ -27,13 +27,14 @@ public class InjectorEntity extends Monster{
 
     @Override
     protected void registerGoals() {
-        super.registerGoals();
         this.goalSelector.addGoal(0, new FloatGoal(this));
+        this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 8.0F));
+        this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
+        this.addBehaviourGoals();
+    }
+    protected void addBehaviourGoals() {
         this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.0F, false));
-        this.goalSelector.addGoal(3, new LookAtPlayerGoal (this, Player.class, 8.0F));
-        this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
-        this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.50F));
-        this.goalSelector.addGoal(6, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+        this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0D));
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
     }

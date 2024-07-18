@@ -48,3 +48,8 @@ mandatory=true
 versionRange="${terrablender_version_range}"
 ordering="NONE"
 side="BOTH"
+
+[[dependencies.voidascension]]
+modId="curios"
+mandatory = true
+versionRange = "(1.20.1-5.9.1,)"

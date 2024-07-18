@@ -62,6 +62,5 @@
   "block.voidascension.void_slab": "Void Slab",
   "creativetab.void_ascension_tab": "Void Ascension",
   "biome.voidascension.void_touched_biome": "Void Touched Biome",
-  "effect.voidascension.void_decay": "Void Decay",
   "death.attack.void_decay": "%1$s Was Consumed By The Void"
 }

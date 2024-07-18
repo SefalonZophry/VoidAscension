@@ -8,7 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.customeffects.ModDamageTypes;
+import net.sefalonzophry.voidascension.setup.customeffects.VoidDecayDamage;
 import net.sefalonzophry.voidascension.setup.worldgen.ModBiomeModifiers;
 import net.sefalonzophry.voidascension.setup.worldgen.ModConfiguredFeatures;
 import net.sefalonzophry.voidascension.setup.worldgen.ModPlacedFeatures;
@@ -20,7 +20,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-            .add(Registries.DAMAGE_TYPE, ModDamageTypes::bootstrap)
+            .add(Registries.DAMAGE_TYPE, VoidDecayDamage::bootstrap)
             .add(Registries.DIMENSION_TYPE, ModDimensions::bootstrapType)
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)

@@ -4,6 +4,7 @@ import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.sefalonzophry.voidascension.VoidAscension;
 import net.sefalonzophry.voidascension.setup.*;
+import net.sefalonzophry.voidascension.setup.curios.curiositems.items.RiftFormer;
 import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
 import net.sefalonzophry.voidascension.setup.moditems.custom.ModArmorItem;
 import net.sefalonzophry.voidascension.setup.moditems.custom.ModItemTier;
@@ -22,7 +23,7 @@ public class ModItems {
 
     //Items
     public static final RegistryObject<Item> RIFT_FORMER = ITEMS.register("rift_former", () ->
-            new Item(new Item.Properties()));
+            new RiftFormer(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> RIFT_CRYSTAL = ITEMS.register("rift_crystal", () ->
             new Item(new Item.Properties()));
