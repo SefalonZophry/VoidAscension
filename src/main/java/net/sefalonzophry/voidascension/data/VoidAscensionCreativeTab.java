@@ -8,7 +8,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.curios.curiositems.items.RiftFormer;
 import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
 
