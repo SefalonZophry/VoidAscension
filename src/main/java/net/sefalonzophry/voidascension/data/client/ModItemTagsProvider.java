@@ -31,12 +31,12 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         //Items
 
-        tag(ModTags.Items.RIFT_FORMER).add(ModItems.RIFT_FORMER.get());
+        tag(ModTags.Items.VOID_ENVIRONMENTAL_REFLECTOR).add(ModItems.VOID_ENVIRONMENTAL_REFLECTOR.get());
         tag(ModTags.Items.VOID_ESSENCE).add(ModItems.VOID_ESSENCE.get());
         tag(ModTags.Items.EMPOWERED_VOID_ESSENCE).add(ModItems.EMPOWERED_VOID_ESSENCE.get());
-        tag(ModTags.Items.RIFT_CRYSTAL).add(ModItems.RIFT_CRYSTAL.get());
+        tag(ModTags.Items.VOID_CRYSTAL).add(ModItems.VOID_CRYSTAL.get());
         tag(ModTags.Items.VOID_INFUSED_STRING).add(ModItems.VOID_INFUSED_STRING.get());
-        tag(ModTags.Items.UNSTABLE_RIFT_CRYSTAL).add(ModItems.UNSTABLE_RIFT_CRYSTAL.get());
+        tag(ModTags.Items.UNSTABLE_VOID_CRYSTAL).add(ModItems.UNSTABLE_VOID_CRYSTAL.get());
         tag(ModTags.Items.LIVING_VOID_INGOT).add(ModItems.LIVING_VOID_INGOT.get());
         tag(ModTags.Items.NE_RELIC_PIECE).add(ModItems.NE_RELIC_PIECE.get());
         tag(ModTags.Items.SE_RELIC_PIECE).add(ModItems.SE_RELIC_PIECE.get());

@@ -7,13 +7,13 @@
   ],
   "key": {
     "c": {
-      "item": "voidascension:rift_crystal"
+      "item": "voidascension:void_crystal"
     },
     "e": {
       "item": "voidascension:void_essence"
     }
   },
   "result": {
-    "item": "voidascension:unstable_rift_crystal"
+    "item": "voidascension:unstable_void_crystal"
   }
 }

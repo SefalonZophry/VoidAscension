@@ -16,21 +16,21 @@ import net.sefalonzophry.voidascension.VoidAscension;
 import java.util.List;
 
 public class ModPlacedFeatures {
-    public static final ResourceKey<PlacedFeature> RIFT_CRYSTAL_ORE_PLACED_KEY = registerKey("rift_crystal_ore_placed");
-//    public static final ResourceKey<PlacedFeature> NETHER_RIFT_CRYSTAL_ORE_PLACED_KEY = registerKey("");
-//    public static final ResourceKey<PlacedFeature> END_RIFT_CRYSTAL_ORE_PLACED_KEY = registerKey("");
+    public static final ResourceKey<PlacedFeature> VOID_CRYSTAL_ORE_PLACED_KEY = registerKey("void_crystal_ore_placed");
+//    public static final ResourceKey<PlacedFeature> NETHER_VOID_CRYSTAL_ORE_PLACED_KEY = registerKey("");
+//    public static final ResourceKey<PlacedFeature> END_VOID_CRYSTAL_ORE_PLACED_KEY = registerKey("");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        register(context, RIFT_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RIFT_CRYSTAL_ORE_KEY),
+        register(context, VOID_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_VOID_CRYSTAL_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(64,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(80))));
-//        register(context, NETHER_RIFT_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_RIFT_CRYSTAL_ORE_PLACED_KEY),
+//        register(context, NETHER_VOID_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_VOID_CRYSTAL_ORE_PLACED_KEY),
 //                ModOrePlacement.commonOrePlacement(12,
 //                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-//        register(context, END_RIFT_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_RIFT_CRYSTAL_ORE_PLACED_KEY),
+//        register(context, END_VOID_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_VOID_CRYSTAL_ORE_PLACED_KEY),
 //                ModOrePlacement.commonOrePlacement(12,
 //                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     }

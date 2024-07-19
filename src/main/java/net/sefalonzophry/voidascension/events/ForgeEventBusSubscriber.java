@@ -21,9 +21,9 @@ public class ForgeEventBusSubscriber {
         public static void ifInsideDeepVoid(TickEvent.PlayerTickEvent event) {
             if (event.side == LogicalSide.SERVER) {
                 if (event.player.level().dimension() == ModDimensions.VOID_LEVEL_KEY) {
-                    if (event.player.getInventory().contains(new ItemStack(ModItems.RIFT_FORMER.get()))) {
+                    if (event.player.getInventory().contains(new ItemStack(ModItems.VOID_ENVIRONMENTAL_REFLECTOR.get()))) {
                     } else {
-                        if (!event.player.getInventory().contains(new ItemStack(ModItems.RIFT_FORMER.get()))) {
+                        if (!event.player.getInventory().contains(new ItemStack(ModItems.VOID_ENVIRONMENTAL_REFLECTOR.get()))) {
                             DamageSource void_decay = new ModDamageSource(event.player.level().registryAccess()).void_decay();
                             event.player.hurt(void_decay, 1.5f);
                         }
@@ -31,5 +31,15 @@ public class ForgeEventBusSubscriber {
                 }
             }
         }
+        /*
+        @SubscribeEvent
+        public static void Purification(ItemExpireEvent event) {
+            if (event.getEntity(ModItems.UNSTABLE_VOID_CRYSTAL.get())) {
+            }
+        }
+*/
     }
 }
+
+
+

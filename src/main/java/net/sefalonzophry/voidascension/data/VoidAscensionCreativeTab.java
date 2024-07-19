@@ -16,14 +16,14 @@ public class VoidAscensionCreativeTab {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, VoidAscension.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> VOID_ASCENSION_TAB = CREATIVE_MODE_TABS.register("void_ascension_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RIFT_CRYSTAL.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.VOID_CRYSTAL.get()))
                     .title(Component.translatable("creativetab.void_ascension_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
                         //Items
-                        pOutput.accept(ModItems.RIFT_FORMER.get());
-                        pOutput.accept(ModItems.RIFT_CRYSTAL.get());
-                        pOutput.accept(ModItems.UNSTABLE_RIFT_CRYSTAL.get());
+                        pOutput.accept(ModItems.VOID_ENVIRONMENTAL_REFLECTOR.get());
+                        pOutput.accept(ModItems.VOID_CRYSTAL.get());
+                        pOutput.accept(ModItems.UNSTABLE_VOID_CRYSTAL.get());
                         pOutput.accept(ModItems.VOID_ESSENCE.get());
                         pOutput.accept(ModItems.EMPOWERED_VOID_ESSENCE.get());
                         pOutput.accept(ModItems.LIVING_VOID_INGOT.get());
@@ -66,14 +66,14 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModItems.ELITE_VOID_SPAWN_SPAWN_EGG.get());
                         pOutput.accept(ModItems.INJECTOR_SPAWN_EGG.get());
                         //Blocks
-                        pOutput.accept(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get());
+                        pOutput.accept(ModBlocks.VOID_CRYSTAL_ORE_BLOCK.get());
                         pOutput.accept(ModBlocks.CHALICE.get());
                         pOutput.accept(ModBlocks.VOID_FENCE.get());
                         pOutput.accept(ModBlocks.VOID_STAIRS.get());
                         pOutput.accept(ModBlocks.VOID_SLAB.get());
                         pOutput.accept(ModBlocks.VOID_STONE.get());
                         pOutput.accept(ModBlocks.VOID_PILLAR_TOP.get());
-                        pOutput.accept(ModBlocks.DEEPSLATE_RIFT_CRYSTAL_ORE_BLOCK.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_VOID_CRYSTAL_ORE_BLOCK.get());
 
                     })
                     .build());

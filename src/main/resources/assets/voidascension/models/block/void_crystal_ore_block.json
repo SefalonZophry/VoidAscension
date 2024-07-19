@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "voidascension:block/rift_crystal_ore_block"
+    "all": "voidascension:block/void_crystal_ore_block"
   }
 }

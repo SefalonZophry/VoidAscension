@@ -16,12 +16,12 @@ public enum ModArmorMaterial implements ArmorMaterial {
 
     VOID("void", 78, new int[] {4, 6, 7, 5}, 15,
             SoundEvents.ARMOR_EQUIP_IRON, 5.0f, 0.4f, () -> {
-        return Ingredient.of(ModItems.RIFT_CRYSTAL.get());
+        return Ingredient.of(ModItems.VOID_CRYSTAL.get());
 
     }),
     VOID_RELIC("void_relic", 78, new int[] {6, 10, 12, 7}, 15,
             SoundEvents.ARMOR_EQUIP_DIAMOND, 10.0f, 0.6f, () -> {
-        return Ingredient.of(ModItems.UNSTABLE_RIFT_CRYSTAL.get());
+        return Ingredient.of(ModItems.UNSTABLE_VOID_CRYSTAL.get());
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

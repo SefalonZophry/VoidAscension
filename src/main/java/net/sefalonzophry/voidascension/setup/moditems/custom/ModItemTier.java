@@ -15,6 +15,6 @@ import java.util.List;
 public class ModItemTier {
     public static final Tier VOID = TierSortingRegistry.registerTier(
             new ForgeTier(5,2500,10F,10,5,
-                    ModTags.Blocks.NEEDS_VOID_TOOL, () -> Ingredient.of(ModItems.RIFT_CRYSTAL.get())),
+                    ModTags.Blocks.NEEDS_VOID_TOOL, () -> Ingredient.of(ModItems.VOID_CRYSTAL.get())),
             new ResourceLocation(VoidAscension.MOD_ID, "void"), List.of(Tiers.NETHERITE), List.of());
 }

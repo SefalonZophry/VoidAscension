@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "voidascension:rift_crystal"
+      "item": "voidascension:void_crystal"
     },
     {
       "item": "voidascension:void_pickaxe"

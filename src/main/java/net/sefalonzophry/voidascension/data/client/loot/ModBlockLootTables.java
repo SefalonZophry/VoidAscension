@@ -8,9 +8,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
-import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
-import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
@@ -32,10 +29,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.VOID_STAIRS.get());
         this.dropSelf(ModBlocks.VOID_FENCE.get());
 
-        this.add(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(),
-                block -> createOreDrop(ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get(), ModItems.RIFT_CRYSTAL.get()));
-        this.add(ModBlocks.DEEPSLATE_RIFT_CRYSTAL_ORE_BLOCK.get(),
-                block -> createOreDrop(ModBlocks.DEEPSLATE_RIFT_CRYSTAL_ORE_BLOCK.get(), ModItems.RIFT_CRYSTAL.get()));
+        this.add(ModBlocks.VOID_CRYSTAL_ORE_BLOCK.get(),
+                block -> createOreDrop(ModBlocks.VOID_CRYSTAL_ORE_BLOCK.get(), ModItems.VOID_CRYSTAL.get()));
+        this.add(ModBlocks.DEEPSLATE_VOID_CRYSTAL_ORE_BLOCK.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_VOID_CRYSTAL_ORE_BLOCK.get(), ModItems.VOID_CRYSTAL.get()));
 
     }
     protected LootTable.Builder createOreDrop(Block pBlock, Item item) {

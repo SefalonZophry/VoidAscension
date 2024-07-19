@@ -21,7 +21,7 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RIFT_CRYSTAL_ORE_KEY = registerKey("rift_crystal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_VOID_CRYSTAL_ORE_KEY = registerKey("void_crystal_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -29,12 +29,12 @@ public class ModConfiguredFeatures {
         RuleTest netherrackReplacables = new BlockMatchTest(Blocks.NETHERRACK);
         RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
 
-        List<OreConfiguration.TargetBlockState> overworldRiftCrystalOres = List.of(OreConfiguration.target(stoneReplaceable,
-                        ModBlocks.RIFT_CRYSTAL_ORE_BLOCK.get().defaultBlockState()),
+        List<OreConfiguration.TargetBlockState> overworldVoidCrystalOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.VOID_CRYSTAL_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
-                        ModBlocks.DEEPSLATE_RIFT_CRYSTAL_ORE_BLOCK.get().defaultBlockState()));
+                        ModBlocks.DEEPSLATE_VOID_CRYSTAL_ORE_BLOCK.get().defaultBlockState()));
 
-        register(context, OVERWORLD_RIFT_CRYSTAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRiftCrystalOres, 4));
+        register(context, OVERWORLD_VOID_CRYSTAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldVoidCrystalOres, 4));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

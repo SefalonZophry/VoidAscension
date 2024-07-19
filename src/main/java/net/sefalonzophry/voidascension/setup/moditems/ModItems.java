@@ -4,7 +4,7 @@ import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.sefalonzophry.voidascension.VoidAscension;
 import net.sefalonzophry.voidascension.setup.*;
-import net.sefalonzophry.voidascension.setup.curios.curiositems.items.RiftFormer;
+import net.sefalonzophry.voidascension.setup.curios.curiositems.items.VoidEnvironmentalReflector;
 import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
 import net.sefalonzophry.voidascension.setup.moditems.custom.ModArmorItem;
 import net.sefalonzophry.voidascension.setup.moditems.custom.ModItemTier;
@@ -22,13 +22,13 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, VoidAscension.MOD_ID);
 
     //Items
-    public static final RegistryObject<Item> RIFT_FORMER = ITEMS.register("rift_former", () ->
-            new RiftFormer(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> VOID_ENVIRONMENTAL_REFLECTOR = ITEMS.register("void_environmental_reflector", () ->
+            new VoidEnvironmentalReflector(new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> RIFT_CRYSTAL = ITEMS.register("rift_crystal", () ->
+    public static final RegistryObject<Item> VOID_CRYSTAL = ITEMS.register("void_crystal", () ->
             new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> UNSTABLE_RIFT_CRYSTAL = ITEMS.register("unstable_rift_crystal", () ->
+    public static final RegistryObject<Item> UNSTABLE_VOID_CRYSTAL = ITEMS.register("unstable_void_crystal", () ->
             new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> VOID_INFUSED_STRING = ITEMS.register("void_infused_string", () ->

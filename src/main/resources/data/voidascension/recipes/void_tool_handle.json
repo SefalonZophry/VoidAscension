@@ -7,7 +7,7 @@
   ],
   "key": {
     "c": {
-      "item": "voidascension:rift_crystal"
+      "item": "voidascension:void_crystal"
     },
     "l": {
       "item": "voidascension:living_void_ingot"
@@ -16,7 +16,7 @@
       "item": "voidascension:void_infused_string"
     },
     "u": {
-      "item": "voidascension:unstable_rift_crystal"
+      "item": "voidascension:unstable_void_crystal"
     }
   },
   "result": {

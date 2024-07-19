@@ -18,8 +18,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
 
         //Items
-        withExistingParent("rift_crystal",
-                modLoc("item/rift_crystal"));
+        withExistingParent("void_crystal",
+                modLoc("item/void_crystal"));
 
         withExistingParent("void_infused_string",
                 modLoc("item/void_infused_string"));
@@ -118,17 +118,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         //Items
         builder(itemGenerated,
-                "rift_former");
+                "void_environmental_reflector");
         builder(itemGenerated,
                 "void_essence");
         builder(itemGenerated,
                 "empowered_void_essence");
         builder(itemGenerated,
-                "rift_crystal");
+                "void_crystal");
         builder(itemGenerated,
                 "void_infused_string");
         builder(itemGenerated,
-                "unstable_rift_crystal");
+                "unstable_void_crystal");
         builder(itemGenerated,
                 "living_void_ingot");
         builder(itemGenerated,

@@ -1,10 +1,5 @@
 package net.sefalonzophry.voidascension.events;
 
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.Level;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,7 +9,6 @@ import net.sefalonzophry.voidascension.setup.entity.custom.EliteVoidSpawnEntity;
 import net.sefalonzophry.voidascension.setup.entity.custom.InjectorEntity;
 import net.sefalonzophry.voidascension.setup.entity.custom.VoidSpawnEntity;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.sefalonzophry.voidascension.setup.worldgen.dimension.ModDimensions;
 
 @Mod.EventBusSubscriber(modid = VoidAscension.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModClientEvents {
