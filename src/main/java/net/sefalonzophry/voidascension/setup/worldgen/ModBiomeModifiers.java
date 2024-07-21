@@ -18,6 +18,9 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_NETHER_VOID_CRYSTAL_ORE = registerKey("add_nether_void_crystal_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_VOID_CRYSTAL_ORE = registerKey("add_end_void_crystal_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_VOID_TOUCHED_TREE_VTB = registerKey("add_void_touched_tree_vtb");
+    public static final ResourceKey<BiomeModifier> ADD_VOID_TOUCHED_TREE_DV = registerKey("add_void_touched_tree_dv");
+
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -43,6 +46,15 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_VOID_CRYSTAL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 */
+        context.register(ADD_VOID_TOUCHED_TREE_VTB, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(ModTags.Biomes.VOID_TOUCHED_BIOME),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.VOID_TOUCHED_TREE_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_VOID_TOUCHED_TREE_DV, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(ModTags.Biomes.DEEP_VOID),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.VOID_TOUCHED_TREE_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {

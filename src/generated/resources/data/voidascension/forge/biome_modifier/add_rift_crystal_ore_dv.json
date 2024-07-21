@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#voidascension:deep_void",
-  "features": "voidascension:rift_crystal_ore_placed",
-  "step": "underground_ores"
-}

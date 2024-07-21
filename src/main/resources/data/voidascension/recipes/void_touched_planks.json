@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "voidascension:void_touched_log"
+    }
+  ],
+  "result": {
+    "item": "voidascension:void_touched_planks",
+    "count": 4
+  }
+}

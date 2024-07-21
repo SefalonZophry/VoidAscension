@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#voidascension:void_touched_biome",
+  "features": "voidascension:void_touched_tree_placed",
+  "step": "vegetal_decoration"
+}

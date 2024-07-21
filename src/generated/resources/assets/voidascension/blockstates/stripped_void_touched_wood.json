@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "voidascension:block/stripped_void_touched_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "voidascension:block/stripped_void_touched_wood"
+    },
+    "axis=z": {
+      "model": "voidascension:block/stripped_void_touched_wood_horizontal",
+      "x": 90
+    }
+  }
+}

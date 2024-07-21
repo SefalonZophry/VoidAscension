@@ -2,11 +2,12 @@ package net.sefalonzophry.voidascension.data.client;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
+import net.sefalonzophry.voidascension.setup.block.ModBlocks;
 import net.sefalonzophry.voidascension.setup.ModTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -23,5 +24,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.VOID_CRYSTAL_ORE_BLOCK.get()).addTag(Tags.Blocks.ORES)
                 .add(ModBlocks.DEEPSLATE_VOID_CRYSTAL_ORE_BLOCK.get()).addTag(Tags.Blocks.ORES);
 
+        this.tag(BlockTags.LOGS_THAT_BURN);
+
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.VOID_TOUCHED_PLANKS.get());
     }
 }

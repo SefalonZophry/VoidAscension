@@ -1,8 +1,9 @@
 package net.sefalonzophry.voidascension.setup;
 
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.customblocks.*;
+import net.sefalonzophry.voidascension.setup.block.*;
 //import net.sefalonzophry.voidascension.setup.customblocks.tileentities.AltarTileEntity;
+import net.sefalonzophry.voidascension.setup.block.custom.Chalice;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.*;

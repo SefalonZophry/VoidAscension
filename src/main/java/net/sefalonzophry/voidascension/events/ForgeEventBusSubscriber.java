@@ -34,10 +34,12 @@ public class ForgeEventBusSubscriber {
         /*
         @SubscribeEvent
         public static void Purification(ItemExpireEvent event) {
-            if (event.getEntity(ModItems.UNSTABLE_VOID_CRYSTAL.get())) {
+            if (event.getEntity()) {
+                if (event.getEntity)
             }
         }
-*/
+         */
+
     }
 }
 

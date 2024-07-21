@@ -6,22 +6,30 @@ import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
+import net.sefalonzophry.voidascension.setup.block.ModBlocks;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_VOID_CRYSTAL_ORE_KEY = registerKey("void_crystal_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> VOID_TOUCHED_TREE_KEY = registerKey("void_touched_tree_key");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -35,6 +43,13 @@ public class ModConfiguredFeatures {
                         ModBlocks.DEEPSLATE_VOID_CRYSTAL_ORE_BLOCK.get().defaultBlockState()));
 
         register(context, OVERWORLD_VOID_CRYSTAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldVoidCrystalOres, 4));
+
+        register(context, VOID_TOUCHED_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.VOID_TOUCHED_LOG.get()),
+                new StraightTrunkPlacer(4, 5,4),
+                BlockStateProvider.simple(ModBlocks.VOID_TOUCHED_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(4), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

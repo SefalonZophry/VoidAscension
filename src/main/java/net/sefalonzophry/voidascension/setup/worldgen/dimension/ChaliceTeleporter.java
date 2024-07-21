@@ -1,9 +1,8 @@
 package net.sefalonzophry.voidascension.setup.worldgen.dimension;
 
 import net.minecraft.world.level.block.Blocks;
-import net.sefalonzophry.voidascension.setup.customblocks.Chalice;
-import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
-import net.minecraft.world.level.block.state.BlockState;
+import net.sefalonzophry.voidascension.setup.block.custom.Chalice;
+import net.sefalonzophry.voidascension.setup.block.ModBlocks;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.core.BlockPos;

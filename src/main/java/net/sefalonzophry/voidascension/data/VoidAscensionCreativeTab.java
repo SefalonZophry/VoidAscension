@@ -8,7 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
+import net.sefalonzophry.voidascension.setup.block.ModBlocks;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
 
 public class VoidAscensionCreativeTab {
@@ -22,6 +22,7 @@ public class VoidAscensionCreativeTab {
 
                         //Items
                         pOutput.accept(ModItems.VOID_ENVIRONMENTAL_REFLECTOR.get());
+                        pOutput.accept(ModItems.VOID_INFUSED_STRING.get());
                         pOutput.accept(ModItems.VOID_CRYSTAL.get());
                         pOutput.accept(ModItems.UNSTABLE_VOID_CRYSTAL.get());
                         pOutput.accept(ModItems.VOID_ESSENCE.get());
@@ -74,7 +75,13 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModBlocks.VOID_STONE.get());
                         pOutput.accept(ModBlocks.VOID_PILLAR_TOP.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_VOID_CRYSTAL_ORE_BLOCK.get());
-
+                        pOutput.accept(ModBlocks.VOID_TOUCHED_LOG.get());
+                        pOutput.accept(ModBlocks.VOID_TOUCHED_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_VOID_TOUCHED_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_VOID_TOUCHED_WOOD.get());
+                        pOutput.accept(ModBlocks.VOID_TOUCHED_PLANKS.get());
+                        pOutput.accept(ModBlocks.VOID_TOUCHED_LEAVES.get());
+                        pOutput.accept(ModBlocks.VOID_TOUCHED_TREE_SAPLING.get());
                     })
                     .build());
 

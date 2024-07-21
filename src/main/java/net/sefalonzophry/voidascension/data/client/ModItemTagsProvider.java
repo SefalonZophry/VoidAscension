@@ -3,9 +3,12 @@ package net.sefalonzophry.voidascension.data.client;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.sefalonzophry.voidascension.VoidAscension;
+import net.sefalonzophry.voidascension.setup.block.ModBlocks;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
 import net.sefalonzophry.voidascension.setup.ModTags;
 import org.jetbrains.annotations.Nullable;
@@ -51,7 +54,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.INJECTOR_SPAWN_EGG).add(ModItems.INJECTOR_SPAWN_EGG.get());
         tag(ModTags.Items.ELITE_VOID_SPAWN_SPAWN_EGG).add(ModItems.ELITE_VOID_SPAWN_SPAWN_EGG.get());
 
-
         //Tools
         tag(ModTags.Items.VOID_SWORD_UNPOWERED).add(ModItems.VOID_SWORD_UNPOWERED.get());
         tag(ModTags.Items.VOID_SWORD_POWERED).add(ModItems.VOID_SWORD_POWERED.get());
@@ -59,8 +61,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_BOW).add(ModItems.VOID_BOW.get());
         tag(ModTags.Items.VOID_SHOVEL).add(ModItems.VOID_SHOVEL.get());
         tag(ModTags.Items.VOID_BATTLE_AXE).add(ModItems.VOID_BATTLE_AXE.get());
-
-
 
         //Tool Workables
         tag(ModTags.Items.VOID_PICKAXE_HEAD).add(ModItems.VOID_PICKAXE_HEAD.get());
@@ -76,8 +76,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_SHOVEL_HEAD).add(ModItems.VOID_SHOVEL_HEAD.get());
         tag(ModTags.Items.VOID_BATTLE_AXE_HEAD).add(ModItems.VOID_BATTLE_AXE_HEAD.get());
 
-
-
         //Armor
         tag(ModTags.Items.VOID_HELMET).add(ModItems.VOID_HELMET.get());
         tag(ModTags.Items.VOID_CHESTPLATE).add(ModItems.VOID_CHESTPLATE.get());
@@ -87,6 +85,11 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_RELIC_CHESTPLATE).add(ModItems.VOID_RELIC_CHESTPLATE.get());
         tag(ModTags.Items.VOID_RELIC_LEGGINGS).add(ModItems.VOID_RELIC_LEGGINGS.get());
         tag(ModTags.Items.VOID_RELIC_BOOTS).add(ModItems.VOID_RELIC_BOOTS.get());
+
+        this.tag(ItemTags.LOGS_THAT_BURN);
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.VOID_TOUCHED_PLANKS.get().asItem());
 
     }
 }

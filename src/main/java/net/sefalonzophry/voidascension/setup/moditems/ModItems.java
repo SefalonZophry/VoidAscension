@@ -5,7 +5,7 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.sefalonzophry.voidascension.VoidAscension;
 import net.sefalonzophry.voidascension.setup.*;
 import net.sefalonzophry.voidascension.setup.curios.curiositems.items.VoidEnvironmentalReflector;
-import net.sefalonzophry.voidascension.setup.customblocks.ModBlocks;
+import net.sefalonzophry.voidascension.setup.block.ModBlocks;
 import net.sefalonzophry.voidascension.setup.moditems.custom.ModArmorItem;
 import net.sefalonzophry.voidascension.setup.moditems.custom.ModItemTier;
 import net.sefalonzophry.voidascension.setup.moditems.custom.VoidArrowItem;

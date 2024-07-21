@@ -1,12 +1,15 @@
 package net.sefalonzophry.voidascension.data.client;
 
-import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.RegistryObject;
 import net.sefalonzophry.voidascension.VoidAscension;
+import net.sefalonzophry.voidascension.setup.block.ModBlocks;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -151,8 +154,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                 "filled_void_essence_syringe");
 
         //Blocks
-
-
+        saplingItem(ModBlocks.VOID_TOUCHED_TREE_SAPLING);
 
         //Workables
         builder(itemGenerated,
@@ -180,6 +182,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated,
                 "void_battle_axe_head");
 
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(VoidAscension.MOD_ID, "block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {

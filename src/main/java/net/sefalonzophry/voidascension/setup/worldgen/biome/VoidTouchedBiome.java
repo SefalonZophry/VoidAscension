@@ -43,8 +43,6 @@ public class VoidTouchedBiome {
         globalOverworldGenerationVoidTouchedBiome(biomeBuilder);
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.TREES_PLAINS);
-
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
 
         return new Biome.BiomeBuilder()
