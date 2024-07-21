@@ -40,7 +40,6 @@ public class ModTags {
         //Items
         public static final TagKey<Item> VOID_ENVIRONMENTAL_REFLECTOR = tag("voidascension/misc");
         public static final TagKey<Item> VOID_ESSENCE = tag("voidascension/misc");
-        public static final TagKey<Item> EMPOWERED_VOID_ESSENCE = tag("voidascension/misc");
         public static final TagKey<Item> VOID_CRYSTAL = tag("voidascension/misc");
         public static final TagKey<Item> UNSTABLE_VOID_CRYSTAL = tag("voidascension/misc");
         public static final TagKey<Item> VOID_INFUSED_STRING = tag("voidascension/misc");
@@ -53,8 +52,9 @@ public class ModTags {
         public static final TagKey<Item> VOID_SPAWN_SPAWN_EGG = tag("voidascension/misc");
         public static final TagKey<Item> INJECTOR_SPAWN_EGG = tag("voidascension/misc");
         public static final TagKey<Item> ELITE_VOID_SPAWN_SPAWN_EGG = tag("voidascension/misc");
-        public static final TagKey<Item> VOID_ESSENCE_CAPSULE = tag("voidascension/misc");
         public static final TagKey<Item> EMPTY_VOID_ESSENCE_CAPSULE = tag("voidascension/misc");
+        public static final TagKey<Item> FILLED_VOID_ESSENCE_CAPSULE = tag("voidascension/misc");
+        public static final TagKey<Item> FILLED_EMPOWERED_VOID_ESSENCE_CAPSULE = tag("voidascension/misc");
         public static final TagKey<Item> EMPTY_SYRINGE = tag("voidascension/misc");
         public static final TagKey<Item> FILLED_VOID_ESSENCE_SYRINGE = tag("voidascension/misc");
 

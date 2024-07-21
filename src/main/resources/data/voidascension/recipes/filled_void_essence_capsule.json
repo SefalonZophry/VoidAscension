@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " u ",
-    "ueu",
-    " u "
+    "   ",
+    "eie",
+    "   "
   ],
   "key": {
     "e": {
       "item": "voidascension:void_essence"
     },
-    "u": {
-      "item": "voidascension:unstable_void_crystal"
+    "i": {
+      "item": "voidascension:empty_void_essence_capsule"
     }
   },
   "result": {
-    "item": "voidascension:empowered_void_essence"
+    "item": "voidascension:filled_void_essence_capsule"
   }
 }

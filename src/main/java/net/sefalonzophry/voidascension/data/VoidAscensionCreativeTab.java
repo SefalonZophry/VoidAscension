@@ -26,7 +26,6 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModItems.VOID_CRYSTAL.get());
                         pOutput.accept(ModItems.UNSTABLE_VOID_CRYSTAL.get());
                         pOutput.accept(ModItems.VOID_ESSENCE.get());
-                        pOutput.accept(ModItems.EMPOWERED_VOID_ESSENCE.get());
                         pOutput.accept(ModItems.LIVING_VOID_INGOT.get());
                         pOutput.accept(ModItems.VOID_ARROW.get());
                         pOutput.accept(ModItems.VOID_ARROW_HEAD.get());
@@ -37,6 +36,8 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModItems.EMPTY_SYRINGE.get());
                         pOutput.accept(ModItems.FILLED_VOID_ESSENCE_SYRINGE.get());
                         pOutput.accept(ModItems.EMPTY_VOID_ESSENCE_CAPSULE.get());
+                        pOutput.accept(ModItems.FILLED_VOID_ESSENCE_CAPSULE.get());
+                        pOutput.accept(ModItems.FILLED_EMPOWERED_VOID_ESSENCE_CAPSULE.get());
                         pOutput.accept(ModItems.RELIC.get());
                         pOutput.accept(ModItems.NE_RELIC_PIECE.get());
                         pOutput.accept(ModItems.NW_RELIC_PIECE.get());

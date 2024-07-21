@@ -30,9 +30,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("void_essence",
                 modLoc("item/void_essence"));
 
-        withExistingParent("empowered_void_essence",
-                modLoc("item/empowered_void_essence"));
-
         withExistingParent("living_void_ingot",
                 modLoc("item/living_void_ingot"));
 
@@ -51,11 +48,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("relic",
                 modLoc("item/relic"));
 
-        withExistingParent("void_essence_capsule",
-                modLoc("item/void_essence_capsule"));
-
         withExistingParent("empty_void_essence_capsule",
                 modLoc("item/empty_void_essence_capsule"));
+
+        withExistingParent("filled_void_essence_capsule",
+                modLoc("item/filled_void_essence_capsule"));
+
+        withExistingParent("filled_empowered_void_essence_capsule",
+                modLoc("item/filled_empowered_void_essence_capsule"));
 
         withExistingParent("empty_syringe",
                 modLoc("item/empty_syringe"));
@@ -125,8 +125,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated,
                 "void_essence");
         builder(itemGenerated,
-                "empowered_void_essence");
-        builder(itemGenerated,
                 "void_crystal");
         builder(itemGenerated,
                 "void_infused_string");
@@ -145,9 +143,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated,
                 "relic");
         builder(itemGenerated,
-                "void_essence_capsule");
-        builder(itemGenerated,
                 "empty_void_essence_capsule");
+        builder(itemGenerated,
+                "filled_void_essence_capsule");
+        builder(itemGenerated,
+                "filled_empowered_void_essence_capsule");
         builder(itemGenerated,
                 "empty_syringe");
         builder(itemGenerated,

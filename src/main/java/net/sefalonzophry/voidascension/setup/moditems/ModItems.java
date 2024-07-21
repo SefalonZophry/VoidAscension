@@ -40,9 +40,6 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_ESSENCE = ITEMS.register("void_essence", () ->
             new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> EMPOWERED_VOID_ESSENCE = ITEMS.register("empowered_void_essence", () ->
-            new Item(new Item.Properties()));
-
     public static final RegistryObject<Item> NE_RELIC_PIECE = ITEMS.register("ne_relic_piece", () ->
             new Item(new Item.Properties()));
 
@@ -58,10 +55,13 @@ public class ModItems {
     public static final RegistryObject<Item> RELIC = ITEMS.register("relic", () ->
             new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> VOID_ESSENCE_CAPSULE = ITEMS.register("void_essence_capsule", () ->
+    public static final RegistryObject<Item> EMPTY_VOID_ESSENCE_CAPSULE = ITEMS.register("empty_void_essence_capsule", () ->
             new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> EMPTY_VOID_ESSENCE_CAPSULE = ITEMS.register("empty_void_essence_capsule", () ->
+    public static final RegistryObject<Item> FILLED_VOID_ESSENCE_CAPSULE = ITEMS.register("filled_void_essence_capsule", () ->
+            new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FILLED_EMPOWERED_VOID_ESSENCE_CAPSULE = ITEMS.register("filled_empowered_void_essence_capsule", () ->
             new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> EMPTY_SYRINGE = ITEMS.register("empty_syringe", () ->

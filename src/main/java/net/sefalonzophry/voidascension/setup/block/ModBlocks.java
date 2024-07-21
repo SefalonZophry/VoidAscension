@@ -67,27 +67,22 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> VOID_TOUCHED_LOG = registerBlock("void_touched_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
-                    .strength(3,10)
-                    .requiresCorrectToolForDrops()));
+                    .strength(3,10)));
 
     public static final RegistryObject<Block> VOID_TOUCHED_WOOD = registerBlock("void_touched_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
-                    .strength(3,10)
-                    .requiresCorrectToolForDrops()));
+                    .strength(3,10)));
 
     public static final RegistryObject<Block> STRIPPED_VOID_TOUCHED_LOG = registerBlock("stripped_void_touched_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
-                    .strength(3,10)
-                    .requiresCorrectToolForDrops()));
+                    .strength(3,10)));
 
     public static final RegistryObject<Block> STRIPPED_VOID_TOUCHED_WOOD = registerBlock("stripped_void_touched_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
-                    .strength(3,10)
-                    .requiresCorrectToolForDrops()));
+                    .strength(3,10)));
 
     public static final RegistryObject<Block> VOID_TOUCHED_PLANKS = registerBlock("void_touched_planks",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .requiresCorrectToolForDrops()) {
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return false;

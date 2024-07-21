@@ -3,7 +3,7 @@
     "icon": {
       "item": "voidascension:relic"
     },
-    "title": "Heart of Nothingness.",
+    "title": "Heart of Nothingness",
     "description": "Enter the void.",
     "show_toast": true,
     "announce_to_chat": true,

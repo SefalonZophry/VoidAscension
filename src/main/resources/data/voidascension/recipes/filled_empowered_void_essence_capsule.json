@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " e ",
-    "eie",
-    " e "
+    "eee",
+    "efe",
+    "eee"
   ],
   "key": {
-    "e": {
+    "f": {
       "item": "voidascension:filled_void_essence_capsule"
     },
-    "i": {
-      "item": "minecraft:iron_ingot"
+    "e": {
+      "item": "voidascension:void_essence"
     }
   },
   "result": {
-    "item": "voidascension:living_void_ingot"
+    "item": "voidascension:filled_empowered_void_essence_capsule"
   }
 }

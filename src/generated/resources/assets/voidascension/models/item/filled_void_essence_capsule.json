@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "voidascension:item/empowered_void_essence"
+    "layer0": "voidascension:item/filled_void_essence_capsule"
   }
 }

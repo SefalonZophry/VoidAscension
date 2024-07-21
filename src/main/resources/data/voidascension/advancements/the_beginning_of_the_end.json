@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "voidascension:empty_void_essence_capsule"
+    },
+    "title": "The Beginning of The End",
+    "description": "Buy a empty void essence capsule from a wandering merchant.",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "voidascension:voidascension",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "voidascension:empty_void_essence_capsule",
+            "count": 1
+          }
+        ]
+      }
+    }
+  }
+}
