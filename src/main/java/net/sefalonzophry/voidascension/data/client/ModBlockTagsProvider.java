@@ -3,9 +3,11 @@ package net.sefalonzophry.voidascension.data.client;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.sefalonzophry.voidascension.VoidAscension;
 import net.sefalonzophry.voidascension.setup.block.ModBlocks;
 import net.sefalonzophry.voidascension.setup.ModTags;
@@ -28,5 +30,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.VOID_TOUCHED_PLANKS.get());
+
+        this.tag(BlockTags.LOGS)
+                .add(ModBlocks.VOID_TOUCHED_LOG.get());
+
+        this.tag(BlockTags.LEAVES)
+                .add(ModBlocks.VOID_TOUCHED_LEAVES.get());
     }
 }

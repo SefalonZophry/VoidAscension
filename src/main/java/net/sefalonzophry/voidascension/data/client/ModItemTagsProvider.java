@@ -30,6 +30,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         copy(ModTags.Blocks.PEDESTAL, ModTags.Items.PEDESTAL);
         copy(ModTags.Blocks.VOID_STONE, ModTags.Items.VOID_STONE);
         copy(ModTags.Blocks.VOID_PILLAR_TOP, ModTags.Items.VOID_PILLAR_TOP);
+        copy(ModTags.Blocks.VOID_TOUCHED_LEAVES, ModTags.Items.VOID_TOUCHED_LEAVES);
+        copy(ModTags.Blocks.VOID_TOUCHED_LOG, ModTags.Items.VOID_TOUCHED_LOG);
 
 
         //Items
@@ -88,8 +90,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         this.tag(ItemTags.LOGS_THAT_BURN);
 
-        this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.VOID_TOUCHED_PLANKS.get().asItem());
+        this.tag(ItemTags.PLANKS);
 
     }
 }

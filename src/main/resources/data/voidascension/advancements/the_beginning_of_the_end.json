@@ -5,6 +5,7 @@
     },
     "title": "The Beginning of The End",
     "description": "Buy a empty void essence capsule from a wandering merchant.",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
@@ -16,8 +17,9 @@
       "conditions": {
         "items": [
           {
-            "item": "voidascension:empty_void_essence_capsule",
-            "count": 1
+            "items": [
+              "voidascension:empty_void_essence_capsule"
+            ]
           }
         ]
       }

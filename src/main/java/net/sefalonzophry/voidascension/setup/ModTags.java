@@ -25,6 +25,9 @@ public class ModTags {
         public static final TagKey<Block> VOID_SLAB = tag("voidascension/block");
         public static final TagKey<Block> VOID_STAIRS = tag("voidascension/block");
         public static final TagKey<Block> NEEDS_VOID_TOOL = tag("voidascension/needs_void_tool");
+        public static final TagKey<Block> VOID_TOUCHED_LEAVES = tag("voidascension/block");
+        public static final TagKey<Block> VOID_TOUCHED_LOG = tag("voidascension/block");
+
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation("tag", name));
@@ -66,6 +69,8 @@ public class ModTags {
 //        public static final TagKey<Item> ALTAR = tag("voidascension/block");
         public static final TagKey<Item> CHALICE = tag("voidascension/block");
         public static final TagKey<Item> PEDESTAL = tag("voidascension/block");
+        public static final TagKey<Item> VOID_TOUCHED_LEAVES = tag("voidascension/block");
+        public static final TagKey<Item> VOID_TOUCHED_LOG = tag("voidascension/block");
 
 
         //Tools
