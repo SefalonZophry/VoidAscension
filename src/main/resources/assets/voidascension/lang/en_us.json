@@ -68,6 +68,6 @@
   "block.voidascension.void_touched_planks": "Void Touched Planks",
   "block.voidascension.void_touched_leaves": "Void Touched Leaves",
   "creativetab.void_ascension_tab": "Void Ascension",
-  "biome.voidascension.void_touched_biome": "Void Touched Biome",
+  "biome.voidascension.void_touched_biome": "Void Touched Forest",
   "death.attack.void_decay": "%1$s Was Consumed By The Void"
 }

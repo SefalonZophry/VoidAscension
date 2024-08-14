@@ -18,19 +18,19 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<VoidSpawnEntity>> VOIDSPAWN =
             ENTITY_TYPES.register("voidspawn",
                     () -> EntityType.Builder.of(VoidSpawnEntity::new,
-                                    MobCategory.MONSTER).sized(1f, 3f)
+                                    MobCategory.MONSTER).sized(1f, 2f)
                     .build(new ResourceLocation(VoidAscension.MOD_ID, "voidspawn").toString()));
 
     public static final RegistryObject<EntityType<VoidSpawnEntity>> ELITEVOIDSPAWN =
             ENTITY_TYPES.register("elitevoidspawn",
                     () -> EntityType.Builder.of(VoidSpawnEntity::new,
-                                    MobCategory.MONSTER).sized(1f, 3f)
+                                    MobCategory.MONSTER).sized(1f, 2f)
                             .build(new ResourceLocation(VoidAscension.MOD_ID, "elitevoidspawn").toString()));
 
     public static final RegistryObject<EntityType<InjectorEntity>> INJECTOR =
             ENTITY_TYPES.register("injector",
                     () -> EntityType.Builder.of(InjectorEntity::new,
-                                    MobCategory.MONSTER).sized(1f, 3f)
+                                    MobCategory.MONSTER).sized(1f, 1f)
                             .build(new ResourceLocation(VoidAscension.MOD_ID, "injector").toString()));
 
     public static void register(IEventBus eventBus) {
