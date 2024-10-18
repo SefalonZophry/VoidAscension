@@ -1,0 +1,16 @@
+{
+  "type": "voidascension:void_destabilizing",
+  "ingredients": [
+    {
+      "item": "voidascension:void_ash"
+    },
+    {
+      "item": "voidascension:filled_void_essence_capsule"
+    }
+
+  ],
+  "output": {
+    "count": 1,
+    "item": "voidascension:filled_empowered_void_essence_capsule"
+  }
+}

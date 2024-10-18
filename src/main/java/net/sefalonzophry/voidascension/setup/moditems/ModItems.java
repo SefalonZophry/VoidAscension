@@ -40,6 +40,9 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_ESSENCE = ITEMS.register("void_essence", () ->
             new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> VOID_ASH = ITEMS.register("void_ash", () ->
+            new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> NE_RELIC_PIECE = ITEMS.register("ne_relic_piece", () ->
             new Item(new Item.Properties()));
 

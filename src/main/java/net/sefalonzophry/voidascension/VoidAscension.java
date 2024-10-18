@@ -1,7 +1,9 @@
 package net.sefalonzophry.voidascension;
 
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.eventbus.EventBus;
 import net.sefalonzophry.voidascension.client.renderer.entity.VoidArrowRenderer;
 import net.sefalonzophry.voidascension.data.VoidAscensionCreativeTab;
 //import net.sefalonzophry.voidascension.setup.CustomDimensionRenders;
@@ -9,6 +11,11 @@ import net.sefalonzophry.voidascension.data.VoidAscensionCreativeTab;
 //import net.sefalonzophry.voidascension.setup.init.TileEntityTypesInit;
 //import net.sefalonzophry.voidascension.setup.customeffects.ModEffects;
 import net.sefalonzophry.voidascension.data.client.loot.ModLootModifiers;
+import net.sefalonzophry.voidascension.screen.ModMenuTypes;
+import net.sefalonzophry.voidascension.screen.voiddestabilizer.VoidDestabilizerScreen;
+import net.sefalonzophry.voidascension.setup.block.tileentities.ModBlockEntities;
+import net.sefalonzophry.voidascension.setup.block.tileentities.VoidDestabilizerBlockEntity;
+import net.sefalonzophry.voidascension.setup.block.tileentities.recipe.ModRecipes;
 import net.sefalonzophry.voidascension.setup.worldgen.ModConfiguredSurfaceBuilder;
 import net.sefalonzophry.voidascension.setup.worldgen.Terrablender;
 import net.sefalonzophry.voidascension.setup.worldgen.world.entity.ModEntityType;
@@ -46,6 +53,11 @@ public class VoidAscension {
         ModEntityTypes.register(eventBus);
 
         ModLootModifiers.register(eventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
 //        ModEffects.register(eventBus);
 
@@ -94,6 +106,8 @@ public class VoidAscension {
         EntityRenderers.register(ModEntityTypes.VOIDSPAWN.get(), VoidSpawnRenderer::new);
         EntityRenderers.register(ModEntityTypes.ELITEVOIDSPAWN.get(), EliteVoidSpawnRenderer::new);
         EntityRenderers.register(ModEntityTypes.INJECTOR.get(), InjectorRenderer::new);
+
+        MenuScreens.register(ModMenuTypes.VOID_DESTABILIZER_MENU.get(), VoidDestabilizerScreen::new);
 
     }
 

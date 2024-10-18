@@ -41,6 +41,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leavesBlock(ModBlocks.VOID_TOUCHED_LEAVES);
 
         saplingBlock(ModBlocks.VOID_TOUCHED_TREE_SAPLING);
+
+        simpleBlockWithItem(ModBlocks.VOID_DESTABILIZER.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/void_destabilizer")));
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {

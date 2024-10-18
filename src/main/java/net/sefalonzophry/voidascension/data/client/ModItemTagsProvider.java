@@ -38,6 +38,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         tag(ModTags.Items.VOID_ENVIRONMENTAL_REFLECTOR).add(ModItems.VOID_ENVIRONMENTAL_REFLECTOR.get());
         tag(ModTags.Items.VOID_ESSENCE).add(ModItems.VOID_ESSENCE.get());
+        tag(ModTags.Items.VOID_ASH).add(ModItems.VOID_ASH.get());
         tag(ModTags.Items.VOID_CRYSTAL).add(ModItems.VOID_CRYSTAL.get());
         tag(ModTags.Items.VOID_INFUSED_STRING).add(ModItems.VOID_INFUSED_STRING.get());
         tag(ModTags.Items.UNSTABLE_VOID_CRYSTAL).add(ModItems.UNSTABLE_VOID_CRYSTAL.get());

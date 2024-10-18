@@ -26,6 +26,7 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModItems.VOID_CRYSTAL.get());
                         pOutput.accept(ModItems.UNSTABLE_VOID_CRYSTAL.get());
                         pOutput.accept(ModItems.VOID_ESSENCE.get());
+                        pOutput.accept(ModItems.VOID_ASH.get());
                         pOutput.accept(ModItems.LIVING_VOID_INGOT.get());
                         pOutput.accept(ModItems.VOID_ARROW.get());
                         pOutput.accept(ModItems.VOID_ARROW_HEAD.get());
@@ -70,6 +71,7 @@ public class VoidAscensionCreativeTab {
                         //Blocks
                         pOutput.accept(ModBlocks.VOID_CRYSTAL_ORE_BLOCK.get());
                         pOutput.accept(ModBlocks.CHALICE.get());
+                        pOutput.accept(ModBlocks.VOID_DESTABILIZER.get());
                         pOutput.accept(ModBlocks.VOID_FENCE.get());
                         pOutput.accept(ModBlocks.VOID_STAIRS.get());
                         pOutput.accept(ModBlocks.VOID_SLAB.get());

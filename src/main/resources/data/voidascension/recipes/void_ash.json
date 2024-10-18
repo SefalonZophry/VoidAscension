@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "items",
+  "cookingtime": 400,
+  "experience": 0.3,
+  "ingredient": {
+    "item": "voidascension:void_essence"
+  },
+  "result": "voidascension:void_ash"
+}

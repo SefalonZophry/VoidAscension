@@ -30,6 +30,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("void_essence",
                 modLoc("item/void_essence"));
 
+        withExistingParent("void_ash",
+                modLoc("item/void_ash"));
+
         withExistingParent("living_void_ingot",
                 modLoc("item/living_void_ingot"));
 
@@ -124,6 +127,8 @@ public class ModItemModelProvider extends ItemModelProvider {
                 "void_environmental_reflector");
         builder(itemGenerated,
                 "void_essence");
+        builder(itemGenerated,
+                "void_ash");
         builder(itemGenerated,
                 "void_crystal");
         builder(itemGenerated,

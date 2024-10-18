@@ -11,6 +11,7 @@ import net.sefalonzophry.voidascension.setup.Registration;
 //import net.sefalonzophry.voidascension.setup.customblocks.tileentities.AltarTileEntity;
 import net.sefalonzophry.voidascension.setup.block.custom.Chalice;
 import net.sefalonzophry.voidascension.setup.block.custom.ModFlammableRotatedPillarBlock;
+import net.sefalonzophry.voidascension.setup.block.custom.VoidDestablizer;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -120,6 +121,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> VOID_TOUCHED_TREE_SAPLING = registerBlock("void_touched_tree_sapling",
             () -> new SaplingBlock(new VoidTouchedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+    public  static  final RegistryObject<Block> VOID_DESTABILIZER = registerBlock("void_destabilizer",
+            () -> new VoidDestablizer(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS).noOcclusion()));
+
     //Ore Blocks
 
     public static final RegistryObject<Block> VOID_CRYSTAL_ORE_BLOCK = registerBlock("void_crystal_ore_block", () ->
@@ -140,9 +144,8 @@ public class ModBlocks {
         return toReturn;
     }
 
-    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
-                new Item.Properties()));
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

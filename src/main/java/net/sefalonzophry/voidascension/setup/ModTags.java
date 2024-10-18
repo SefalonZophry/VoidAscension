@@ -43,6 +43,7 @@ public class ModTags {
         //Items
         public static final TagKey<Item> VOID_ENVIRONMENTAL_REFLECTOR = tag("voidascension/misc");
         public static final TagKey<Item> VOID_ESSENCE = tag("voidascension/misc");
+        public static final TagKey<Item> VOID_ASH = tag("voidascension/misc");
         public static final TagKey<Item> VOID_CRYSTAL = tag("voidascension/misc");
         public static final TagKey<Item> UNSTABLE_VOID_CRYSTAL = tag("voidascension/misc");
         public static final TagKey<Item> VOID_INFUSED_STRING = tag("voidascension/misc");

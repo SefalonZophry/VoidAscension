@@ -35,6 +35,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_VOID_TOUCHED_WOOD.get());
         this.dropSelf(ModBlocks.VOID_TOUCHED_PLANKS.get());
         this.dropSelf(ModBlocks.VOID_TOUCHED_TREE_SAPLING.get());
+        this.dropSelf(ModBlocks.VOID_DESTABILIZER.get());
 
         this.add(ModBlocks.VOID_TOUCHED_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.VOID_TOUCHED_TREE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -43,7 +44,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.VOID_CRYSTAL_ORE_BLOCK.get(), ModItems.VOID_CRYSTAL.get()));
         this.add(ModBlocks.DEEPSLATE_VOID_CRYSTAL_ORE_BLOCK.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_VOID_CRYSTAL_ORE_BLOCK.get(), ModItems.VOID_CRYSTAL.get()));
-
     }
     protected LootTable.Builder createOreDrop(Block pBlock, Item item) {
         return createSilkTouchDispatchTable(pBlock,

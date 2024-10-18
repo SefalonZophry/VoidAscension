@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "lgl",
+    "gcg",
+    "lll"
+  ],
+  "key": {
+    "l": {
+      "item": "voidascension:living_void_ingot"
+    },
+    "c": {
+      "item": "voidascension:void_crystal"
+    },
+    "g": {
+      "item": "minecraft:black_stained_glass_pane"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_destabilizer"
+  }
+}
