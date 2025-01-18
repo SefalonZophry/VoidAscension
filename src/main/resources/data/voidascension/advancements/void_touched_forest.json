@@ -1,10 +1,10 @@
 {
   "display": {
     "icon": {
-      "item": "voidascension:void_sword_powered"
+      "item": "voidascension:masterwork_void_sword_powered"
     },
     "title": "Looming Darkness",
-    "description": "Find and enter a void touched Biome.",
+    "description": "Find and enter a void touched forest.",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
@@ -19,7 +19,7 @@
           {
             "condition": "minecraft:location_check",
             "predicate": {
-              "biome": "voidascension:void_touched_biome"
+              "biome": "voidascension:void_touched_forest"
             }
           }
         ]

@@ -36,5 +36,14 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         this.tag(BlockTags.LEAVES)
                 .add(ModBlocks.VOID_TOUCHED_LEAVES.get());
+
+        this.tag(ModTags.Blocks.VOID_STAIRS)
+                .add(ModBlocks.VOID_STAIRS.get());
+
+        this.tag(ModTags.Blocks.VOID_FENCES)
+                .add(ModBlocks.VOID_FENCE.get());
+
+        this.tag(ModTags.Blocks.VOID_SLAB)
+                .add(ModBlocks.VOID_SLAB.get());
     }
 }

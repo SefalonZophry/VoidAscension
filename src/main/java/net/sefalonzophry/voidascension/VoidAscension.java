@@ -3,7 +3,6 @@ package net.sefalonzophry.voidascension;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.EventBus;
 import net.sefalonzophry.voidascension.client.renderer.entity.VoidArrowRenderer;
 import net.sefalonzophry.voidascension.data.VoidAscensionCreativeTab;
 //import net.sefalonzophry.voidascension.setup.CustomDimensionRenders;
@@ -14,7 +13,6 @@ import net.sefalonzophry.voidascension.data.client.loot.ModLootModifiers;
 import net.sefalonzophry.voidascension.screen.ModMenuTypes;
 import net.sefalonzophry.voidascension.screen.voiddestabilizer.VoidDestabilizerScreen;
 import net.sefalonzophry.voidascension.setup.block.tileentities.ModBlockEntities;
-import net.sefalonzophry.voidascension.setup.block.tileentities.VoidDestabilizerBlockEntity;
 import net.sefalonzophry.voidascension.setup.block.tileentities.recipe.ModRecipes;
 import net.sefalonzophry.voidascension.setup.worldgen.ModConfiguredSurfaceBuilder;
 import net.sefalonzophry.voidascension.setup.worldgen.Terrablender;
@@ -36,6 +34,7 @@ import net.sefalonzophry.voidascension.setup.Registration;
 import net.sefalonzophry.voidascension.setup.entity.ModEntityTypes;
 import net.sefalonzophry.voidascension.setup.entity.render.InjectorRenderer;
 import net.sefalonzophry.voidascension.setup.entity.render.VoidSpawnRenderer;
+import net.sefalonzophry.voidascension.villager.ModVillagers;
 import terrablender.api.SurfaceRuleManager;
 
 @Mod(VoidAscension.MOD_ID)
@@ -53,6 +52,7 @@ public class VoidAscension {
         ModEntityTypes.register(eventBus);
 
         ModLootModifiers.register(eventBus);
+        ModVillagers.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
@@ -99,8 +99,6 @@ public class VoidAscension {
 
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-
-//        CustomDimensionRenders.init();
 
         EntityRenderers.register(ModEntityType.VOID_ARROW.get(), VoidArrowRenderer::new);
         EntityRenderers.register(ModEntityTypes.VOIDSPAWN.get(), VoidSpawnRenderer::new);

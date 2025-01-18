@@ -105,29 +105,52 @@ public class ModItems {
             new Item(new Item.Properties()));
 
 
-   //Tools
-    public static final RegistryObject<Item> VOID_SWORD_UNPOWERED = ITEMS.register("void_sword_unpowered", () ->
-            new SwordItem(ModItemTier.VOID,6, -2.5F,
-                    new Item.Properties()));
-
-    public static final RegistryObject<Item> VOID_SWORD_POWERED = ITEMS.register("void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID,13, -2.3F,
-                    new Item.Properties()));
-
+    //Tools
     public static final RegistryObject<Item> VOID_PICKAXE = ITEMS.register("void_pickaxe", () ->
-            new PickaxeItem(ModItemTier.VOID, 2,  -2.4F,
+            new PickaxeItem(ModItemTier.VOID_TOOLS, 2,  -2.4F,
                     new Item.Properties()));
 
     public static final RegistryObject<Item> VOID_SHOVEL = ITEMS.register("void_shovel", () ->
-            new ShovelItem(ModItemTier.VOID, 2,  -2.3F,
+            new ShovelItem(ModItemTier.VOID_TOOLS, 2,  -2.3F,
                     new Item.Properties()));
 
     public static final RegistryObject<Item> VOID_BATTLE_AXE = ITEMS.register("void_battle_axe", () ->
-            new AxeItem(ModItemTier.VOID, 19, -2.7F,
+            new AxeItem(ModItemTier.VOID_TOOLS, 7, -2.7F,
                     new Item.Properties()));
 
+    //Bows
     public static final RegistryObject<Item> VOID_BOW = ITEMS.register("void_bow", () ->
             new VoidBow(new Item.Properties().stacksTo(1) .durability( 2500)));
+
+    //Unpowered Weapons
+    public static final RegistryObject<Item> VOID_SWORD_UNPOWERED = ITEMS.register("void_sword_unpowered", () ->
+            new SwordItem(ModItemTier.VOID_UNPOWERED,6, -2.5F,
+                    new Item.Properties()));
+
+    //Flawed Weapons
+    public static final RegistryObject<Item> FLAWED_VOID_SWORD_POWERED = ITEMS.register("flawed_void_sword_powered", () ->
+            new SwordItem(ModItemTier.VOID_FLAWED,8, -2.3F,
+                    new Item.Properties()));
+
+    //Acceptable Weapons
+    public static final RegistryObject<Item> ACCEPTABLE_VOID_SWORD_POWERED = ITEMS.register("acceptable_void_sword_powered", () ->
+            new SwordItem(ModItemTier.VOID_ACCEPTABLE,10, -2.3F,
+                    new Item.Properties()));
+
+    //Exceptional Weapons
+    public static final RegistryObject<Item> EXCEPTIONAL_VOID_SWORD_POWERED = ITEMS.register("exceptional_void_sword_powered", () ->
+            new SwordItem(ModItemTier.VOID_EXCEPTIONAL,12, -2.3F,
+                    new Item.Properties()));
+
+    //Flawless Weapons
+    public static final RegistryObject<Item> FLAWLESS_VOID_SWORD_POWERED = ITEMS.register("flawless_void_sword_powered", () ->
+            new SwordItem(ModItemTier.VOID_FLAWLESS,14, -2.3F,
+                    new Item.Properties()));
+
+    //Masterwork Weapons
+    public static final RegistryObject<Item> MASTERWORK_VOID_SWORD_POWERED = ITEMS.register("masterwork_void_sword_powered", () ->
+            new SwordItem(ModItemTier.VOID_MASTERWORK,18, -2.3F,
+                    new Item.Properties()));
 
     //Arrows
     public static final RegistryObject<Item> VOID_ARROW = ITEMS.register("void_arrow", () ->

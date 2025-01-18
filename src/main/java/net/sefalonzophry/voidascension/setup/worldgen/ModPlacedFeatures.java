@@ -31,7 +31,7 @@ public class ModPlacedFeatures {
 
         register(context, VOID_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_VOID_CRYSTAL_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(64,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(80))));
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(0))));
 //        register(context, NETHER_VOID_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_VOID_CRYSTAL_ORE_PLACED_KEY),
 //                ModOrePlacement.commonOrePlacement(12,
 //                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));

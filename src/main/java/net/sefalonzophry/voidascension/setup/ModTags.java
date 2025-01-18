@@ -21,7 +21,7 @@ public class ModTags {
         //        public static final TagKey<Block> ALTAR = tag("voidascension/block");
         public static final TagKey<Block> CHALICE = tag("voidacension/block");
         public static final TagKey<Block> PEDESTAL = tag("voidascension/block");
-        public static final TagKey<Block> VOID_FENCE = tag("voidascension/block");
+        public static final TagKey<Block> VOID_FENCES = tag("voidascension/block");
         public static final TagKey<Block> VOID_SLAB = tag("voidascension/block");
         public static final TagKey<Block> VOID_STAIRS = tag("voidascension/block");
         public static final TagKey<Block> NEEDS_VOID_TOOL = tag("voidascension/needs_void_tool");
@@ -64,7 +64,6 @@ public class ModTags {
 
 
         //Blocks
-//        public static final TagKey<Item> VOID_CRYSTAL_ORE_BLOCK = tag("voidascension/ore");
         public static final TagKey<Item> VOID_STONE = tag("voidascension/block");
         public static final TagKey<Item> VOID_PILLAR_TOP = tag("voidascension/block");
 //        public static final TagKey<Item> ALTAR = tag("voidascension/block");
@@ -75,12 +74,28 @@ public class ModTags {
 
 
         //Tools
-        public static final TagKey<Item> VOID_SWORD_UNPOWERED = tag("voidascension/tool");
-        public static final TagKey<Item> VOID_SWORD_POWERED = tag("voidascension/tool");
         public static final TagKey<Item> VOID_PICKAXE = tag("voidascension/tool");
         public static final TagKey<Item> VOID_BOW = tag("voidascension/tool");
         public static final TagKey<Item> VOID_SHOVEL = tag("voidascension/tool");
         public static final TagKey<Item> VOID_BATTLE_AXE = tag("voidascension/tool");
+
+        //Unpowered Weapons
+        public static final TagKey<Item> VOID_SWORD_UNPOWERED = tag("voidascension/tool");
+
+        //Flawed Weapons
+        public static final TagKey<Item> FLAWED_VOID_SWORD_POWERED = tag("voidascension/tool");
+
+        //Acceptable Weapons
+        public static final TagKey<Item> ACCEPTABLE_VOID_SWORD_POWERED = tag("voidascension/tool");
+
+        //Exceptional Weapons
+        public static final TagKey<Item> EXCEPTIONAL_VOID_SWORD_POWERED = tag("voidascension/tool");
+
+        //Flawless Weapons
+        public static final TagKey<Item> FLAWLESS_VOID_SWORD_POWERED = tag("voidascension/tool");
+
+        //Masterwork Weapons
+        public static final TagKey<Item> MASTERWORK_VOID_SWORD_POWERED = tag("voidascension/tool");
 
 
         //Tool Workables
@@ -119,8 +134,8 @@ public class ModTags {
 
     public static final class Biomes {
 
-        public static TagKey<Biome> VOID_TOUCHED_BIOME =
-                TagKey.create(Registries.BIOME, new ResourceLocation(VoidAscension.MOD_ID, "void_touched_biome"));
+        public static TagKey<Biome> VOID_TOUCHED_FOREST =
+                TagKey.create(Registries.BIOME, new ResourceLocation(VoidAscension.MOD_ID, "void_touched_forest"));
 
         public static TagKey<Biome> DEEP_VOID =
                 TagKey.create(Registries.BIOME, new ResourceLocation(VoidAscension.MOD_ID, "deep_void"));

@@ -1,20 +1,19 @@
 {
+
   "entity.voidascension.voidspawn": "Void Spawn",
   "entity.voidascension.injector": "Injector",
   "entity.voidascension.elitevoidspawn": "Elite Void Spawn",
+
+
   "item.voidascension.void_environmental_reflector": "Void Environmental Reflector",
-  "item.voidascension.void_sword": "Void Sword",
   "item.voidascension.living_void_ingot": "Living Void Ingot",
   "item.voidascension.void_pickaxe_head": "Void Pickaxe Head",
   "item.voidascension.void_tool_handle": "Void Tool Handle",
-  "item.voidascension.void_pickaxe": "Void Pickaxe",
   "item.voidascension.void_sword_handle": "Void Sword Handle",
   "item.voidascension.void_sword_guard": "Void Sword Guard",
   "item.voidascension.void_sword_blade": "Void Sword Blade",
   "item.voidascension.void_sword_lower_half": "Void Sword Lower Half",
   "item.voidascension.unstable_void_crystal": "Unstable Void Crystal",
-  "item.voidascension.void_sword_powered": "Void Sword Powered",
-  "item.voidascension.void_sword_unpowered": "Void Sword Unpowered",
   "item.voidascension.void_helmet": "Void Helmet",
   "item.voidascension.void_chestplate": "Void Chestplate",
   "item.voidascension.void_leggings": "Void Leggings",
@@ -44,12 +43,31 @@
   "item.voidascension.empty_syringe": "Empty Syringe",
   "item.voidascension.filled_void_essence_syringe": "Filled Void Essence Syringe",
   "item.voidascension.void_shovel_head": "Void Shovel head",
-  "item.voidascension.void_shovel": "Void Shovel",
   "item.voidascension.void_battle_axe_head": "Void Battle Axe Head",
-  "item.voidascension.void_battle_axe": "Void Battle Axe",
+
+
   "item.voidascension.void_spawn_spawn_egg": "Void Spawn",
   "item.voidascension.elite_void_spawn_spawn_egg": "Elite Void Spawn",
   "item.voidascension.injector_spawn_egg": "Injector",
+
+
+  "item.voidascension.void_pickaxe": "Void Pickaxe",
+  "item.voidascension.void_shovel": "Void Shovel",
+  "item.voidascension.void_battle_axe": "Void Battle Axe",
+
+
+  "item.voidascension.void_sword_unpowered": "Void Sword Unpowered",
+
+
+  "item.voidascension.flawed_void_sword_powered": "Flawed Void Sword Powered",
+  "item.voidascension.acceptable_void_sword_powered": "Acceptable Void Sword Powered",
+  "item.voidascension.exceptional_void_sword_powered": "Exceptional Void Sword Powered",
+  "item.voidascension.flawless_void_sword_powered": "Flawless Void Sword Powered",
+  "item.voidascension.masterwork_void_sword_powered": "Masterwork Void Sword Powered",
+
+
+
+
   "block.voidascension.void_crystal_ore_block": "Void Crystal Ore",
   "block.voidascension.deepslate_void_crystal_ore_block": "Deepslate Void Crystal Ore",
   "block.voidascension.void_stone": "Void Stone",
@@ -69,6 +87,9 @@
   "block.voidascension.stripped_void_touched_wood": "Stripped Void Touched Wood",
   "block.voidascension.void_touched_planks": "Void Touched Planks",
   "block.voidascension.void_touched_leaves": "Void Touched Leaves",
+
+  "entity.minecraft.villager.voidascension.voidspecialist": "Void Specialist",
+
   "creativetab.void_ascension_tab": "Void Ascension",
   "biome.voidascension.void_touched_biome": "Void Touched Forest",
   "death.attack.void_decay": "%1$s Was Consumed By The Void"

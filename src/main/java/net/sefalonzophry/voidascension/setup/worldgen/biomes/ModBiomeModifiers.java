@@ -1,4 +1,4 @@
-package net.sefalonzophry.voidascension.setup.worldgen;
+package net.sefalonzophry.voidascension.setup.worldgen.biomes;
 
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
@@ -11,6 +11,7 @@ import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.sefalonzophry.voidascension.VoidAscension;
 import net.sefalonzophry.voidascension.setup.ModTags;
+import net.sefalonzophry.voidascension.setup.worldgen.ModPlacedFeatures;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_VOID_CRYSTAL_ORE_VTB = registerKey("add_void_crystal_ore_vtb");
@@ -27,7 +28,7 @@ public class ModBiomeModifiers {
         var biomes = context.lookup(Registries.BIOME);
 
         context.register(ADD_VOID_CRYSTAL_ORE_VTB, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(ModTags.Biomes.VOID_TOUCHED_BIOME),
+                biomes.getOrThrow(ModTags.Biomes.VOID_TOUCHED_FOREST),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.VOID_CRYSTAL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
@@ -47,12 +48,7 @@ public class ModBiomeModifiers {
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 */
         context.register(ADD_VOID_TOUCHED_TREE_VTB, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(ModTags.Biomes.VOID_TOUCHED_BIOME),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.VOID_TOUCHED_TREE_PLACED)),
-                GenerationStep.Decoration.VEGETAL_DECORATION));
-
-        context.register(ADD_VOID_TOUCHED_TREE_DV, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(ModTags.Biomes.DEEP_VOID),
+                biomes.getOrThrow(ModTags.Biomes.VOID_TOUCHED_FOREST),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.VOID_TOUCHED_TREE_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }

@@ -1,0 +1,30 @@
+{
+  "display": "voidascension:void_crystal",
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "voidascension:deep_voiddim_type",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "voidascension:deep_void",
+          "lakes": true,
+          "features": true,
+          "layers": [
+            {
+              "height": 64,
+              "block": "minecraft:grass_block"
+            },
+            {
+              "height": 60,
+              "block": "voidascension:void_stone"
+            },
+            {
+              "height": 0,
+              "block": "minecraft:bedrock"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

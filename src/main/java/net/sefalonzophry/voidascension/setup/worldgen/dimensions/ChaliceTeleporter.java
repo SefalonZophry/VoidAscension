@@ -1,4 +1,4 @@
-package net.sefalonzophry.voidascension.setup.worldgen.dimension;
+package net.sefalonzophry.voidascension.setup.worldgen.dimensions;
 
 import net.minecraft.world.level.block.Blocks;
 import net.sefalonzophry.voidascension.setup.block.custom.Chalice;

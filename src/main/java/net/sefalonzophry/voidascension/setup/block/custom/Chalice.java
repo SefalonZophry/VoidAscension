@@ -13,8 +13,8 @@ import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
-import net.sefalonzophry.voidascension.setup.worldgen.dimension.ChaliceTeleporter;
-import net.sefalonzophry.voidascension.setup.worldgen.dimension.ModDimensions;
+import net.sefalonzophry.voidascension.setup.worldgen.dimensions.ChaliceTeleporter;
+import net.sefalonzophry.voidascension.setup.worldgen.dimensions.Dimensions;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.server.MinecraftServer;
@@ -51,12 +51,12 @@ public class Chalice extends Block {
     private void handleVoidPortal(Entity player, BlockPos pPos) {
         if (player.level() instanceof ServerLevel serverlevel) {
             MinecraftServer minecraftserver = serverlevel.getServer();
-            ResourceKey<Level> resourcekey = player.level().dimension() == ModDimensions.VOID_LEVEL_KEY ?
-                    Level.OVERWORLD : ModDimensions.VOID_LEVEL_KEY;
+            ResourceKey<Level> resourcekey = player.level().dimension() == Dimensions.VOID_LEVEL_KEY ?
+                    Level.OVERWORLD : Dimensions.VOID_LEVEL_KEY;
 
             ServerLevel portalDimension = minecraftserver.getLevel(resourcekey);
             if (portalDimension != null && !player.isPassenger()) {
-                if(resourcekey == ModDimensions.VOID_LEVEL_KEY) {
+                if(resourcekey == Dimensions.VOID_LEVEL_KEY) {
                     player.changeDimension(portalDimension, new ChaliceTeleporter(pPos, true));
                 } else {
                     player.changeDimension(portalDimension, new ChaliceTeleporter(pPos, false));

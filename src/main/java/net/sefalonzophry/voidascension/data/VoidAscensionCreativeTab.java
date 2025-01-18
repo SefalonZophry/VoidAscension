@@ -32,8 +32,6 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModItems.VOID_ARROW_HEAD.get());
                         pOutput.accept(ModItems.VOID_ARROW_SHAFT.get());
                         pOutput.accept(ModItems.VOID_BOW.get());
-                        pOutput.accept(ModItems.VOID_BOW_BODY.get());
-                        pOutput.accept(ModItems.VOID_BOW_UNPOWERED_BODY.get());
                         pOutput.accept(ModItems.EMPTY_SYRINGE.get());
                         pOutput.accept(ModItems.FILLED_VOID_ESSENCE_SYRINGE.get());
                         pOutput.accept(ModItems.EMPTY_VOID_ESSENCE_CAPSULE.get());
@@ -44,6 +42,8 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModItems.NW_RELIC_PIECE.get());
                         pOutput.accept(ModItems.SE_RELIC_PIECE.get());
                         pOutput.accept(ModItems.SW_RELIC_PIECE.get());
+
+                        //Armor
                         pOutput.accept(ModItems.VOID_HELMET.get());
                         pOutput.accept(ModItems.VOID_CHESTPLATE.get());
                         pOutput.accept(ModItems.VOID_LEGGINGS.get());
@@ -52,22 +52,43 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModItems.VOID_RELIC_CHESTPLATE.get());
                         pOutput.accept(ModItems.VOID_RELIC_LEGGINGS.get());
                         pOutput.accept(ModItems.VOID_RELIC_BOOTS.get());
+
+                        //Workables
                         pOutput.accept(ModItems.VOID_TOOL_HANDLE.get());
-                        pOutput.accept(ModItems.VOID_SWORD_POWERED.get());
-                        pOutput.accept(ModItems.VOID_SWORD_UNPOWERED.get());
                         pOutput.accept(ModItems.VOID_SWORD_BLADE.get());
                         pOutput.accept(ModItems.VOID_SWORD_GUARD.get());
                         pOutput.accept(ModItems.VOID_SWORD_HANDLE.get());
                         pOutput.accept(ModItems.VOID_SWORD_LOWER_HALF.get());
-                        pOutput.accept(ModItems.VOID_BATTLE_AXE.get());
                         pOutput.accept(ModItems.VOID_BATTLE_AXE_HEAD.get());
-                        pOutput.accept(ModItems.VOID_PICKAXE.get());
                         pOutput.accept(ModItems.VOID_PICKAXE_HEAD.get());
-                        pOutput.accept(ModItems.VOID_SHOVEL.get());
                         pOutput.accept(ModItems.VOID_SHOVEL_HEAD.get());
-                        pOutput.accept(ModItems.VOID_SPAWN_SPAWN_EGG.get());
-                        pOutput.accept(ModItems.ELITE_VOID_SPAWN_SPAWN_EGG.get());
-                        pOutput.accept(ModItems.INJECTOR_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.VOID_BOW_BODY.get());
+                        pOutput.accept(ModItems.VOID_BOW_UNPOWERED_BODY.get());
+
+                        //Tools
+                        pOutput.accept(ModItems.VOID_SHOVEL.get());
+                        pOutput.accept(ModItems.VOID_PICKAXE.get());
+                        pOutput.accept(ModItems.VOID_BATTLE_AXE.get());
+
+                        //Unpowered Weapons
+                        pOutput.accept(ModItems.VOID_SWORD_UNPOWERED.get());
+
+                        //Flawed Weapons
+                        pOutput.accept(ModItems.FLAWED_VOID_SWORD_POWERED.get());
+
+                        //Acceptable Weapons
+                        pOutput.accept(ModItems.ACCEPTABLE_VOID_SWORD_POWERED.get());
+
+                        //Exceptional Weapons
+                        pOutput.accept(ModItems.EXCEPTIONAL_VOID_SWORD_POWERED.get());
+
+                        //Flawless Weapons
+                        pOutput.accept(ModItems.FLAWLESS_VOID_SWORD_POWERED.get());
+
+                        //Masterwork Weapons
+                        pOutput.accept(ModItems.MASTERWORK_VOID_SWORD_POWERED.get());
+
+
                         //Blocks
                         pOutput.accept(ModBlocks.VOID_CRYSTAL_ORE_BLOCK.get());
                         pOutput.accept(ModBlocks.CHALICE.get());
@@ -85,6 +106,11 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModBlocks.VOID_TOUCHED_PLANKS.get());
                         pOutput.accept(ModBlocks.VOID_TOUCHED_LEAVES.get());
                         pOutput.accept(ModBlocks.VOID_TOUCHED_TREE_SAPLING.get());
+
+                        //Spawn Eggs
+                        pOutput.accept(ModItems.VOID_SPAWN_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.ELITE_VOID_SPAWN_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.INJECTOR_SPAWN_EGG.get());
                     })
                     .build());
 

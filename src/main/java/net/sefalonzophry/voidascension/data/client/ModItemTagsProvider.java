@@ -58,12 +58,28 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.ELITE_VOID_SPAWN_SPAWN_EGG).add(ModItems.ELITE_VOID_SPAWN_SPAWN_EGG.get());
 
         //Tools
-        tag(ModTags.Items.VOID_SWORD_UNPOWERED).add(ModItems.VOID_SWORD_UNPOWERED.get());
-        tag(ModTags.Items.VOID_SWORD_POWERED).add(ModItems.VOID_SWORD_POWERED.get());
         tag(ModTags.Items.VOID_PICKAXE).add(ModItems.VOID_PICKAXE.get());
         tag(ModTags.Items.VOID_BOW).add(ModItems.VOID_BOW.get());
         tag(ModTags.Items.VOID_SHOVEL).add(ModItems.VOID_SHOVEL.get());
         tag(ModTags.Items.VOID_BATTLE_AXE).add(ModItems.VOID_BATTLE_AXE.get());
+
+        //Unpowered Weapons
+        tag(ModTags.Items.VOID_SWORD_UNPOWERED).add(ModItems.VOID_SWORD_UNPOWERED.get());
+
+        //Flawed Weapons
+        tag(ModTags.Items.FLAWED_VOID_SWORD_POWERED).add(ModItems.FLAWED_VOID_SWORD_POWERED.get());
+
+        //Acceptable  Weapons
+        tag(ModTags.Items.ACCEPTABLE_VOID_SWORD_POWERED).add(ModItems.ACCEPTABLE_VOID_SWORD_POWERED.get());
+
+        //Exceptional Weapons
+        tag(ModTags.Items.EXCEPTIONAL_VOID_SWORD_POWERED).add(ModItems.EXCEPTIONAL_VOID_SWORD_POWERED.get());
+
+        //Flawless Weapons
+        tag(ModTags.Items.FLAWLESS_VOID_SWORD_POWERED).add(ModItems.FLAWLESS_VOID_SWORD_POWERED.get());
+
+        //Masterwork Weapons
+        tag(ModTags.Items.MASTERWORK_VOID_SWORD_POWERED).add(ModItems.MASTERWORK_VOID_SWORD_POWERED.get());
 
         //Tool Workables
         tag(ModTags.Items.VOID_PICKAXE_HEAD).add(ModItems.VOID_PICKAXE_HEAD.get());
