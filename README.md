@@ -1,8 +1,8 @@
 <details>
 
-<summary>Github Info & Version Help</summary>
+<summary>GitHub Info & Version Help</summary>
 
-This is the Official Github for the Minecraft mod by the name of Void Ascension by Sefalon Zophry.
+This is the Official GitHub for the Minecraft mod by the name of Void Ascension by Sefalon Zophry.
 
 You are viewing the 1.20.1 branch at this time.
 
