@@ -1,4 +1,4 @@
-package net.sefalonzophry.voidascension.setup.customeffects;
+package net.sefalonzophry.voidascension.setup.customeffects.damagesources;
 
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;

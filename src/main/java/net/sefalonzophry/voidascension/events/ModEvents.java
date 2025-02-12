@@ -1,12 +1,17 @@
 package net.sefalonzophry.voidascension.events;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.npc.VillagerTrades;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.entity.living.MobEffectEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
 import net.sefalonzophry.voidascension.VoidAscension;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;

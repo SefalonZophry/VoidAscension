@@ -15,6 +15,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.sefalonzophry.voidascension.setup.entity.ModEntityTypes;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+//import net.sefalonzophry.voidascension.setup.moditems.custom.usableitems.Syringe;
 
 public class ModItems {
 
@@ -24,6 +25,9 @@ public class ModItems {
     //Items
     public static final RegistryObject<Item> VOID_ENVIRONMENTAL_REFLECTOR = ITEMS.register("void_environmental_reflector", () ->
             new VoidEnvironmentalReflector(new Item.Properties().stacksTo(1)));
+
+//    public static final RegistryObject<Item> FILLED_VOID_ESSENCE_SYRINGE = ITEMS.register("filled_void_essence_syringe", () ->
+//            new Syringe(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> VOID_CRYSTAL = ITEMS.register("void_crystal", () ->
             new Item(new Item.Properties()));
@@ -68,9 +72,6 @@ public class ModItems {
             new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> EMPTY_SYRINGE = ITEMS.register("empty_syringe", () ->
-            new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> FILLED_VOID_ESSENCE_SYRINGE = ITEMS.register("filled_void_essence_syringe", () ->
             new Item(new Item.Properties()));
 
     //Tool Workables
@@ -124,32 +125,32 @@ public class ModItems {
 
     //Unpowered Weapons
     public static final RegistryObject<Item> VOID_SWORD_UNPOWERED = ITEMS.register("void_sword_unpowered", () ->
-            new SwordItem(ModItemTier.VOID_UNPOWERED,6, -2.5F,
+            new SwordItem(ModItemTier.VOID_UNPOWERED,8, -2.5F,
                     new Item.Properties()));
 
     //Flawed Weapons
     public static final RegistryObject<Item> FLAWED_VOID_SWORD_POWERED = ITEMS.register("flawed_void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID_FLAWED,8, -2.3F,
+            new SwordItem(ModItemTier.VOID_FLAWED,10, -2.3F,
                     new Item.Properties()));
 
     //Acceptable Weapons
     public static final RegistryObject<Item> ACCEPTABLE_VOID_SWORD_POWERED = ITEMS.register("acceptable_void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID_ACCEPTABLE,10, -2.3F,
+            new SwordItem(ModItemTier.VOID_ACCEPTABLE,12, -2.3F,
                     new Item.Properties()));
 
     //Exceptional Weapons
     public static final RegistryObject<Item> EXCEPTIONAL_VOID_SWORD_POWERED = ITEMS.register("exceptional_void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID_EXCEPTIONAL,12, -2.3F,
+            new SwordItem(ModItemTier.VOID_EXCEPTIONAL,13, -2.3F,
                     new Item.Properties()));
 
     //Flawless Weapons
     public static final RegistryObject<Item> FLAWLESS_VOID_SWORD_POWERED = ITEMS.register("flawless_void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID_FLAWLESS,14, -2.3F,
+            new SwordItem(ModItemTier.VOID_FLAWLESS,15, -2.3F,
                     new Item.Properties()));
 
     //Masterwork Weapons
     public static final RegistryObject<Item> MASTERWORK_VOID_SWORD_POWERED = ITEMS.register("masterwork_void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID_MASTERWORK,18, -2.3F,
+            new SwordItem(ModItemTier.VOID_MASTERWORK,30, -2.3F,
                     new Item.Properties()));
 
     //Arrows

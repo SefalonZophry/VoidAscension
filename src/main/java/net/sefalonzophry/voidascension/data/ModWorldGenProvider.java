@@ -8,7 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.customeffects.VoidDecayDamage;
+import net.sefalonzophry.voidascension.setup.customeffects.damagesources.VoidDecayDamage;
 import net.sefalonzophry.voidascension.setup.worldgen.biomes.ModBiomeModifiers;
 import net.sefalonzophry.voidascension.setup.worldgen.ModConfiguredFeatures;
 import net.sefalonzophry.voidascension.setup.worldgen.ModPlacedFeatures;

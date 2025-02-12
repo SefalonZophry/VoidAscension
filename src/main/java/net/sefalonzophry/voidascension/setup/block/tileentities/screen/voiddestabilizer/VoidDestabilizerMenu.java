@@ -1,4 +1,4 @@
-package net.sefalonzophry.voidascension.screen.voiddestabilizer;
+package net.sefalonzophry.voidascension.setup.block.tileentities.screen.voiddestabilizer;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -9,7 +9,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
-import net.sefalonzophry.voidascension.screen.ModMenuTypes;
+import net.sefalonzophry.voidascension.setup.block.tileentities.screen.ModMenuTypes;
 import net.sefalonzophry.voidascension.setup.block.ModBlocks;
 import net.sefalonzophry.voidascension.setup.block.tileentities.VoidDestabilizerBlockEntity;
 

@@ -52,7 +52,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.FILLED_VOID_ESSENCE_CAPSULE).add(ModItems.FILLED_VOID_ESSENCE_CAPSULE.get());
         tag(ModTags.Items.FILLED_EMPOWERED_VOID_ESSENCE_CAPSULE).add(ModItems.FILLED_EMPOWERED_VOID_ESSENCE_CAPSULE.get());
         tag(ModTags.Items.EMPTY_SYRINGE).add(ModItems.EMPTY_SYRINGE.get());
-        tag(ModTags.Items.FILLED_VOID_ESSENCE_SYRINGE).add(ModItems.FILLED_VOID_ESSENCE_SYRINGE.get());
+//        tag(ModTags.Items.FILLED_VOID_ESSENCE_SYRINGE).add(ModItems.FILLED_VOID_ESSENCE_SYRINGE.get());
         tag(ModTags.Items.VOID_SPAWN_SPAWN_EGG).add(ModItems.VOID_SPAWN_SPAWN_EGG.get());
         tag(ModTags.Items.INJECTOR_SPAWN_EGG).add(ModItems.INJECTOR_SPAWN_EGG.get());
         tag(ModTags.Items.ELITE_VOID_SPAWN_SPAWN_EGG).add(ModItems.ELITE_VOID_SPAWN_SPAWN_EGG.get());

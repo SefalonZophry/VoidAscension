@@ -1,4 +1,4 @@
-package net.sefalonzophry.voidascension.screen.voiddestabilizer;
+package net.sefalonzophry.voidascension.setup.block.tileentities.screen.voiddestabilizer;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.GuiGraphics;

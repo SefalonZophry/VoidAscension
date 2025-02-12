@@ -1,4 +1,4 @@
-package net.sefalonzophry.voidascension.setup.customeffects;
+package net.sefalonzophry.voidascension.setup.customeffects.damagesources;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;

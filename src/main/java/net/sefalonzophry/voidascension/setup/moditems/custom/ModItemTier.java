@@ -19,32 +19,32 @@ public class ModItemTier {
             new ResourceLocation(VoidAscension.MOD_ID, "void_tools"), List.of(Tiers.NETHERITE), List.of());
 
     public static final Tier VOID_UNPOWERED = TierSortingRegistry.registerTier(
-            new ForgeTier(5,250,10F,1,2,
+            new ForgeTier(5,250,10F,4,2,
                     ModTags.Blocks.NEEDS_VOID_TOOL, () -> Ingredient.of(ModItems.VOID_CRYSTAL.get())),
             new ResourceLocation(VoidAscension.MOD_ID, "void_unpowered"), List.of(Tiers.NETHERITE), List.of());
 
     public static final Tier VOID_FLAWED = TierSortingRegistry.registerTier(
-            new ForgeTier(5,500,10F,2,2,
+            new ForgeTier(5,500,10F,6,2,
                     ModTags.Blocks.NEEDS_VOID_TOOL, () -> Ingredient.of(ModItems.VOID_CRYSTAL.get())),
             new ResourceLocation(VoidAscension.MOD_ID, "void_flawed"), List.of(Tiers.NETHERITE), List.of());
 
     public static final Tier VOID_ACCEPTABLE = TierSortingRegistry.registerTier(
-            new ForgeTier(5,1000,10F,4,3,
+            new ForgeTier(5,1000,10F,7,3,
                     ModTags.Blocks.NEEDS_VOID_TOOL, () -> Ingredient.of(ModItems.VOID_CRYSTAL.get())),
             new ResourceLocation(VoidAscension.MOD_ID, "void_acceptable"), List.of(Tiers.NETHERITE), List.of());
 
     public static final Tier VOID_EXCEPTIONAL = TierSortingRegistry.registerTier(
-            new ForgeTier(5,1500,10F,5,3,
+            new ForgeTier(5,1500,10F,8,3,
                     ModTags.Blocks.NEEDS_VOID_TOOL, () -> Ingredient.of(ModItems.VOID_CRYSTAL.get())),
             new ResourceLocation(VoidAscension.MOD_ID, "void_exceptional"), List.of(Tiers.NETHERITE), List.of());
 
     public static final Tier VOID_FLAWLESS = TierSortingRegistry.registerTier(
-            new ForgeTier(5,2000,10F,8,4,
+            new ForgeTier(5,2000,10F,10,4,
                     ModTags.Blocks.NEEDS_VOID_TOOL, () -> Ingredient.of(ModItems.VOID_CRYSTAL.get())),
             new ResourceLocation(VoidAscension.MOD_ID, "void_flawless"), List.of(Tiers.NETHERITE), List.of());
 
     public static final Tier VOID_MASTERWORK = TierSortingRegistry.registerTier(
-            new ForgeTier(5,2500,10F,10,7,
+            new ForgeTier(5,2500,10F,12,7,
                     ModTags.Blocks.NEEDS_VOID_TOOL, () -> Ingredient.of(ModItems.VOID_CRYSTAL.get())),
             new ResourceLocation(VoidAscension.MOD_ID, "void_masterwork"), List.of(Tiers.NETHERITE), List.of());
 }

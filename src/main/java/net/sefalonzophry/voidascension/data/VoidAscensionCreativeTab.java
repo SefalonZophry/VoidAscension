@@ -33,7 +33,7 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModItems.VOID_ARROW_SHAFT.get());
                         pOutput.accept(ModItems.VOID_BOW.get());
                         pOutput.accept(ModItems.EMPTY_SYRINGE.get());
-                        pOutput.accept(ModItems.FILLED_VOID_ESSENCE_SYRINGE.get());
+//                        pOutput.accept(ModItems.FILLED_VOID_ESSENCE_SYRINGE.get());
                         pOutput.accept(ModItems.EMPTY_VOID_ESSENCE_CAPSULE.get());
                         pOutput.accept(ModItems.FILLED_VOID_ESSENCE_CAPSULE.get());
                         pOutput.accept(ModItems.FILLED_EMPOWERED_VOID_ESSENCE_CAPSULE.get());

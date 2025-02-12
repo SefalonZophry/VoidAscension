@@ -9,7 +9,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeManager;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.screen.voiddestabilizer.VoidDestabilizerScreen;
+import net.sefalonzophry.voidascension.setup.block.tileentities.screen.voiddestabilizer.VoidDestabilizerScreen;
 import net.sefalonzophry.voidascension.setup.block.tileentities.recipe.VoidDestabilizerRecipes;
 
 import java.util.List;

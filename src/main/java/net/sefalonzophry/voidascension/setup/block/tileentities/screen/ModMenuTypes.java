@@ -1,4 +1,4 @@
-package net.sefalonzophry.voidascension.screen;
+package net.sefalonzophry.voidascension.setup.block.tileentities.screen;
 
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -9,7 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.screen.voiddestabilizer.VoidDestabilizerMenu;
+import net.sefalonzophry.voidascension.setup.block.tileentities.screen.voiddestabilizer.VoidDestabilizerMenu;
 
 public class ModMenuTypes {
     public static final DeferredRegister<MenuType<?>> MENUS =

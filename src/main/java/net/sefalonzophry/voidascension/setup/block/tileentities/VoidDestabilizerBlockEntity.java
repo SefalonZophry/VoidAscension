@@ -15,16 +15,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
-import net.sefalonzophry.voidascension.screen.voiddestabilizer.VoidDestabilizerMenu;
+import net.sefalonzophry.voidascension.setup.block.tileentities.screen.voiddestabilizer.VoidDestabilizerMenu;
 import net.sefalonzophry.voidascension.setup.block.tileentities.recipe.VoidDestabilizerRecipes;
-import net.sefalonzophry.voidascension.setup.moditems.ModItems;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
