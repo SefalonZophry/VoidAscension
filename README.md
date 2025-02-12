@@ -4,7 +4,7 @@
 
 This is the Official GitHub for the Minecraft mod by the name of Void Ascension by Sefalon Zophry.
 
-You are viewing the 1.21.1 Neoforge branch at this time.
+You are viewing the 1.20.1 forge branch at this time.
 
 </details>
 
