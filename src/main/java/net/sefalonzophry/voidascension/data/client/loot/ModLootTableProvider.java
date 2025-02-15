@@ -1,3 +1,4 @@
+/*
 package net.sefalonzophry.voidascension.data.client.loot;
 
 import net.minecraft.data.PackOutput;
@@ -15,3 +16,4 @@ public class ModLootTableProvider {
         ));
     }
 }
+*/

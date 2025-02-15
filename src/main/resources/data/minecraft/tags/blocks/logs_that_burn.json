@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "voidascension:void_touched_log",
-    "voidascension:void_touched_wood",
-    "voidascension:stripped_void_touched_log",
-    "voidascension:stripped_void_touched_wood"
-  ]
-}

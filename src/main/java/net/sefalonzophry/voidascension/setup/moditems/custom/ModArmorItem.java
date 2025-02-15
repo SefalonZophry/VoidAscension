@@ -2,7 +2,6 @@ package net.sefalonzophry.voidascension.setup.moditems.custom;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.world.entity.Entity;
-import net.sefalonzophry.voidascension.setup.ModArmorMaterial;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "nlu",
+    "  l",
+    "  n"
+  ],
+  "key": {
+    "n": {
+      "item": "voidascension:void_nythril_shard"
+    },
+    "l": {
+      "item": "voidascension:living_void_ingot"
+    },
+    "u": {
+      "item": "voidascension:unstable_void_crystal"
+    }
+
+  },
+  "result": {
+    "item": "voidascension:void_nythril_pickaxe_head"
+  }
+}

@@ -10,7 +10,7 @@ import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.ModTags;
+import net.sefalonzophry.voidascension.setup.util.ModTags;
 import net.sefalonzophry.voidascension.setup.worldgen.ModPlacedFeatures;
 
 public class ModBiomeModifiers {

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "voidascension:void_crystal_ore_block",
+    "#forge:ores",
+    "voidascension:deepslate_void_crystal_ore_block",
+    "#forge:ores",
+    "voidascension:void_nythril_ore",
+    "#forge:ores"
+  ]
+}

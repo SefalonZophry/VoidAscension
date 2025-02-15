@@ -30,7 +30,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.sefalonzophry.voidascension.setup.Registration;
+import net.sefalonzophry.voidascension.setup.util.Registration;
 import net.sefalonzophry.voidascension.setup.entity.ModEntityTypes;
 import net.sefalonzophry.voidascension.setup.entity.render.InjectorRenderer;
 import net.sefalonzophry.voidascension.setup.entity.render.VoidSpawnRenderer;
@@ -51,8 +51,9 @@ public class VoidAscension {
 
         ModEntityTypes.register(eventBus);
 
-        ModLootModifiers.register(eventBus);
         ModVillagers.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);

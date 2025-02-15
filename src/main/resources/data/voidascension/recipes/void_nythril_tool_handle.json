@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "shs",
+    " n "
+  ],
+  "key":
+  {
+    "h": {
+      "item": "voidascension:void_tool_handle"
+    },
+    "s": {
+      "item": "voidascension:void_infused_string"
+    },
+    "n": {
+      "item": "voidascension:void_nythril_shard"
+    }
+  },
+  "result": {
+    "item": "voidascension:void_nythril_tool_handle"
+  }
+}

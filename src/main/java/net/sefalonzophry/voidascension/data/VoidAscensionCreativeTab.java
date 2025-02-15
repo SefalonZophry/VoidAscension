@@ -24,16 +24,21 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModItems.VOID_ENVIRONMENTAL_REFLECTOR.get());
                         pOutput.accept(ModItems.VOID_INFUSED_STRING.get());
                         pOutput.accept(ModItems.VOID_CRYSTAL.get());
+                        pOutput.accept(ModItems.VOID_NYTHRIL_LIVING_CRYSTAL.get());
+                        pOutput.accept(ModItems.VOID_NYTHRIL_SHARD.get());
                         pOutput.accept(ModItems.UNSTABLE_VOID_CRYSTAL.get());
                         pOutput.accept(ModItems.VOID_ESSENCE.get());
                         pOutput.accept(ModItems.VOID_ASH.get());
                         pOutput.accept(ModItems.LIVING_VOID_INGOT.get());
+                        pOutput.accept(ModItems.LIVING_VOID_INGOT_NUGGET.get());
                         pOutput.accept(ModItems.VOID_ARROW.get());
                         pOutput.accept(ModItems.VOID_ARROW_HEAD.get());
                         pOutput.accept(ModItems.VOID_ARROW_SHAFT.get());
                         pOutput.accept(ModItems.VOID_BOW.get());
                         pOutput.accept(ModItems.EMPTY_SYRINGE.get());
 //                        pOutput.accept(ModItems.FILLED_VOID_ESSENCE_SYRINGE.get());
+                        pOutput.accept(ModItems.QUICK_ACTION_RELEASE_SYSTEM_EMPTY.get());
+                        pOutput.accept(ModItems.HEART_QUICK_ACTION_RELEASE_SYSTEM.get());
                         pOutput.accept(ModItems.EMPTY_VOID_ESSENCE_CAPSULE.get());
                         pOutput.accept(ModItems.FILLED_VOID_ESSENCE_CAPSULE.get());
                         pOutput.accept(ModItems.FILLED_EMPOWERED_VOID_ESSENCE_CAPSULE.get());
@@ -55,12 +60,14 @@ public class VoidAscensionCreativeTab {
 
                         //Workables
                         pOutput.accept(ModItems.VOID_TOOL_HANDLE.get());
+                        pOutput.accept(ModItems.VOID_NYTHRIL_TOOL_HANDLE.get());
                         pOutput.accept(ModItems.VOID_SWORD_BLADE.get());
                         pOutput.accept(ModItems.VOID_SWORD_GUARD.get());
                         pOutput.accept(ModItems.VOID_SWORD_HANDLE.get());
                         pOutput.accept(ModItems.VOID_SWORD_LOWER_HALF.get());
                         pOutput.accept(ModItems.VOID_BATTLE_AXE_HEAD.get());
                         pOutput.accept(ModItems.VOID_PICKAXE_HEAD.get());
+                        pOutput.accept(ModItems.VOID_NYTHRIL_PICKAXE_HEAD.get());
                         pOutput.accept(ModItems.VOID_SHOVEL_HEAD.get());
                         pOutput.accept(ModItems.VOID_BOW_BODY.get());
                         pOutput.accept(ModItems.VOID_BOW_UNPOWERED_BODY.get());
@@ -68,6 +75,7 @@ public class VoidAscensionCreativeTab {
                         //Tools
                         pOutput.accept(ModItems.VOID_SHOVEL.get());
                         pOutput.accept(ModItems.VOID_PICKAXE.get());
+                        pOutput.accept(ModItems.VOID_NYTHRIL_PICKAXE.get());
                         pOutput.accept(ModItems.VOID_BATTLE_AXE.get());
 
                         //Unpowered Weapons
@@ -91,12 +99,15 @@ public class VoidAscensionCreativeTab {
 
                         //Blocks
                         pOutput.accept(ModBlocks.VOID_CRYSTAL_ORE_BLOCK.get());
+                        pOutput.accept(ModBlocks.VOID_NYTHRIL_ORE.get());
                         pOutput.accept(ModBlocks.CHALICE.get());
                         pOutput.accept(ModBlocks.VOID_DESTABILIZER.get());
                         pOutput.accept(ModBlocks.VOID_FENCE.get());
                         pOutput.accept(ModBlocks.VOID_STAIRS.get());
                         pOutput.accept(ModBlocks.VOID_SLAB.get());
                         pOutput.accept(ModBlocks.VOID_STONE.get());
+                        pOutput.accept(ModBlocks.DARKENED_VOID_STONE.get());
+                        pOutput.accept(ModBlocks.VOID_SPIKE_HEART.get());
                         pOutput.accept(ModBlocks.VOID_PILLAR_TOP.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_VOID_CRYSTAL_ORE_BLOCK.get());
                         pOutput.accept(ModBlocks.VOID_TOUCHED_LOG.get());

@@ -19,7 +19,7 @@ public class VoidSpawnEntity extends Monster {
 
     public static AttributeSupplier.Builder setCustomAttribute() {
         return Monster.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 40.0D)
+                .add(Attributes.MAX_HEALTH, 55.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.30F)
                 .add(Attributes.ATTACK_DAMAGE, 15.0D)
                 .add(Attributes.ATTACK_SPEED, 0.25F)

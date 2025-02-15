@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " n ",
+    " s ",
+    " l "
+  ],
+  "key": {
+    "n": {
+      "item": "voidascension:void_nythril_shard"
+    },
+    "s": {
+      "item": "voidascension:void_sword_unpowered"
+    },
+    "l": {
+      "item": "voidascension:void_nythril_living_crystal"
+    }
+
+  },
+  "result": {
+    "item": "voidascension:acceptable_void_sword_powered"
+  }
+}

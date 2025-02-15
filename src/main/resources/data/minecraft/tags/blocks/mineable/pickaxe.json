@@ -1,6 +1,16 @@
 {
+  "replace": false,
   "values": [
+    "voidascension:void_stone",
+    "voidascension:void_stairs",
+    "voidascension:void_fence",
+    "voidascension:darkened_void_stone",
+    "voidascension:void_slab",
+    "voidascension:void_pillar_top",
+    "voidascension:void_destabilizer",
+    "voidascension:void_spike_heart",
     "voidascension:void_crystal_ore_block",
-    "voidascension:deepslate_void_crystal_ore_block"
+    "voidascension:deepslate_void_crystal_ore_block",
+    "voidascension:void_nythril_ore"
   ]
 }

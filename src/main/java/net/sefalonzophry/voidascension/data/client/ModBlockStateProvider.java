@@ -20,6 +20,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.VOID_STONE);
+        blockWithItem(ModBlocks.DARKENED_VOID_STONE);
+        blockWithItem(ModBlocks.VOID_SPIKE_HEART);
         blockWithItem(ModBlocks.VOID_PILLAR_TOP);
 
         logBlock(((RotatedPillarBlock) ModBlocks.VOID_TOUCHED_LOG.get()));

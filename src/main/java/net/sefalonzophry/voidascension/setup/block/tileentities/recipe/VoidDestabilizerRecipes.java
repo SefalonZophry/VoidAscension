@@ -8,6 +8,8 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
@@ -30,7 +32,7 @@ public class VoidDestabilizerRecipes implements Recipe<SimpleContainer> {
         if(level.isClientSide()) {
             return false;
         }
-        return inputItem.get(0).test(simpleContainer.getItem(0)) && inputItem.get(1).test(simpleContainer.getItem(1)) && inputItem.get(0).test(simpleContainer.getItem(2));
+        return inputItem.get(0).test(simpleContainer.getItem(0)) && inputItem.get(1).test(simpleContainer.getItem(1)) && inputItem.get(2).test(simpleContainer.getItem(2));
     }
 
     @Override
@@ -82,7 +84,7 @@ public class VoidDestabilizerRecipes implements Recipe<SimpleContainer> {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(jsonObject, "output"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(jsonObject, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(2, Ingredient.EMPTY);
+            NonNullList<Ingredient> inputs = NonNullList.withSize(3, Ingredient.EMPTY);
 
             for(int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));

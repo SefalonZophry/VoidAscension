@@ -1,0 +1,19 @@
+{
+  "type": "voidascension:void_destabilizing",
+  "ingredients": [
+    {
+      "item": "voidascension:void_nythril_shard"
+    },
+    {
+      "item": "voidascension:quick_action_release_system_empty"
+    },
+    {
+      "item": "voidascension:void_nythril_shard"
+    }
+
+  ],
+  "output": {
+    "count": 1,
+    "item": "voidascension:heart_quick_action_release_system"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "voidascension:add_item",
+  "conditions": [
+    {
+      "block": "voidascension:void_crystal_ore_block",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.35,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "voidascension:void_essence"
+}

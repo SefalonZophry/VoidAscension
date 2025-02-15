@@ -7,8 +7,12 @@
 
   "item.voidascension.void_environmental_reflector": "Void Environmental Reflector",
   "item.voidascension.living_void_ingot": "Living Void Ingot",
+  "item.voidascension.living_void_ingot_nugget": "Living Void Ingot Nugget",
+  "item.voidascension.void_nythril_shard": "Void Nythril Shard",
   "item.voidascension.void_pickaxe_head": "Void Pickaxe Head",
+  "item.voidascension.void_nythril_pickaxe_head": "Void Nythril Pickaxe Head",
   "item.voidascension.void_tool_handle": "Void Tool Handle",
+  "item.voidascension.void_nythril_tool_handle": "Void Nythril Tool Handle",
   "item.voidascension.void_sword_handle": "Void Sword Handle",
   "item.voidascension.void_sword_guard": "Void Sword Guard",
   "item.voidascension.void_sword_blade": "Void Sword Blade",
@@ -23,6 +27,7 @@
   "item.voidascension.void_relic_leggings": "Void Relic Leggings",
   "item.voidascension.void_relic_boots": "Void Relic Boots",
   "item.voidascension.void_crystal": "Void Crystal",
+  "item.voidascension.void_nythril_living_crystal": "Void Nythril Living Crystal",
   "item.voidascension.void_infused_string": "Void Infused String",
   "item.voidascension.void_essence": "Void Essence",
   "item.voidascension.void_ash": "Void Ash",
@@ -42,6 +47,8 @@
   "item.voidascension.filled_empowered_void_essence_capsule": "Filled Empowered Void Essence Capsule",
   "item.voidascension.empty_syringe": "Empty Syringe",
   "item.voidascension.filled_void_essence_syringe": "Filled Void Essence Syringe",
+  "item.voidascension.quick_action_release_system_empty": "Quick Action Release System Empty",
+  "item.voidascension.heart_quick_action_release_system": "Heart Quick Action Release System",
   "item.voidascension.void_shovel_head": "Void Shovel head",
   "item.voidascension.void_battle_axe_head": "Void Battle Axe Head",
 
@@ -52,6 +59,7 @@
 
 
   "item.voidascension.void_pickaxe": "Void Pickaxe",
+  "item.voidascension.void_nythril_pickaxe": "Void Nythril Pickaxe",
   "item.voidascension.void_shovel": "Void Shovel",
   "item.voidascension.void_battle_axe": "Void Battle Axe",
 
@@ -69,8 +77,11 @@
 
 
   "block.voidascension.void_crystal_ore_block": "Void Crystal Ore",
+  "block.voidascension.void_nythril_ore": "Void Nythril Ore",
   "block.voidascension.deepslate_void_crystal_ore_block": "Deepslate Void Crystal Ore",
   "block.voidascension.void_stone": "Void Stone",
+  "block.voidascension.darkened_void_stone": "Darkened Void Stone",
+  "block.voidascension.void_spike_heart": "Void Spike Heart",
   "block.voidascension.void_pillar_top": "Void Pillar Top",
   "block.voidascension.void_touched_dirt": "Void Touched Dirt",
   "block.voidascension.altar": "Altar",

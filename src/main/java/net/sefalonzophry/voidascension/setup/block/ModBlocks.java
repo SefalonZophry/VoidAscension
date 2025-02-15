@@ -7,11 +7,12 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.Registration;
+import net.sefalonzophry.voidascension.setup.block.custom.DarkenedVoidStone;
+import net.sefalonzophry.voidascension.setup.util.Registration;
 //import net.sefalonzophry.voidascension.setup.customblocks.tileentities.AltarTileEntity;
 import net.sefalonzophry.voidascension.setup.block.custom.Chalice;
 import net.sefalonzophry.voidascension.setup.block.custom.ModFlammableRotatedPillarBlock;
-import net.sefalonzophry.voidascension.setup.block.custom.VoidDestablizer;
+import net.sefalonzophry.voidascension.setup.block.custom.VoidDestabilizer;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,15 +34,22 @@ public class ModBlocks {
 //    public static final RegistryObject<Block> ALTAR = Registration.BLOCKS.register("altar", AltarTileEntity::new);
 
     public static final RegistryObject<Block> CHALICE = Registration.BLOCKS.register("chalice", Chalice::new);
+    public static final RegistryObject<Block> DARKENED_VOID_STONE = Registration.BLOCKS.register("darkened_void_stone", DarkenedVoidStone::new);
 
 //    public static final RegistryObject<Block> PEDESTAL = Registration.BLOCKS.register("pedestal", Pedestal::new);
 
     //Blocks
 
     public static final RegistryObject<Block> VOID_STONE = registerBlock("void_stone", () ->
-            new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .strength(3, 10)
+            new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)
+                    .strength(3, 2)
                     .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> VOID_SPIKE_HEART = registerBlock("void_spike_heart", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(6, 25)
+                    .sound(SoundType.NETHERRACK)
                     .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> VOID_PILLAR_TOP = registerBlock("void_pillar_top", () ->
@@ -122,13 +130,19 @@ public class ModBlocks {
             () -> new SaplingBlock(new VoidTouchedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public  static  final RegistryObject<Block> VOID_DESTABILIZER = registerBlock("void_destabilizer",
-            () -> new VoidDestablizer(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS).noOcclusion()));
+            () -> new VoidDestabilizer(BlockBehaviour.Properties.copy(Blocks.WHITE_STAINED_GLASS).noOcclusion()));
 
     //Ore Blocks
 
     public static final RegistryObject<Block> VOID_CRYSTAL_ORE_BLOCK = registerBlock("void_crystal_ore_block", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3, 10)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> VOID_NYTHRIL_ORE = registerBlock("void_nythril_ore", () ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(5, 12)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()));
 

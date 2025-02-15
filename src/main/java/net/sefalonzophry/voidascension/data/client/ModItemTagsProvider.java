@@ -1,16 +1,14 @@
+/*
 package net.sefalonzophry.voidascension.data.client;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.block.ModBlocks;
 import net.sefalonzophry.voidascension.setup.moditems.ModItems;
-import net.sefalonzophry.voidascension.setup.ModTags;
+import net.sefalonzophry.voidascension.setup.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -26,13 +24,13 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         //Blocks
 
 //        copy(ModTags.Blocks.ALTAR, ModTags.Items.ALTAR);
-        copy(ModTags.Blocks.CHALICE, ModTags.Items.CHALICE);
-        copy(ModTags.Blocks.PEDESTAL, ModTags.Items.PEDESTAL);
-        copy(ModTags.Blocks.VOID_STONE, ModTags.Items.VOID_STONE);
-        copy(ModTags.Blocks.VOID_PILLAR_TOP, ModTags.Items.VOID_PILLAR_TOP);
-        copy(ModTags.Blocks.VOID_TOUCHED_LEAVES, ModTags.Items.VOID_TOUCHED_LEAVES);
-        copy(ModTags.Blocks.VOID_TOUCHED_LOG, ModTags.Items.VOID_TOUCHED_LOG);
-
+        copy(ModTags.Blocks.PORTALS, ModTags.Items.PORTALS);
+        copy(ModTags.Blocks.MACHINES, ModTags.Items.MACHINES);
+//        copy(ModTags.Blocks.PEDESTAL, ModTags.Items.PEDESTAL);
+//        copy(ModTags.Blocks.VOID_STONE, ModTags.Items.VOID_STONE);
+//        copy(ModTags.Blocks.DARKENED_VOID_STONE, ModTags.Items.DARKENED_VOID_STONE);
+//        copy(ModTags.Blocks.LIVING_VOID, ModTags.Items.VOID_SPIKE_HEART);
+//        copy(ModTags.Blocks.DECOR, ModTags.Items.DECOR);
 
         //Items
 
@@ -40,6 +38,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_ESSENCE).add(ModItems.VOID_ESSENCE.get());
         tag(ModTags.Items.VOID_ASH).add(ModItems.VOID_ASH.get());
         tag(ModTags.Items.VOID_CRYSTAL).add(ModItems.VOID_CRYSTAL.get());
+        tag(ModTags.Items.VOID_NYTHRIL_SHARD).add(ModItems.VOID_NYTHRIL_SHARD.get());
         tag(ModTags.Items.VOID_INFUSED_STRING).add(ModItems.VOID_INFUSED_STRING.get());
         tag(ModTags.Items.UNSTABLE_VOID_CRYSTAL).add(ModItems.UNSTABLE_VOID_CRYSTAL.get());
         tag(ModTags.Items.LIVING_VOID_INGOT).add(ModItems.LIVING_VOID_INGOT.get());
@@ -59,6 +58,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         //Tools
         tag(ModTags.Items.VOID_PICKAXE).add(ModItems.VOID_PICKAXE.get());
+        tag(ModTags.Items.VOID_NYTHRIL_PICKAXE).add(ModItems.VOID_NYTHRIL_PICKAXE.get());
         tag(ModTags.Items.VOID_BOW).add(ModItems.VOID_BOW.get());
         tag(ModTags.Items.VOID_SHOVEL).add(ModItems.VOID_SHOVEL.get());
         tag(ModTags.Items.VOID_BATTLE_AXE).add(ModItems.VOID_BATTLE_AXE.get());
@@ -83,9 +83,11 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         //Tool Workables
         tag(ModTags.Items.VOID_PICKAXE_HEAD).add(ModItems.VOID_PICKAXE_HEAD.get());
+        tag(ModTags.Items.VOID_NYTHRIL_PICKAXE_HEAD).add(ModItems.VOID_NYTHRIL_PICKAXE_HEAD.get());
         tag(ModTags.Items.VOID_SWORD_HANDLE).add(ModItems.VOID_SWORD_HANDLE.get());
         tag(ModTags.Items.VOID_SWORD_LOWER_HALF).add(ModItems.VOID_SWORD_LOWER_HALF.get());
         tag(ModTags.Items.VOID_TOOL_HANDLE).add(ModItems.VOID_TOOL_HANDLE.get());
+        tag(ModTags.Items.VOID_NYTHRIL_TOOL_HANDLE).add(ModItems.VOID_NYTHRIL_TOOL_HANDLE.get());
         tag(ModTags.Items.VOID_SWORD_BLADE).add(ModItems.VOID_SWORD_BLADE.get());
         tag(ModTags.Items.VOID_SWORD_GUARD).add(ModItems.VOID_SWORD_GUARD.get());
         tag(ModTags.Items.VOID_BOW_BODY).add(ModItems.VOID_BOW_BODY.get());
@@ -105,9 +107,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_RELIC_LEGGINGS).add(ModItems.VOID_RELIC_LEGGINGS.get());
         tag(ModTags.Items.VOID_RELIC_BOOTS).add(ModItems.VOID_RELIC_BOOTS.get());
 
-        this.tag(ItemTags.LOGS_THAT_BURN);
-
-        this.tag(ItemTags.PLANKS);
-
     }
 }
+*/

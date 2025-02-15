@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " l ",
+    "lgl",
+    "nl "
+  ],
+  "key": {
+    "l": {
+      "item": "voidascension:living_void_ingot"
+    },
+    "n": {
+      "item": "voidascension:living_void_ingot_nugget"
+    },
+    "g": {
+      "item": "minecraft:black_stained_glass_pane"
+    }
+  },
+  "result": {
+    "item": "voidascension:quick_action_release_system_empty"
+  }
+}

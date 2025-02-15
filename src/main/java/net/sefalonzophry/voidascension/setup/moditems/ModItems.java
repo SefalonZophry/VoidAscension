@@ -3,18 +3,15 @@ package net.sefalonzophry.voidascension.setup.moditems;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.sefalonzophry.voidascension.VoidAscension;
-import net.sefalonzophry.voidascension.setup.*;
 import net.sefalonzophry.voidascension.setup.curios.curiositems.items.VoidEnvironmentalReflector;
 import net.sefalonzophry.voidascension.setup.block.ModBlocks;
-import net.sefalonzophry.voidascension.setup.moditems.custom.ModArmorItem;
-import net.sefalonzophry.voidascension.setup.moditems.custom.ModItemTier;
-import net.sefalonzophry.voidascension.setup.moditems.custom.VoidArrowItem;
-import net.sefalonzophry.voidascension.setup.moditems.custom.VoidBow;
+import net.sefalonzophry.voidascension.setup.moditems.custom.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 import net.sefalonzophry.voidascension.setup.entity.ModEntityTypes;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.sefalonzophry.voidascension.setup.moditems.custom.usableitems.HeartQuickActionReleaseSystem;
 //import net.sefalonzophry.voidascension.setup.moditems.custom.usableitems.Syringe;
 
 public class ModItems {
@@ -26,10 +23,19 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_ENVIRONMENTAL_REFLECTOR = ITEMS.register("void_environmental_reflector", () ->
             new VoidEnvironmentalReflector(new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> HEART_QUICK_ACTION_RELEASE_SYSTEM = ITEMS.register("heart_quick_action_release_system", () ->
+            new HeartQuickActionReleaseSystem(new Item.Properties().stacksTo(16).durability(1)));
+
 //    public static final RegistryObject<Item> FILLED_VOID_ESSENCE_SYRINGE = ITEMS.register("filled_void_essence_syringe", () ->
 //            new Syringe(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> VOID_CRYSTAL = ITEMS.register("void_crystal", () ->
+            new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> VOID_NYTHRIL_LIVING_CRYSTAL = ITEMS.register("void_nythril_living_crystal", () ->
+            new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> VOID_NYTHRIL_SHARD = ITEMS.register("void_nythril_shard", () ->
             new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> UNSTABLE_VOID_CRYSTAL = ITEMS.register("unstable_void_crystal", () ->
@@ -39,6 +45,9 @@ public class ModItems {
             new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> LIVING_VOID_INGOT = ITEMS.register("living_void_ingot", () ->
+            new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> LIVING_VOID_INGOT_NUGGET = ITEMS.register("living_void_ingot_nugget", () ->
             new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> VOID_ESSENCE = ITEMS.register("void_essence", () ->
@@ -74,11 +83,20 @@ public class ModItems {
     public static final RegistryObject<Item> EMPTY_SYRINGE = ITEMS.register("empty_syringe", () ->
             new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> QUICK_ACTION_RELEASE_SYSTEM_EMPTY = ITEMS.register("quick_action_release_system_empty", () ->
+            new Item(new Item.Properties()));
+
     //Tool Workables
     public static final RegistryObject<Item> VOID_PICKAXE_HEAD = ITEMS.register("void_pickaxe_head", () ->
             new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> VOID_NYTHRIL_PICKAXE_HEAD = ITEMS.register("void_nythril_pickaxe_head", () ->
+            new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> VOID_TOOL_HANDLE = ITEMS.register("void_tool_handle", () ->
+            new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> VOID_NYTHRIL_TOOL_HANDLE = ITEMS.register("void_nythril_tool_handle", () ->
             new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> VOID_SWORD_GUARD = ITEMS.register("void_sword_guard", () ->
@@ -108,7 +126,11 @@ public class ModItems {
 
     //Tools
     public static final RegistryObject<Item> VOID_PICKAXE = ITEMS.register("void_pickaxe", () ->
-            new PickaxeItem(ModItemTier.VOID_TOOLS, 2,  -2.4F,
+            new PickaxeItem(ModItemTier.VOID_TOOLS, 5,  -2.4F,
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> VOID_NYTHRIL_PICKAXE = ITEMS.register("void_nythril_pickaxe", () ->
+            new PickaxeItem(ModItemTier.VOID_NYTHRIL_TOOLS, 5,  -2.0F,
                     new Item.Properties()));
 
     public static final RegistryObject<Item> VOID_SHOVEL = ITEMS.register("void_shovel", () ->
@@ -130,27 +152,27 @@ public class ModItems {
 
     //Flawed Weapons
     public static final RegistryObject<Item> FLAWED_VOID_SWORD_POWERED = ITEMS.register("flawed_void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID_FLAWED,10, -2.3F,
+            new SwordItem(ModItemTier.VOID_FLAWED,14, -2.3F,
                     new Item.Properties()));
 
     //Acceptable Weapons
     public static final RegistryObject<Item> ACCEPTABLE_VOID_SWORD_POWERED = ITEMS.register("acceptable_void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID_ACCEPTABLE,12, -2.3F,
+            new SwordItem(ModItemTier.VOID_ACCEPTABLE,18, -2.3F,
                     new Item.Properties()));
 
     //Exceptional Weapons
     public static final RegistryObject<Item> EXCEPTIONAL_VOID_SWORD_POWERED = ITEMS.register("exceptional_void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID_EXCEPTIONAL,13, -2.3F,
+            new SwordItem(ModItemTier.VOID_EXCEPTIONAL,20, -2.3F,
                     new Item.Properties()));
 
     //Flawless Weapons
     public static final RegistryObject<Item> FLAWLESS_VOID_SWORD_POWERED = ITEMS.register("flawless_void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID_FLAWLESS,15, -2.3F,
+            new SwordItem(ModItemTier.VOID_FLAWLESS,24, -2.3F,
                     new Item.Properties()));
 
     //Masterwork Weapons
     public static final RegistryObject<Item> MASTERWORK_VOID_SWORD_POWERED = ITEMS.register("masterwork_void_sword_powered", () ->
-            new SwordItem(ModItemTier.VOID_MASTERWORK,30, -2.3F,
+            new SwordItem(ModItemTier.VOID_MASTERWORK,48, -2.3F,
                     new Item.Properties()));
 
     //Arrows
@@ -185,6 +207,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> VOID_RELIC_LEGGINGS = ITEMS.register("void_relic_leggings", () ->
             new ModArmorItem(ModArmorMaterial.VOID_RELIC, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
     public static final RegistryObject<Item> VOID_RELIC_BOOTS = ITEMS.register("void_relic_boots", () ->
             new ModArmorItem(ModArmorMaterial.VOID_RELIC, ArmorItem.Type.BOOTS, new Item.Properties()));
 
@@ -208,6 +231,8 @@ public class ModItems {
 //    public static final RegistryObject<Item> ALTAR_ITEM = ITEMS.register("altar", () -> new BlockItem(ModBlocks.ALTAR.get(), new Item.Properties()(RiftsItemGroup.creativeTab)));
 
     public static final RegistryObject<Item> CHALICE = ITEMS.register("chalice", () -> new BlockItem(ModBlocks.CHALICE.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> Darkened_Void_Stone = ITEMS.register("darkened_void_stone", () -> new BlockItem(ModBlocks.DARKENED_VOID_STONE.get(), new Item.Properties().stacksTo(64)));
 
 //    public static final RegistryObject<Item> PEDESTAL = ITEMS.register("pedestal", () -> new BlockItem(ModBlocks.PEDESTAL.get(), new Item.Properties()));
 

@@ -54,9 +54,9 @@ public class DestabilizingCategory implements IRecipeCategory<VoidDestabilizerRe
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder iRecipeLayoutBuilder, VoidDestabilizerRecipes voidDestabilizerRecipes, IFocusGroup iFocusGroup) {
-        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.INPUT, 52, 11).addIngredients(Ingredient.of(ModItems.VOID_ASH.get()));
-        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.INPUT, 80, 11).addIngredients(Ingredient.of(ModItems.FILLED_VOID_ESSENCE_CAPSULE.get()));
-        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.INPUT, 107, 11).addIngredients(Ingredient.of(ModItems.VOID_ASH.get()));
+        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.INPUT, 52, 11).addIngredients(voidDestabilizerRecipes.getIngredients().get(0));
+        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.INPUT, 80, 11).addIngredients(voidDestabilizerRecipes.getIngredients().get(1));
+        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.INPUT, 107, 11).addIngredients(voidDestabilizerRecipes.getIngredients().get(2));
 
         iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.OUTPUT, 80, 59).addItemStack(voidDestabilizerRecipes.getResultItem(null));
     }

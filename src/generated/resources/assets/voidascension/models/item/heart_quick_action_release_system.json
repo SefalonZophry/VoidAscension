@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "voidascension:item/heart_quick_action_release_system"
+  }
+}

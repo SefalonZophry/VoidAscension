@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.sefalonzophry.voidascension.VoidAscension;
 import net.sefalonzophry.voidascension.data.client.loot.ModGlobalLootModifiersProvider;
-import net.sefalonzophry.voidascension.data.client.loot.ModLootTableProvider;
+//import net.sefalonzophry.voidascension.data.client.loot.ModLootTableProvider;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -26,15 +26,20 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
+//        generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
 
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
 
         generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
 
-        generator.addProvider(event.includeServer(), new ModGlobalLootModifiersProvider(packOutput));
-
         generator.addProvider(event.includeServer(), new ModPoiTypeTagsProvider(packOutput, lookupProvider, existingFileHelper));
+
+//        ModBlockTagsProvider blockTagprovider = generator.addProvider(event.includeServer(),
+//                new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper));
+
+//        generator.addProvider(event.includeServer(), new ModItemTagsProvider(packOutput, lookupProvider, blockTagprovider.contentsGetter(), existingFileHelper));
+
+        generator.addProvider(event.includeServer(), new ModGlobalLootModifiersProvider(packOutput));
     }
 }

@@ -18,7 +18,7 @@ public class InjectorEntity extends Monster{
 
     public static AttributeSupplier.Builder setCustomAttribute() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 25.0D)
+                .add(Attributes.MAX_HEALTH, 30.0D)
                 .add(Attributes.MOVEMENT_SPEED,0.50F)
                 .add(Attributes.ATTACK_DAMAGE, 10.0D)
                 .add(Attributes.ATTACK_SPEED, 0.25F)

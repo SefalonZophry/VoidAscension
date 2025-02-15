@@ -24,6 +24,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("void_crystal",
                 modLoc("item/void_crystal"));
 
+        withExistingParent("void_nythril_living_crystal",
+                modLoc("item/void_nythril_living_crystal"));
+
+        withExistingParent("void_nythril_shard",
+                modLoc("item/void_nythril_shard"));
+
         withExistingParent("void_infused_string",
                 modLoc("item/void_infused_string"));
 
@@ -35,6 +41,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         withExistingParent("living_void_ingot",
                 modLoc("item/living_void_ingot"));
+
+        withExistingParent("living_void_ingot_nugget",
+                modLoc("item/living_void_ingot_nugget"));
 
         withExistingParent("ne_relic_piece",
                 modLoc("item/ne_relic_piece"));
@@ -63,8 +72,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("empty_syringe",
                 modLoc("item/empty_syringe"));
 
-        withExistingParent("filled_void_essence_syringe",
-                modLoc("item/filled_void_essence_syringe"));
+//        withExistingParent("filled_void_essence_syringe",
+//                modLoc("item/filled_void_essence_syringe"));
+
+        withExistingParent("quick_action_release_system_empty",
+                modLoc("item/quick_action_release_system_empty"));
+
+        withExistingParent("heart_quick_action_release_system",
+                modLoc("item/heart_quick_action_release_system"));
 
         //SpawnEggs
 
@@ -77,6 +92,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("void_stone",
                 modLoc("block/void_stone"));
 
+        withExistingParent("darkened_void_stone",
+                modLoc("block/darkened_void_stone"));
+
         withExistingParent("void_pillar_top",
                 modLoc("block/void_pillar_top"));
 
@@ -85,8 +103,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("void_pickaxe_head",
                 modLoc("item/void_pickaxe_head"));
 
+        withExistingParent("void_nythril_pickaxe_head",
+                modLoc("item/void_nythril_pickaxe_head"));
+
         withExistingParent("void_tool_handle",
                 modLoc("item/void_tool_handle"));
+
+        withExistingParent("void_nythril_tool_handle",
+                modLoc("item/void_nythril_tool_handle"));
 
         withExistingParent("void_sword_guard",
                 modLoc("item/void_sword_guard"));
@@ -132,11 +156,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated,
                 "void_crystal");
         builder(itemGenerated,
+                "void_nythril_living_crystal");
+        builder(itemGenerated,
+                "void_nythril_shard");
+        builder(itemGenerated,
                 "void_infused_string");
         builder(itemGenerated,
                 "unstable_void_crystal");
         builder(itemGenerated,
                 "living_void_ingot");
+        builder(itemGenerated,
+                "living_void_ingot_nugget");
         builder(itemGenerated,
                 "ne_relic_piece");
         builder(itemGenerated,
@@ -157,6 +187,10 @@ public class ModItemModelProvider extends ItemModelProvider {
                 "empty_syringe");
         builder(itemGenerated,
                 "filled_void_essence_syringe");
+        builder(itemGenerated,
+                "quick_action_release_system_empty");
+        builder(itemGenerated,
+                "heart_quick_action_release_system");
 
         //Blocks
         saplingItem(ModBlocks.VOID_TOUCHED_TREE_SAPLING);
@@ -165,7 +199,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated,
                 "void_pickaxe_head");
         builder(itemGenerated,
+                "void_nythril_pickaxe_head");
+        builder(itemGenerated,
                 "void_tool_handle");
+        builder(itemGenerated,
+                "void_nythril_tool_handle");
         builder(itemGenerated,
                 "void_sword_handle");
         builder(itemGenerated,

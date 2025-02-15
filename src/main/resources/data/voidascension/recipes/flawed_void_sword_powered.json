@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    " s ",
+    " u "
+  ],
+  "key": {
+    "c": {
+      "item": "voidascension:void_crystal"
+    },
+    "s": {
+      "item": "voidascension:void_sword_unpowered"
+    },
+    "u": {
+      "item": "voidascension:unstable_void_crystal"
+    }
+
+  },
+  "result": {
+    "item": "voidascension:flawed_void_sword_powered"
+  }
+}
