@@ -9,6 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.event.TickEvent;
 import net.sefalonzophry.voidascension.setup.customeffects.effects.ModEffects;
 import org.jetbrains.annotations.NotNull;
 
@@ -27,7 +28,7 @@ public class Syringe extends Item {
             if (pPlayer.hasEffect(ModEffects.VOID_CORRUPTION.get())) {
                 pPlayer.kill();
             } else {
-                pPlayer.addEffect( new MobEffectInstance(ModEffects.VOID_CORRUPTION.get(), 60));
+                pPlayer.addEffect( new MobEffectInstance(ModEffects.VOID_CORRUPTION.get(), 30));
             }
         }
         return new InteractionResultHolder<>(InteractionResult.SUCCESS, stack);

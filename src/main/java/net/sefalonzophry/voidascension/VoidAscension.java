@@ -14,6 +14,7 @@ import net.sefalonzophry.voidascension.setup.block.tileentities.screen.voiddesta
 import net.sefalonzophry.voidascension.setup.block.tileentities.ModBlockEntities;
 import net.sefalonzophry.voidascension.setup.block.tileentities.recipe.ModRecipes;
 //import net.sefalonzophry.voidascension.setup.customeffects.effects.ModEffects;
+import net.sefalonzophry.voidascension.setup.entity.custom.VoidSpawnEntity;
 import net.sefalonzophry.voidascension.setup.worldgen.ModConfiguredSurfaceBuilder;
 import net.sefalonzophry.voidascension.setup.worldgen.Terrablender;
 import net.sefalonzophry.voidascension.setup.worldgen.world.entity.ModEntityType;

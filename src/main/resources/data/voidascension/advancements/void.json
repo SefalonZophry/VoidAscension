@@ -3,13 +3,13 @@
     "icon": {
       "item": "voidascension:relic"
     },
-    "title": "Heart of Nothingness",
-    "description": "Enter the void.",
+    "title": "Heart Of Nothingness",
+    "description": "Enter The Outer Reassesses Of The Void.",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "voidascension:void_touched_biome",
+  "parent": "voidascension:reflector",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:changed_dimension",

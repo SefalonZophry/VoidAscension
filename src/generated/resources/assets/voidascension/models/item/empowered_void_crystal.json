@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "voidascension:item/unstable_void_crystal"
+    "layer0": "voidascension:item/empowered_void_crystal"
   }
 }

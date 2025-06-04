@@ -1,11 +1,11 @@
 {
-  "name": "voidascension:void_touched_biome_dungeon_1/start_pool",
+  "name": "voidascension:void_touched_forest_dungeon_1/start_pool",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
       "element": {
-        "location": "voidascension:void_touched_biome_dungeon_1",
+        "location": "voidascension:void_touched_forest_dungeon_1",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

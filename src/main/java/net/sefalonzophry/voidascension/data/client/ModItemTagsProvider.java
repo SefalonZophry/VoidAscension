@@ -40,7 +40,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.VOID_CRYSTAL).add(ModItems.VOID_CRYSTAL.get());
         tag(ModTags.Items.VOID_NYTHRIL_SHARD).add(ModItems.VOID_NYTHRIL_SHARD.get());
         tag(ModTags.Items.VOID_INFUSED_STRING).add(ModItems.VOID_INFUSED_STRING.get());
-        tag(ModTags.Items.UNSTABLE_VOID_CRYSTAL).add(ModItems.UNSTABLE_VOID_CRYSTAL.get());
+        tag(ModTags.Items.EMPOWERED_VOID_CRYSTAL).add(ModItems.EMPOWERED_VOID_CRYSTAL.get());
         tag(ModTags.Items.LIVING_VOID_INGOT).add(ModItems.LIVING_VOID_INGOT.get());
         tag(ModTags.Items.NE_RELIC_PIECE).add(ModItems.NE_RELIC_PIECE.get());
         tag(ModTags.Items.SE_RELIC_PIECE).add(ModItems.SE_RELIC_PIECE.get());

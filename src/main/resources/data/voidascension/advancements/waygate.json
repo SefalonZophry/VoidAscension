@@ -1,25 +1,25 @@
 {
   "display": {
     "icon": {
-      "item": "voidascension:masterwork_void_sword_powered"
+      "item": "voidascension:void_essence"
     },
-    "title": "Looming Darkness",
-    "description": "Find And Enter A Void Touched Forest.",
+    "title": "The Waygate",
+    "description": "Find a Waygate, Where does it go?",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "voidascension:voidascension",
+  "parent": "voidascension:void_touched_forest",
   "criteria": {
-    "requirement": {
+    "waygate": {
       "trigger": "minecraft:location",
       "conditions": {
         "player": [
           {
             "condition": "minecraft:location_check",
             "predicate": {
-              "biome": "voidascension:void_touched_forest"
+              "structure": "voidascension:waygate"
             }
           }
         ]

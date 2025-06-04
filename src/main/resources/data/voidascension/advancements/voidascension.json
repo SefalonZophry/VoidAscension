@@ -4,7 +4,7 @@
       "item": "voidascension:void_crystal"
     },
     "title": "Void Ascension",
-    "description": "He has awoken.",
+    "description": "He Has Awoken.",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

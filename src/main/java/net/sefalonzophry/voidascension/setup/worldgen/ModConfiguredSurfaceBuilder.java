@@ -11,7 +11,7 @@ public class ModConfiguredSurfaceBuilder {
     private static final SurfaceRules.RuleSource STONE = makeStateRule(Blocks.STONE);
 
     public static SurfaceRules.RuleSource makeRules() {
-        SurfaceRules.ConditionSource isAtOrAboveWaterLevel = SurfaceRules.waterBlockCheck(-1, 0);
+        SurfaceRules.ConditionSource isAtOrAboveWaterLevel = SurfaceRules.waterBlockCheck(0, 0);
 
         SurfaceRules.RuleSource dirtSurface = SurfaceRules.sequence(SurfaceRules.ifTrue(isAtOrAboveWaterLevel, DIRT), DIRT);
 

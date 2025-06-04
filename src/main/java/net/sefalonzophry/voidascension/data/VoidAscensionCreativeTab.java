@@ -26,7 +26,7 @@ public class VoidAscensionCreativeTab {
                         pOutput.accept(ModItems.VOID_CRYSTAL.get());
                         pOutput.accept(ModItems.VOID_NYTHRIL_LIVING_CRYSTAL.get());
                         pOutput.accept(ModItems.VOID_NYTHRIL_SHARD.get());
-                        pOutput.accept(ModItems.UNSTABLE_VOID_CRYSTAL.get());
+                        pOutput.accept(ModItems.EMPOWERED_VOID_CRYSTAL.get());
                         pOutput.accept(ModItems.VOID_ESSENCE.get());
                         pOutput.accept(ModItems.VOID_ASH.get());
                         pOutput.accept(ModItems.LIVING_VOID_INGOT.get());

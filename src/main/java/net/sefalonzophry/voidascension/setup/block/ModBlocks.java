@@ -31,8 +31,6 @@ public class ModBlocks {
 
     //Custom Blocks
 
-//    public static final RegistryObject<Block> ALTAR = Registration.BLOCKS.register("altar", AltarTileEntity::new);
-
     public static final RegistryObject<Block> CHALICE = Registration.BLOCKS.register("chalice", Chalice::new);
     public static final RegistryObject<Block> DARKENED_VOID_STONE = Registration.BLOCKS.register("darkened_void_stone", DarkenedVoidStone::new);
 

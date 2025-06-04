@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "voidascension:void_crystal"
+    },
+    "title": "He Has Noticed You",
+    "description": "Mine Void Crystal Ore, And Acquire A Void Crystal.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "voidascension:void_touched_forest",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voidascension:void_crystal"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

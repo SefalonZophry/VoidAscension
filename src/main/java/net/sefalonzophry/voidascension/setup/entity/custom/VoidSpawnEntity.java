@@ -1,8 +1,9 @@
 package net.sefalonzophry.voidascension.setup.entity.custom;
 
-import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Pose;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -10,7 +11,13 @@ import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.vehicle.Minecart;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.sefalonzophry.voidascension.setup.entity.ModEntityTypes;
+import net.sefalonzophry.voidascension.setup.worldgen.biomes.Biomes;
 
 public class VoidSpawnEntity extends Monster {
     public VoidSpawnEntity(EntityType<? extends Monster> p_i48553_1_, Level p_i48553_2_) {

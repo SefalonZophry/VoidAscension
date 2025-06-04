@@ -1,8 +1,8 @@
 {
   "type": "minecraft:jigsaw",
-  "start_pool": "voidascension:void_touched_biome_dungeon_1/start_pool",
+  "start_pool": "voidascension:waygate/start_pool",
   "size": 7,
-  "biomes": "#voidascension:has_structure/altar",
+  "biomes": "#voidascension:has_structure/waygate",
   "spawn_overrides": {
     "monster": {
       "bounding_box": "full",
@@ -11,19 +11,13 @@
           "type": "voidascension:voidspawn",
           "weight": 2,
           "minCount": 1,
-          "maxCount": 2
-        },
-        {
-          "type": "voidascension:injector",
-          "weight": 2,
-          "minCount": 2,
-          "maxCount": 3
+          "maxCount": 1
         }
       ]
     }
   },
   "adapt_noise": true,
-  "max_distance_from_center": 24,
+  "max_distance_from_center": 20,
   "step": "surface_structures",
   "start_height": {
     "absolute": -2

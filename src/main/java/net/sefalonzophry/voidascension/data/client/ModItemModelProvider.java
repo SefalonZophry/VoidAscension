@@ -162,7 +162,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated,
                 "void_infused_string");
         builder(itemGenerated,
-                "unstable_void_crystal");
+                "empowered_void_crystal");
         builder(itemGenerated,
                 "living_void_ingot");
         builder(itemGenerated,

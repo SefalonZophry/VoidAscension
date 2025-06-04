@@ -38,7 +38,7 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_NYTHRIL_SHARD = ITEMS.register("void_nythril_shard", () ->
             new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> UNSTABLE_VOID_CRYSTAL = ITEMS.register("unstable_void_crystal", () ->
+    public static final RegistryObject<Item> EMPOWERED_VOID_CRYSTAL = ITEMS.register("empowered_void_crystal", () ->
             new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> VOID_INFUSED_STRING = ITEMS.register("void_infused_string", () ->

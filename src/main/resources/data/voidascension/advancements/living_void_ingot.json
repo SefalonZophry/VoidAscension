@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "voidascension:living_void_ingot"
+    },
+    "title": "Living Ingot",
+    "description": "Is it Really Alive?",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "voidascension:the_beginning_of_the_long_journey",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voidascension:living_void_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

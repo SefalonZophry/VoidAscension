@@ -21,7 +21,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
     }),
     VOID_RELIC("void_relic", 78, new int[] {8, 14, 12, 7}, 15,
             SoundEvents.ARMOR_EQUIP_DIAMOND, 10.0f, 0.6f, () -> {
-        return Ingredient.of(ModItems.UNSTABLE_VOID_CRYSTAL.get());
+        return Ingredient.of(ModItems.EMPOWERED_VOID_CRYSTAL.get());
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

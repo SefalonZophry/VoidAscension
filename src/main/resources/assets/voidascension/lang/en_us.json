@@ -17,7 +17,7 @@
   "item.voidascension.void_sword_guard": "Void Sword Guard",
   "item.voidascension.void_sword_blade": "Void Sword Blade",
   "item.voidascension.void_sword_lower_half": "Void Sword Lower Half",
-  "item.voidascension.unstable_void_crystal": "Unstable Void Crystal",
+  "item.voidascension.empowered_void_crystal": "Empowered Void Crystal",
   "item.voidascension.void_helmet": "Void Helmet",
   "item.voidascension.void_chestplate": "Void Chestplate",
   "item.voidascension.void_leggings": "Void Leggings",
@@ -102,6 +102,7 @@
   "entity.minecraft.villager.voidascension.voidspecialist": "Void Specialist",
 
   "effect.voidascension.void_corruption": "Void Corruption",
+  "effect.voidascension.one_with_the_void": "One With The Void",
   "creativetab.void_ascension_tab": "Void Ascension",
   "biome.voidascension.void_touched_biome": "Void Touched Forest",
   "death.attack.void_decay": "%1$s Was Consumed By The Void"

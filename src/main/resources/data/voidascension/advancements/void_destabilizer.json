@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "voidascension:void_destabilizer"
+    },
+    "title": "Destabilizing",
+    "description": "Build A Destabilizer.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "voidascension:living_void_ingot",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voidascension:void_destabilizer"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
